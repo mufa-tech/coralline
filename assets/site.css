@@ -1,0 +1,63 @@
+/* Coralline site. No external fonts, no scripts, no trackers. Light/dark follows the system. */
+:root{
+  --bg:#F6F3EF; --card:#FFFFFF; --line:#E3DCD3; --ink:#14202E; --muted:#56606E; --accent:#A34A88; --accent-soft:#F3E6EF;
+  --r:16px; --max:760px;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#080B1F; --card:#10153A; --line:#232A5C; --ink:#EEF0FF; --muted:#A7ACCF; --accent:#E69ACF; --accent-soft:#2A1F4A}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans)}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+nav.lang{display:flex;flex-wrap:wrap;gap:2px;font:600 13px/1 var(--mono)}
+nav.lang a{display:inline-block;padding:10px 7px;border-radius:8px;text-decoration:none;color:var(--muted)}
+nav.lang a[aria-current]{color:var(--ink);background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+main{padding:40px 0 56px}
+h1,h2,h3{line-height:1.2;overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+h1{font-size:clamp(30px,7vw,44px);letter-spacing:-.02em;margin:0 0 14px}
+h2{font-size:22px;margin:40px 0 12px}
+p.lead{font-size:clamp(18px,2.6vw,20px);color:var(--muted);margin:0 0 24px}
+.hero{text-align:center;padding-top:8px}
+.hero img.icon{width:112px;height:112px;border-radius:26px;box-shadow:0 12px 40px rgba(20,32,46,.18)}
+.hero h1{margin-top:22px}
+.stores{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:8px 0 10px}
+.store{display:inline-flex;flex-direction:column;justify-content:center;min-height:56px;min-width:200px;padding:8px 20px;border-radius:12px;
+  background:var(--ink);color:var(--bg);text-decoration:none;text-align:left;line-height:1.2}
+.store small{font-size:12px;opacity:.8}
+.store b{font-size:19px;font-weight:700}
+.store:hover{opacity:.9}
+.promise{font-weight:700;margin:18px 0 0}
+.note{font-size:14px;color:var(--muted)}
+ul.features{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:12px;text-align:left}
+ul.features li{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 16px 48px;position:relative}
+ul.features li::before{content:"";position:absolute;left:18px;top:23px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.prose p,.prose li{color:var(--ink)}
+.prose .updated{font:13px var(--mono);color:var(--muted)}
+.prose ol,.prose ul{padding-left:22px}
+.prose li{margin:4px 0}
+.callout{border-left:3px solid var(--accent);padding:12px 16px;background:var(--accent-soft);border-radius:0 12px 12px 0;margin:18px 0}
+details{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:10px 0;padding:0 18px}
+details summary{cursor:pointer;min-height:56px;display:flex;align-items:center;gap:12px;font-weight:700;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";margin-left:auto;font:700 20px var(--mono);color:var(--accent)}
+details[open] summary::after{content:"\2013"}
+details > *:not(summary){margin-top:0}
+details > :last-child{margin-bottom:18px}
+code,.f{font-family:var(--mono);font-size:.92em}
+ol.sources{font-size:15px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+footer a{color:var(--muted)}
+@media (max-width:480px){.store{width:100%}main{padding-top:28px}}

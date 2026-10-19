@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support: Coralline</title>
+<meta name="description" content="Help for Coralline: moving to a new phone, backups, units, how the dosing math works, restoring Pro, contact.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/support/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/support/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/support/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/support/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/support/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/support/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/support/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/support/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/support/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Support: Coralline">
+<meta property="og:description" content="Help for Coralline: moving to a new phone, backups, units, how the dosing math works, restoring Pro, contact.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/support/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<nav class="lang" aria-label="Language"><a href="../support/" hreflang="en" lang="en" aria-current="page">EN</a><a href="../de/support/" hreflang="de" lang="de">DE</a><a href="../fr/support/" hreflang="fr" lang="fr">FR</a><a href="../nl/support/" hreflang="nl" lang="nl">NL</a><a href="../it/support/" hreflang="it" lang="it">IT</a><a href="../es/support/" hreflang="es" lang="es">ES</a><a href="../tr/support/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap prose">
+<h1>Support</h1>
+<p class="lead">Answers to what reefers ask most. Still stuck? Send an email and a real person answers.</p>
+<details open><summary>How do I move my data to a new phone?</summary>
+<p>Your log lives only on your phone, so a backup file is how it moves. Nothing is lost on the way if you follow these steps.</p>
+<ol>
+<li>On the old phone: Tank tab → gear icon → <b>Settings → Back up to a file</b>. Save the file to Files, iCloud Drive or Google Drive, or send it to yourself.</li>
+<li>On the new phone: install Coralline, open <b>Settings → Restore from a file</b> and pick that file.</li>
+<li>Before anything changes, Coralline shows how many tanks and tests the file holds and when it was made. Restoring replaces what is on the new phone.</li>
+<li>Pro belongs to your Apple ID or Google account, not to the file. On the new phone tap <b>Restore purchases</b> on the Pro screen.</li>
+</ol>
+<p>The backup file works between iPhone and Android. A purchase can't move between Apple and Google, though.</p>
+</details>
+<details><summary>How often should I back up? What if I lose my phone?</summary>
+<p>There is no server and no account, so nobody can recover your log for you. The backup file you keep somewhere else is your only copy. Back up after a round of tests, or once a week. Settings shows when you made the last one.</p>
+<p>Uninstalling Coralline deletes its data. Back up first.</p>
+</details>
+<details><summary>Is the number of tests limited?</summary>
+<p>No, and it never will be. The free version logs unlimited tests for one tank and keeps all of them. Free charts show the last 30 days; older tests are still saved and appear in the charts with Pro. When the 7-day trial ends, nothing is deleted.</p>
+</details>
+<details><summary>Which units can I use?</summary>
+<p><b>Settings → Units.</b></p>
+<ul>
+<li>Volume: litres or US gallons</li>
+<li>Alkalinity: dKH, meq/L or ppm CaCO<sub>3</sub>. 1 meq/L = 2.8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
+<li>Calcium, magnesium, nitrate, phosphate, potassium: ppm (mg/L)</li>
+<li>Salinity: ppt or SG. Temperature: °C or °F.</li>
+</ul>
+<p>Coralline stores every value in one base unit, so switching units never changes your data.</p>
+</details>
+<details><summary>My test kit reads phosphorus in ppb. How does that compare to phosphate?</summary>
+<p>Phosphate (PO<sub>4</sub>) in ppm = phosphorus (P) in ppb × 3.066 ÷ 1000. So 100 ppb P is 0.31 ppm PO<sub>4</sub>.</p>
+<p>Kits that read nitrate as nitrogen: NO<sub>3</sub> = NO<sub>3</sub>-N × 4.427. The <b>Test kits</b> tool (Pro) does both for you.</p>
+</details>
+<details><summary>How are the doses and numbers calculated?</summary>
+<ul>
+<li><b>Raise to target.</b> Coralline works out the amount of the ion your tank needs from the water volume and the change, then the grams of the salt you pick. Alkalinity: each meq/L needs 84.0 mg per litre of sodium bicarbonate or 53.0 mg per litre of sodium carbonate. Calcium and magnesium use the molar mass of your salt: calcium chloride dihydrate 147.01 g/mol or anhydrous 110.98, magnesium chloride hexahydrate 203.30, magnesium sulfate heptahydrate 246.47.</li>
+<li><b>Daily limits.</b> Big corrections are split over several days. Defaults per day: Alk 1.4 dKH, Ca 20 ppm, Mg 100 ppm, following Randy Holmes-Farley's conservative guidance. Change them in Settings → Dosing safety.</li>
+<li><b>Kalkwasser.</b> Saturated limewater holds about 800 ppm calcium and 40 meq/L (about 112 dKH) of alkalinity. Your daily top-off in litres, scaled by the saturation you set, gives the daily rise in your tank.</li>
+<li><b>Dose from consumption.</b> The slope of your recent tests (least squares) plus the daily dose you logged gives your tank's real daily use. It needs at least 3 tests over 5 days; with less it says it needs more data.</li>
+<li><b>Water change.</b> New value = old × (1 − f) + new salt mix × f, where f = changed volume ÷ system volume.</li>
+<li><b>Salinity.</b> The EOS-80 equation of state of seawater (UNESCO 1981). At 35 ppt and 25 °C it gives 1023.34 kg/m³ and SG 1.0264 (25/25). Reference temperatures 25/25 °C, 60/60 °F and 77/77 °F.</li>
+</ul>
+<p>Every formula is unit tested against hand-worked values. Sources are listed below.</p>
+</details>
+<details><summary>How do I restore my Pro purchase?</summary>
+<p>Open the Pro screen (Settings → Coralline Pro, or tap any Pro feature) and tap <b>Restore purchases</b>. Use the Apple ID or Google account you bought Pro with. It needs a connection for a moment; after that Pro works offline.</p>
+</details>
+<details><summary>How does the 7-day trial work?</summary>
+<p>Every Pro feature for 7 days. Nothing renews and nothing is charged automatically. When it ends, Coralline goes back to Free and keeps everything you logged.</p>
+</details>
+<details><summary>My reminders come late or not at all.</summary>
+<p>Allow notifications for Coralline in your phone's settings. On Android, reminders arrive at an approximate time to save battery, so one can be a few minutes late. Battery savers that close apps can delay them more.</p>
+</details>
+<details><summary>Does Coralline work without internet?</summary>
+<p>Yes, all of it. Only buying or restoring Pro talks to the App Store or Google Play.</p>
+</details>
+<h2>Sources</h2>
+<ol class="sources">
+<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (EOS-80)</li>
+<li>Millero, F. J. &amp; Poisson, A. (1981). International one-atmosphere equation of state of seawater. <i>Deep-Sea Research</i> 28A, 625–629.</li>
+<li>Holmes-Farley, R. (2002). Solving calcium and alkalinity problems. <i>Advanced Aquarist</i>.</li>
+<li>Holmes-Farley, R. (2004). Reef aquarium water parameters. <i>Reefkeeping Magazine</i>.</li>
+</ol>
+<h2>Disclaimer</h2>
+<p class="callout">Calculations are estimates. Test kits have tolerances, products differ from their labels, and every tank consumes differently. Split big corrections over several days and test again before the next dose. You decide what goes into your aquarium.</p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:hello@mufatech.com">hello@mufatech.com</a></p>
+<p class="note">Please include your phone model, the app version (bottom of Settings) and, for calculation questions, the numbers you entered.</p>
+</main>
+<footer><div class="wrap">
+<span>Coralline is a water test log and dosing calculator for reef aquariums. No cookies or trackers on this site.</span>
+<nav><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+</body>
+</html>
