@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Assistenza: Coralline</title>
-<meta name="description" content="Aiuto per Coralline: passare a un nuovo telefono, backup, unità, come si calcola, ripristinare Pro, contatti.">
+<meta name="description" content="Aiuto per Coralline: nuovo telefono, backup automatici, importazione CSV, widget, unità, come si calcola, ripristinare Pro.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Assistenza: Coralline">
-<meta property="og:description" content="Aiuto per Coralline: passare a un nuovo telefono, backup, unità, come si calcola, ripristinare Pro, contatti.">
+<meta property="og:description" content="Aiuto per Coralline: nuovo telefono, backup automatici, importazione CSV, widget, unità, come si calcola, ripristinare Pro.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/it/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="it_IT">
@@ -39,18 +39,33 @@
 <h1>Assistenza</h1>
 <p class="lead">Le risposte alle domande più frequenti. Ancora bloccato? Scrivi una mail, risponde una persona vera.</p>
 <details open><summary>Come sposto i miei dati su un nuovo telefono?</summary>
-<p>Il tuo diario sta solo sul telefono: lo sposti con un file di backup. Seguendo questi passi non perdi nulla.</p>
+<p>Il tuo diario sta sul telefono, e Coralline ne fa un backup lì ogni giorno. Puoi spostarlo in due modi.</p>
+<p><b>Con il backup del telefono.</b> I dati di Coralline e i backup giornalieri fanno parte del backup iCloud o del computer su iPhone, e del backup del dispositivo su Android. Configura il nuovo telefono da quel backup, installa Coralline e le tue vasche ci sono.</p>
+<p><b>Con un file di backup.</b></p>
 <ol>
-<li>Sul vecchio telefono: scheda Vasca → ingranaggio → <b>Impostazioni → Backup su file</b>. Salva il file in File, iCloud Drive o Google Drive, oppure mandalo a te stesso.</li>
-<li>Sul nuovo telefono: installa Coralline, apri <b>Impostazioni → Ripristina da file</b> e scegli il file.</li>
-<li>Prima di cambiare qualcosa, Coralline mostra quante vasche e quanti test contiene il file e di quando è. Il ripristino sostituisce quello che c’è sul nuovo telefono.</li>
-<li>Pro è legato al tuo ID Apple o account Google, non al file. Sul nuovo telefono tocca <b>Ripristina acquisti</b> nella schermata Pro.</li>
+<li>Sul vecchio telefono: scheda Vasca → <b>Impostazioni</b> (ingranaggio) → <b>Backup su file</b>, oppure <b>Impostazioni → Importa → Mostra backup</b> e condividi il più recente. Salvalo in File, iCloud Drive o Google Drive, o mandalo a te stesso.</li>
+<li>Sul nuovo telefono: installa Coralline, apri <b>Impostazioni → Ripristina da file</b> e scegli il file. Prima di cambiare qualcosa, Coralline mostra quante vasche e quanti test contiene. Il ripristino sostituisce quello che c’è sul nuovo telefono.</li>
 </ol>
-<p>Il file di backup funziona tra iPhone e Android. Un acquisto invece non passa da Apple a Google.</p>
+<p>Pro è legato al tuo ID Apple o account Google, non al file. Sul nuovo telefono tocca <b>Ripristina acquisti</b> nella schermata Pro. Il file di backup funziona tra iPhone e Android; un acquisto invece non passa da Apple a Google.</p>
 </details>
-<details><summary>Ogni quanto faccio il backup? E se perdo il telefono?</summary>
-<p>Non c’è un server né un account, quindi nessuno può recuperare il diario al posto tuo. Il file di backup che tieni altrove è l’unica copia. Fai il backup dopo un giro di test, o una volta a settimana. Nelle Impostazioni vedi quando hai fatto l’ultimo.</p>
-<p>Disinstallare Coralline cancella i dati. Prima fai il backup.</p>
+<details><summary>Come funzionano i backup automatici?</summary>
+<p>Una volta al giorno, quando apri l’app, Coralline scrive un file di backup e tiene gli ultimi 7. Su iPhone li trovi nell’app File in Sul mio iPhone › Coralline › Backups. Su Android stanno nella memoria dell’app.</p>
+<p><b>Impostazioni → Importa → Mostra backup</b> li elenca. Toccane uno per condividerlo, o ripristinalo per tornare a quel giorno (i test registrati dopo vanno persi). <b>Fai il backup ora</b> ne crea subito uno.</p>
+<p>Non c’è un server né un account, quindi nessuno può recuperare il diario al posto tuo. I file giornalieri stanno sullo stesso telefono: ogni tanto tieni una copia altrove. Disinstallare Coralline cancella dati e backup.</p>
+</details>
+<details><summary>Posso portare i test da un’altra app o da un foglio di calcolo?</summary>
+<p>Sì, gratis. Esporta i test in CSV dalla vecchia app, o salva il foglio di calcolo come CSV. Poi <b>Impostazioni → Importa → Da un file CSV</b>.</p>
+<ul>
+<li>Separatore virgola, punto e virgola o tab. Nomi delle colonne in una qualsiasi delle 7 lingue dell’app. Date come 2026-10-18, 18.10.2026 o 10/18/2026; se una data si può leggere in due modi, Coralline chiede.</li>
+<li>Scegli la colonna della data, poi indica per ogni colonna parametro e unità. Le colonne sconosciute possono diventare nuovi parametri.</li>
+<li>Importa in una vasca esistente o in una nuova. I test già presenti vengono saltati, e <b>Annulla importazione</b> toglie l’intera importazione.</li>
+</ul>
+<p>Analisi ICP (Pro): <b>Impostazioni → Importa → Risultati ICP</b>, poi incolla il testo del referto. Calcio, magnesio, potassio, nitrati e fosfati vanno nei loro parametri; ogni altro elemento ha il suo grafico. Il testo viene letto sul telefono.</p>
+</details>
+<details><summary>Come aggiungo il widget?</summary>
+<p>iPhone: tieni premuto un punto vuoto della schermata Home, tocca <b>Modifica → Aggiungi widget</b>, cerca Coralline e scegli la misura piccola o media. Android: tieni premuta la schermata Home, tocca <b>Widget</b> e trascina Coralline.</p>
+<p>Il widget mostra gli ultimi valori con il loro stato e da quanti giorni il KH è stabile. Si aggiorna quando registri un test. Toccalo per aprire Coralline.</p>
+<p>Tenendo premuta l’icona dell’app hai due scorciatoie: <b>Registra test</b> e <b>Alza il KH</b>.</p>
 </details>
 <details><summary>Il numero di test è limitato?</summary>
 <p>No, e non lo sarà. La versione gratuita registra test illimitati per una vasca e li conserva tutti. I grafici gratuiti mostrano gli ultimi 30 giorni; i test più vecchi restano salvati e compaiono nei grafici con Pro. Alla fine dei 7 giorni di prova non viene cancellato nulla.</p>
@@ -67,12 +82,12 @@
 </details>
 <details><summary>Il mio test misura il fosforo in ppb. Come lo confronto con i fosfati?</summary>
 <p>Fosfati (PO<sub>4</sub>) in ppm = fosforo (P) in ppb × 3,066 ÷ 1000. Quindi 100 ppb di P sono 0,31 ppm di PO<sub>4</sub>.</p>
-<p>Test che danno i nitrati come azoto: NO<sub>3</sub> = N-NO<sub>3</sub> × 4,427. Lo strumento <b>Test</b> (Pro) fa entrambe le cose.</p>
+<p>Test che danno i nitrati come azoto: NO<sub>3</sub> = N-NO<sub>3</sub> × 4,427. Lo strumento <b>Test kit</b> (Pro) fa entrambe le cose.</p>
 </details>
 <details><summary>Come calcola Coralline?</summary>
 <ul>
 <li><b>Portare al valore obiettivo.</b> Dal volume d’acqua e dalla differenza Coralline ricava la quantità di ione che serve, poi i grammi del sale che scegli. KH: ogni meq/l richiede 84,0 mg di bicarbonato di sodio o 53,0 mg di carbonato di sodio per litro. Calcio e magnesio usano la massa molare del tuo sale: cloruro di calcio diidrato 147,01 g/mol o anidro 110,98, cloruro di magnesio esaidrato 203,30, solfato di magnesio eptaidrato 246,47.</li>
-<li><b>Limiti giornalieri.</b> Le correzioni grandi vengono divise su più giorni. Valori predefiniti al giorno: KH 1,4 dKH, Ca 20 ppm, Mg 100 ppm, secondo le indicazioni prudenti di Randy Holmes-Farley. Si cambiano in Impostazioni → Sicurezza dosaggi.</li>
+<li><b>Limiti giornalieri.</b> Le correzioni grandi vengono divise su più giorni. Valori predefiniti al giorno: KH 1,4 dKH, Ca 20 ppm, Mg 100 ppm, secondo le indicazioni prudenti di Randy Holmes-Farley. Si cambiano in Impostazioni → Sicurezza dosaggio.</li>
 <li><b>Kalkwasser.</b> L’acqua di calce satura contiene circa 800 ppm di calcio e 40 meq/l (circa 112 dKH). Il tuo rabbocco giornaliero in litri, scalato con la saturazione impostata, dà l’aumento giornaliero in vasca.</li>
 <li><b>Dosaggio dal consumo.</b> La pendenza dei tuoi test recenti (minimi quadrati) più la dose giornaliera che hai registrato dà il consumo reale della vasca. Servono almeno 3 test in 5 giorni; altrimenti l’app dice che servono più dati.</li>
 <li><b>Cambio d’acqua.</b> Nuovo valore = vecchio × (1 − f) + acqua nuova × f, con f = volume cambiato ÷ volume del sistema.</li>

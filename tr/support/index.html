@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Destek: Coralline</title>
-<meta name="description" content="Coralline yardım: yeni telefona geçiş, yedekleme, birimler, hesapların nasıl yapıldığı, Pro geri yükleme, iletişim.">
+<meta name="description" content="Coralline yardım: yeni telefona geçiş, otomatik yedekler, CSV içe aktarma, widget, birimler, hesaplar, Pro geri yükleme.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Destek: Coralline">
-<meta property="og:description" content="Coralline yardım: yeni telefona geçiş, yedekleme, birimler, hesapların nasıl yapıldığı, Pro geri yükleme, iletişim.">
+<meta property="og:description" content="Coralline yardım: yeni telefona geçiş, otomatik yedekler, CSV içe aktarma, widget, birimler, hesaplar, Pro geri yükleme.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/tr/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="tr_TR">
@@ -39,18 +39,33 @@
 <h1>Destek</h1>
 <p class="lead">En çok sorulanların cevapları. Hâlâ takıldıysan e-posta at, gerçek bir insan cevap verir.</p>
 <details open><summary>Verilerimi yeni telefona nasıl taşırım?</summary>
-<p>Günlüğün yalnızca telefonunda durur, taşımanın yolu bir yedek dosyası. Bu adımlarla hiçbir şey kaybolmaz:</p>
+<p>Günlüğün telefonunda durur ve Coralline onu her gün orada yedekler. Taşımanın iki yolu var.</p>
+<p><b>Telefonun kendi yedeğiyle.</b> Coralline'in verileri ve günlük yedekleri iPhone'da iCloud ya da bilgisayar yedeğine, Android'de cihaz yedeğine dahildir. Yeni telefonu bu yedekten kur, Coralline'i yükle; akvaryumların yerinde olur.</p>
+<p><b>Bir yedek dosyasıyla.</b></p>
 <ol>
-<li>Eski telefonda: Akvaryum sekmesi → dişli simgesi → <b>Ayarlar → Dosyaya yedekle</b>. Dosyayı Dosyalar'a, iCloud Drive'a veya Google Drive'a kaydet ya da kendine gönder.</li>
-<li>Yeni telefonda: Coralline'i kur, <b>Ayarlar → Dosyadan geri yükle</b>'yi aç ve o dosyayı seç.</li>
-<li>Hiçbir şey değişmeden önce Coralline, dosyada kaç akvaryum ve test olduğunu ve ne zaman alındığını gösterir. Geri yükleme yeni telefondakilerin yerine geçer.</li>
-<li>Pro, dosyaya değil Apple kimliğine veya Google hesabına bağlıdır. Yeni telefonda Pro ekranındaki <b>Satın alımları geri yükle</b>'ye dokun.</li>
+<li>Eski telefonda: Tank sekmesi → <b>Ayarlar</b> (dişli simgesi) → <b>Dosyaya yedekle</b>, ya da <b>Ayarlar → İçe aktar → Yedekleri göster</b> ve en yenisini paylaş. Dosyalar'a, iCloud Drive'a veya Google Drive'a kaydet ya da kendine gönder.</li>
+<li>Yeni telefonda: Coralline'i kur, <b>Ayarlar → Dosyadan geri yükle</b>'yi aç ve dosyayı seç. Hiçbir şey değişmeden önce Coralline dosyada kaç akvaryum ve test olduğunu gösterir. Geri yükleme yeni telefondakilerin yerine geçer.</li>
 </ol>
-<p>Yedek dosyası iPhone ile Android arasında da çalışır. Ama bir satın alım Apple'dan Google'a geçmez.</p>
+<p>Pro, dosyaya değil Apple kimliğine veya Google hesabına bağlıdır. Yeni telefonda Pro ekranındaki <b>Satın alımları geri yükle</b>'ye dokun. Yedek dosyası iPhone ile Android arasında çalışır; ama bir satın alım Apple'dan Google'a geçmez.</p>
 </details>
-<details><summary>Ne sıklıkla yedek almalıyım? Telefonu kaybedersem ne olur?</summary>
-<p>Sunucu da hesap da yok, yani günlüğünü senin yerine kimse geri getiremez. Başka bir yerde sakladığın yedek dosyası tek kopyandır. Bir test turundan sonra ya da haftada bir yedek al. Son yedeği ne zaman aldığın Ayarlar'da yazar.</p>
-<p>Coralline'i silmek verilerini de siler. Önce yedek al.</p>
+<details><summary>Otomatik yedekler nasıl çalışır?</summary>
+<p>Günde bir kez, uygulamayı açtığında, Coralline bir yedek dosyası yazar ve son 7'sini saklar. iPhone'da Dosyalar uygulamasında iPhone'umda › Coralline › Backups altında bulursun. Android'de uygulamanın kendi depolama alanında durur.</p>
+<p><b>Ayarlar → İçe aktar → Yedekleri göster</b> hepsini listeler. Birine dokunup paylaşabilir ya da geri yükleyip o güne dönebilirsin (sonrasında girilen testler kaybolur). <b>Şimdi yedekle</b> hemen yeni bir tane alır.</p>
+<p>Sunucu da hesap da yok, yani günlüğünü senin yerine kimse geri getiremez. Günlük dosyalar aynı telefonda durur; arada bir başka bir yere kopya al. Coralline'i silmek verileri ve yedekleri de siler.</p>
+</details>
+<details><summary>Testlerimi başka bir uygulamadan ya da tablodan getirebilir miyim?</summary>
+<p>Evet, ücretsiz. Eski uygulamadan testlerini CSV olarak dışa aktar ya da tablonu CSV olarak kaydet. Sonra <b>Ayarlar → İçe aktar → CSV dosyasından</b>.</p>
+<ul>
+<li>Virgül, noktalı virgül ya da sekmeyle ayrılmış. Sütun adları uygulamanın 7 dilinden herhangi birinde. 2026-10-18, 18.10.2026 ya da 10/18/2026 gibi tarihler; bir tarih iki türlü okunabiliyorsa Coralline sorar.</li>
+<li>Tarih sütununu seç, sonra her sütunun hangi parametre ve birim olduğunu belirt. Tanınmayan sütunlar yeni parametre olabilir.</li>
+<li>Var olan bir akvaryuma ya da yeni birine aktar. Coralline'de zaten olan testler atlanır, <b>Aktarmayı geri al</b> tüm aktarımı geri alır.</li>
+</ul>
+<p>ICP sonuçları (Pro): <b>Ayarlar → İçe aktar → ICP sonuçları</b>, sonra laboratuvar raporunun metnini yapıştır. Kalsiyum, magnezyum, potasyum, nitrat ve fosfat kendi parametrelerine gider; diğer her element kendi grafiğini alır. Metin telefonunda okunur.</p>
+</details>
+<details><summary>Widget’ı nasıl eklerim?</summary>
+<p>iPhone: Ana ekranda boş bir yere basılı tut, <b>Düzenle → Widget Ekle</b>'ye dokun, Coralline'i ara ve küçük ya da orta boyu seç. Android: ana ekrana basılı tut, <b>Widget'lar</b>'a dokun ve Coralline'i sürükle.</p>
+<p>Widget son değerlerini durumlarıyla ve KH'nin kaç gündür sabit olduğunu gösterir. Bir test kaydettiğinde güncellenir. Dokununca Coralline açılır.</p>
+<p>Uygulama simgesine basılı tutunca iki kısayol çıkar: <b>Test kaydet</b> ve <b>KH'yi yükselt</b>.</p>
 </details>
 <details><summary>Test sayısı sınırlı mı?</summary>
 <p>Hayır, ileride de olmayacak. Ücretsiz sürüm bir akvaryum için sınırsız test kaydeder ve hepsini saklar. Ücretsiz grafikler son 30 günü gösterir; daha eski testler kayıtlı kalır ve Pro ile grafiklerde görünür. 7 günlük deneme bitince hiçbir şey silinmez.</p>

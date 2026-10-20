@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hulp: Coralline</title>
-<meta name="description" content="Hulp bij Coralline: overstappen naar een nieuwe telefoon, back-ups, eenheden, hoe er gerekend wordt, Pro herstellen, contact.">
+<meta name="description" content="Hulp bij Coralline: nieuwe telefoon, automatische back-ups, CSV-import, widgets, eenheden, hoe er gerekend wordt, Pro herstellen.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Hulp: Coralline">
-<meta property="og:description" content="Hulp bij Coralline: overstappen naar een nieuwe telefoon, back-ups, eenheden, hoe er gerekend wordt, Pro herstellen, contact.">
+<meta property="og:description" content="Hulp bij Coralline: nieuwe telefoon, automatische back-ups, CSV-import, widgets, eenheden, hoe er gerekend wordt, Pro herstellen.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/nl/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="nl_NL">
@@ -39,18 +39,33 @@
 <h1>Hulp</h1>
 <p class="lead">Antwoorden op de vragen die het vaakst komen. Kom je er niet uit? Stuur een mail, er antwoordt een echt mens.</p>
 <details open><summary>Hoe zet ik mijn gegevens over naar een nieuwe telefoon?</summary>
-<p>Je logboek staat alleen op je telefoon. Je verhuist het met een back-upbestand. Zo raak je niets kwijt:</p>
+<p>Je logboek staat op je telefoon, en Coralline maakt er daar elke dag een back-up van. Overzetten kan op twee manieren.</p>
+<p><b>Met de back-up van je telefoon.</b> De gegevens van Coralline en de dagelijkse back-ups zitten op de iPhone in je iCloud- of computerback-up, op Android in de back-up van het toestel. Zet de nieuwe telefoon terug uit die back-up, installeer Coralline, en je bakken staan erin.</p>
+<p><b>Met een back-upbestand.</b></p>
 <ol>
-<li>Op de oude telefoon: tab Bak → tandwiel → <b>Instellingen → Back-up naar bestand</b>. Bewaar het bestand in Bestanden, iCloud Drive of Google Drive, of stuur het naar jezelf.</li>
-<li>Op de nieuwe telefoon: installeer Coralline, open <b>Instellingen → Terugzetten uit bestand</b> en kies dat bestand.</li>
-<li>Voordat er iets verandert, laat Coralline zien hoeveel bakken en tests in het bestand zitten en van wanneer het is. Terugzetten vervangt wat er op de nieuwe telefoon staat.</li>
-<li>Pro hoort bij je Apple ID of Google-account, niet bij het bestand. Tik op de nieuwe telefoon op <b>Aankopen herstellen</b> in het Pro-scherm.</li>
+<li>Op de oude telefoon: tab Bak → <b>Instellingen</b> (tandwiel) → <b>Back-up naar bestand</b>, of <b>Instellingen → Importeren → Back-ups tonen</b> en deel de nieuwste. Bewaar hem in Bestanden, iCloud Drive of Google Drive, of stuur hem naar jezelf.</li>
+<li>Op de nieuwe telefoon: installeer Coralline, open <b>Instellingen → Terugzetten uit bestand</b> en kies het bestand. Voordat er iets verandert, laat Coralline zien hoeveel bakken en tests erin zitten. Terugzetten vervangt wat er op de nieuwe telefoon staat.</li>
 </ol>
-<p>Het back-upbestand werkt tussen iPhone en Android. Een aankoop gaat alleen niet over van Apple naar Google.</p>
+<p>Pro hoort bij je Apple ID of Google-account, niet bij het bestand. Tik op de nieuwe telefoon op <b>Aankopen herstellen</b> in het Pro-scherm. Het back-upbestand werkt tussen iPhone en Android; een aankoop gaat niet over van Apple naar Google.</p>
 </details>
-<details><summary>Hoe vaak moet ik een back-up maken? En als ik mijn telefoon kwijtraak?</summary>
-<p>Er is geen server en geen account, dus niemand kan je logboek voor je terughalen. Het back-upbestand dat je ergens anders bewaart is je enige kopie. Maak een back-up na een testronde, of eens per week. In Instellingen zie je wanneer je de laatste maakte.</p>
-<p>Coralline verwijderen wist de gegevens. Maak eerst een back-up.</p>
+<details><summary>Hoe werken de automatische back-ups?</summary>
+<p>Eén keer per dag, als je de app opent, schrijft Coralline een back-upbestand en houdt de laatste 7. Op de iPhone vind je ze in de app Bestanden onder Op mijn iPhone › Coralline › Backups. Op Android staan ze in de eigen opslag van de app.</p>
+<p><b>Instellingen → Importeren → Back-ups tonen</b> geeft de lijst. Tik op een back-up om hem te delen, of zet hem terug om naar die dag terug te gaan (tests van daarna gaan verloren). <b>Nu back-up maken</b> maakt er meteen een.</p>
+<p>Er is geen server en geen account, dus niemand kan je logboek voor je terughalen. De dagelijkse bestanden staan op dezelfde telefoon; bewaar daarom af en toe een kopie ergens anders. Coralline verwijderen wist de gegevens en de back-ups.</p>
+</details>
+<details><summary>Kan ik mijn tests uit een andere app of een spreadsheet meenemen?</summary>
+<p>Ja, gratis. Exporteer je tests als CSV uit de oude app, of sla je spreadsheet op als CSV. Daarna <b>Instellingen → Importeren → Uit een CSV-bestand</b>.</p>
+<ul>
+<li>Gescheiden door komma, puntkomma of tab. Kolomnamen in elk van de 7 talen van de app. Datums zoals 2026-10-18, 18.10.2026 of 10/18/2026; kan een datum op twee manieren gelezen worden, dan vraagt Coralline het.</li>
+<li>Kies de datumkolom en geef per kolom de parameter en eenheid aan. Onbekende kolommen kunnen nieuwe parameters worden.</li>
+<li>Importeer in een bestaande of een nieuwe bak. Tests die al in Coralline staan worden overgeslagen, en <b>Import ongedaan maken</b> haalt de hele import weer weg.</li>
+</ul>
+<p>ICP-uitslagen (Pro): <b>Instellingen → Importeren → ICP-uitslag</b>, en plak de tekst van het labrapport. Calcium, magnesium, kalium, nitraat en fosfaat gaan naar hun parameters; elk ander element krijgt een eigen grafiek. De tekst wordt op je telefoon gelezen.</p>
+</details>
+<details><summary>Hoe voeg ik de widget toe?</summary>
+<p>iPhone: houd een lege plek op het beginscherm ingedrukt, tik op <b>Wijzig → Voeg widget toe</b>, zoek Coralline en kies klein of middelgroot. Android: houd het startscherm ingedrukt, tik op <b>Widgets</b> en sleep Coralline erop.</p>
+<p>De widget toont je laatste waarden met hun status en hoeveel dagen je KH al stabiel is. Hij werkt bij zodra je een test invoert. Tik erop om Coralline te openen.</p>
+<p>Houd het app-icoon ingedrukt voor twee snelkoppelingen: <b>Test invoeren</b> en <b>KH verhogen</b>.</p>
 </details>
 <details><summary>Is het aantal tests beperkt?</summary>
 <p>Nee, en dat blijft zo. De gratis versie bewaart onbeperkt tests voor één bak en houdt ze allemaal. Gratis grafieken tonen de laatste 30 dagen; oudere tests blijven bewaard en verschijnen met Pro in de grafieken. Als de 7 proefdagen voorbij zijn, wordt er niets gewist.</p>

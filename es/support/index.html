@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ayuda: Coralline</title>
-<meta name="description" content="Ayuda de Coralline: pasar a un teléfono nuevo, copias de seguridad, unidades, cómo se calcula, restaurar Pro, contacto.">
+<meta name="description" content="Ayuda de Coralline: teléfono nuevo, copias automáticas, importación CSV, widgets, unidades, cómo se calcula, restaurar Pro.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Ayuda: Coralline">
-<meta property="og:description" content="Ayuda de Coralline: pasar a un teléfono nuevo, copias de seguridad, unidades, cómo se calcula, restaurar Pro, contacto.">
+<meta property="og:description" content="Ayuda de Coralline: teléfono nuevo, copias automáticas, importación CSV, widgets, unidades, cómo se calcula, restaurar Pro.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/es/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="es_ES">
@@ -39,18 +39,33 @@
 <h1>Ayuda</h1>
 <p class="lead">Respuestas a lo que más se pregunta. ¿Sigues atascado? Escribe un correo y te contesta una persona.</p>
 <details open><summary>¿Cómo paso mis datos a un teléfono nuevo?</summary>
-<p>Tu registro solo está en tu teléfono, así que se mueve con un archivo de copia de seguridad. Con estos pasos no se pierde nada.</p>
+<p>Tu registro está en tu teléfono, y Coralline hace ahí una copia cada día. Puedes pasarlo de dos formas.</p>
+<p><b>Con la copia del propio teléfono.</b> Los datos de Coralline y sus copias diarias forman parte de la copia de iCloud o del ordenador en iPhone, y de la copia del dispositivo en Android. Configura el teléfono nuevo desde esa copia, instala Coralline y tus acuarios estarán ahí.</p>
+<p><b>Con un archivo de copia.</b></p>
 <ol>
-<li>En el teléfono antiguo: pestaña Acuario → engranaje → <b>Ajustes → Copia de seguridad en archivo</b>. Guarda el archivo en Archivos, iCloud Drive o Google Drive, o envíatelo.</li>
-<li>En el teléfono nuevo: instala Coralline, abre <b>Ajustes → Restaurar desde archivo</b> y elige ese archivo.</li>
-<li>Antes de cambiar nada, Coralline muestra cuántos acuarios y pruebas tiene el archivo y de cuándo es. Restaurar reemplaza lo que haya en el teléfono nuevo.</li>
-<li>Pro va con tu ID de Apple o tu cuenta de Google, no con el archivo. En el teléfono nuevo toca <b>Restaurar compras</b> en la pantalla Pro.</li>
+<li>En el teléfono antiguo: pestaña Acuario → <b>Ajustes</b> (engranaje) → <b>Copia de seguridad en archivo</b>, o <b>Ajustes → Importar → Ver copias</b> y comparte la más reciente. Guárdala en Archivos, iCloud Drive o Google Drive, o envíatela.</li>
+<li>En el teléfono nuevo: instala Coralline, abre <b>Ajustes → Restaurar desde archivo</b> y elige el archivo. Antes de cambiar nada, Coralline muestra cuántos acuarios y pruebas contiene. Restaurar reemplaza lo que haya en el teléfono nuevo.</li>
 </ol>
-<p>El archivo funciona entre iPhone y Android. Una compra, en cambio, no pasa de Apple a Google.</p>
+<p>Pro va con tu ID de Apple o tu cuenta de Google, no con el archivo. En el teléfono nuevo toca <b>Restaurar compras</b> en la pantalla Pro. El archivo funciona entre iPhone y Android; una compra no pasa de Apple a Google.</p>
 </details>
-<details><summary>¿Cada cuánto hago una copia? ¿Y si pierdo el teléfono?</summary>
-<p>No hay servidor ni cuenta, así que nadie puede recuperar tu registro por ti. El archivo de copia que guardas en otro sitio es tu única copia. Haz una copia después de una tanda de pruebas, o una vez por semana. En Ajustes ves cuándo hiciste la última.</p>
-<p>Desinstalar Coralline borra sus datos. Haz la copia antes.</p>
+<details><summary>¿Cómo funcionan las copias automáticas?</summary>
+<p>Una vez al día, al abrir la app, Coralline escribe un archivo de copia y guarda los 7 últimos. En iPhone están en la app Archivos, en En mi iPhone › Coralline › Backups. En Android están en el almacenamiento de la app.</p>
+<p><b>Ajustes → Importar → Ver copias</b> los muestra. Toca uno para compartirlo, o restáuralo para volver a ese día (las pruebas apuntadas después se pierden). <b>Hacer copia ahora</b> crea una al momento.</p>
+<p>No hay servidor ni cuenta, así que nadie puede recuperar tu registro por ti. Los archivos diarios están en el mismo teléfono: de vez en cuando guarda una copia en otro sitio. Desinstalar Coralline borra sus datos y sus copias.</p>
+</details>
+<details><summary>¿Puedo traer mis pruebas de otra app o de una hoja de cálculo?</summary>
+<p>Sí, gratis. Exporta tus pruebas en CSV desde la app antigua, o guarda tu hoja de cálculo como CSV. Luego <b>Ajustes → Importar → Desde un archivo CSV</b>.</p>
+<ul>
+<li>Separado por comas, punto y coma o tabulador. Nombres de columna en cualquiera de los 7 idiomas de la app. Fechas como 2026-10-18, 18.10.2026 o 10/18/2026; si una fecha se puede leer de dos formas, Coralline pregunta.</li>
+<li>Elige la columna de fecha y luego indica el parámetro y la unidad de cada columna. Las columnas desconocidas pueden ser parámetros nuevos.</li>
+<li>Importa a un acuario que ya tengas o a uno nuevo. Las pruebas que ya están en Coralline se saltan, y <b>Deshacer importación</b> quita toda la importación.</li>
+</ul>
+<p>Análisis ICP (Pro): <b>Ajustes → Importar → Resultados ICP</b> y pega el texto del informe del laboratorio. Calcio, magnesio, potasio, nitrato y fosfato van a sus parámetros; cada otro elemento tiene su propia gráfica. El texto se lee en tu teléfono.</p>
+</details>
+<details><summary>¿Cómo añado el widget?</summary>
+<p>iPhone: mantén pulsado un hueco libre de la pantalla de inicio, toca <b>Editar → Añadir widget</b>, busca Coralline y elige el tamaño pequeño o mediano. Android: mantén pulsada la pantalla de inicio, toca <b>Widgets</b> y arrastra Coralline.</p>
+<p>El widget muestra tus últimos valores con su estado y cuántos días lleva estable el KH. Se actualiza cuando registras una prueba. Tócalo para abrir Coralline.</p>
+<p>Si mantienes pulsado el icono de la app tienes dos accesos rápidos: <b>Registrar test</b> y <b>Subir el KH</b>.</p>
 </details>
 <details><summary>¿Está limitado el número de pruebas?</summary>
 <p>No, y no lo estará. La versión gratuita registra pruebas ilimitadas para un acuario y las guarda todas. Las gráficas gratuitas muestran los últimos 30 días; las pruebas más antiguas siguen guardadas y aparecen en las gráficas con Pro. Cuando terminan los 7 días de prueba no se borra nada.</p>
@@ -67,7 +82,7 @@
 </details>
 <details><summary>Mi kit mide fósforo en ppb. ¿Cómo lo comparo con fosfato?</summary>
 <p>Fosfato (PO<sub>4</sub>) en ppm = fósforo (P) en ppb × 3,066 ÷ 1000. Así que 100 ppb de P son 0,31 ppm de PO<sub>4</sub>.</p>
-<p>Kits que dan el nitrato como nitrógeno: NO<sub>3</sub> = N-NO<sub>3</sub> × 4,427. La herramienta <b>Kits de prueba</b> (Pro) hace las dos cosas.</p>
+<p>Kits que dan el nitrato como nitrógeno: NO<sub>3</sub> = N-NO<sub>3</sub> × 4,427. La herramienta <b>Kits de test</b> (Pro) hace las dos cosas.</p>
 </details>
 <details><summary>¿Cómo calcula Coralline?</summary>
 <ul>

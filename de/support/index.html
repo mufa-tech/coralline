@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hilfe: Coralline</title>
-<meta name="description" content="Hilfe zu Coralline: Umzug aufs neue Handy, Sicherung, Einheiten, wie gerechnet wird, Pro wiederherstellen, Kontakt.">
+<meta name="description" content="Hilfe zu Coralline: Umzug aufs neue Handy, automatische Backups, CSV-Import, Widgets, Einheiten, wie gerechnet wird, Pro wiederherstellen.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Hilfe: Coralline">
-<meta property="og:description" content="Hilfe zu Coralline: Umzug aufs neue Handy, Sicherung, Einheiten, wie gerechnet wird, Pro wiederherstellen, Kontakt.">
+<meta property="og:description" content="Hilfe zu Coralline: Umzug aufs neue Handy, automatische Backups, CSV-Import, Widgets, Einheiten, wie gerechnet wird, Pro wiederherstellen.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/de/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="de_DE">
@@ -39,18 +39,33 @@
 <h1>Hilfe</h1>
 <p class="lead">Antworten auf die häufigsten Fragen. Trotzdem hängen geblieben? Schreib eine Mail, es antwortet ein Mensch.</p>
 <details open><summary>Wie ziehe ich meine Daten aufs neue Handy um?</summary>
-<p>Dein Logbuch liegt nur auf deinem Handy. Umgezogen wird es mit einer Sicherungsdatei. So geht nichts verloren:</p>
+<p>Dein Logbuch liegt auf deinem Handy, und Coralline sichert es dort jeden Tag. Umziehen geht auf zwei Wegen.</p>
+<p><b>Mit dem Backup des Handys.</b> Die Daten von Coralline und die täglichen Backups gehören auf dem iPhone zum iCloud- oder Computer-Backup, auf Android zur Gerätesicherung. Richte das neue Handy aus diesem Backup ein, installiere Coralline, und deine Becken sind da.</p>
+<p><b>Mit einer Backup-Datei.</b></p>
 <ol>
-<li>Auf dem alten Handy: Tab Becken → Zahnrad → <b>Einstellungen → In Datei sichern</b>. Die Datei in Dateien, iCloud Drive oder Google Drive ablegen oder dir selbst schicken.</li>
-<li>Auf dem neuen Handy: Coralline installieren, <b>Einstellungen → Aus Datei wiederherstellen</b> öffnen und die Datei wählen.</li>
-<li>Bevor sich etwas ändert, zeigt Coralline, wie viele Becken und Tests in der Datei stecken und von wann sie ist. Die Wiederherstellung ersetzt, was auf dem neuen Handy liegt.</li>
-<li>Pro hängt an deiner Apple-ID oder deinem Google-Konto, nicht an der Datei. Auf dem neuen Handy im Pro-Bildschirm auf <b>Käufe wiederherstellen</b> tippen.</li>
+<li>Auf dem alten Handy: Tab Becken → <b>Einstellungen</b> (Zahnrad) → <b>Backup als Datei</b>, oder <b>Einstellungen → Import → Backups anzeigen</b> und das neueste teilen. In Dateien, iCloud Drive oder Google Drive ablegen oder dir selbst schicken.</li>
+<li>Auf dem neuen Handy: Coralline installieren, <b>Einstellungen → Aus Datei wiederherstellen</b> öffnen und die Datei wählen. Bevor sich etwas ändert, zeigt Coralline, wie viele Becken und Tests drinstecken. Die Wiederherstellung ersetzt, was auf dem neuen Handy liegt.</li>
 </ol>
-<p>Die Sicherungsdatei funktioniert zwischen iPhone und Android. Ein Kauf lässt sich aber nicht zwischen Apple und Google übertragen.</p>
+<p>Pro hängt an deiner Apple-ID oder deinem Google-Konto, nicht an der Datei. Auf dem neuen Handy im Pro-Bildschirm auf <b>Käufe wiederherstellen</b> tippen. Die Backup-Datei funktioniert zwischen iPhone und Android; ein Kauf lässt sich aber nicht zwischen Apple und Google übertragen.</p>
 </details>
-<details><summary>Wie oft sollte ich sichern? Was, wenn das Handy weg ist?</summary>
-<p>Es gibt keinen Server und kein Konto, also kann niemand dein Logbuch für dich zurückholen. Die Sicherungsdatei, die du woanders aufbewahrst, ist deine einzige Kopie. Sichere nach einer Testrunde oder einmal pro Woche. In den Einstellungen steht, wann du zuletzt gesichert hast.</p>
-<p>Wer Coralline deinstalliert, löscht die Daten. Vorher sichern.</p>
+<details><summary>Wie funktionieren die automatischen Backups?</summary>
+<p>Einmal am Tag, wenn du die App öffnest, schreibt Coralline eine Backup-Datei und behält die letzten 7. Auf dem iPhone findest du sie in der Dateien-App unter Auf meinem iPhone › Coralline › Backups. Auf Android liegen sie im eigenen Speicher der App.</p>
+<p><b>Einstellungen → Import → Backups anzeigen</b> listet sie auf. Tipp auf eines, um es zu teilen oder wiederherzustellen und damit auf diesen Tag zurückzugehen (spätere Tests gehen dabei verloren). <b>Jetzt sichern</b> macht sofort ein neues.</p>
+<p>Es gibt keinen Server und kein Konto, also kann niemand dein Logbuch für dich zurückholen. Die täglichen Dateien liegen auf demselben Handy. Leg deshalb ab und zu eine Kopie woanders ab. Wer Coralline deinstalliert, löscht Daten und Backups.</p>
+</details>
+<details><summary>Kann ich meine Tests aus einer anderen App oder Tabelle mitnehmen?</summary>
+<p>Ja, gratis. Exportiere die Tests aus der alten App als CSV oder speichere deine Tabelle als CSV. Dann <b>Einstellungen → Import → Aus einer CSV-Datei</b>.</p>
+<ul>
+<li>Getrennt durch Komma, Semikolon oder Tab. Spaltennamen in jeder der 7 App-Sprachen. Datumsangaben wie 2026-10-18, 18.10.2026 oder 10/18/2026; ist ein Datum mehrdeutig, fragt Coralline nach.</li>
+<li>Datumsspalte wählen, dann für jede Spalte Parameter und Einheit festlegen. Unbekannte Spalten können eigene Parameter werden.</li>
+<li>In ein vorhandenes oder ein neues Becken importieren. Tests, die schon in Coralline sind, werden übersprungen, und <b>Import rückgängig machen</b> nimmt den ganzen Import wieder heraus.</li>
+</ul>
+<p>ICP-Analysen (Pro): <b>Einstellungen → Import → ICP-Ergebnisse</b>, dann den Text des Laborberichts einfügen. Calcium, Magnesium, Kalium, Nitrat und Phosphat landen bei ihren Parametern; jedes andere Element bekommt einen eigenen Verlauf. Der Text wird auf dem Handy gelesen.</p>
+</details>
+<details><summary>Wie füge ich das Widget hinzu?</summary>
+<p>iPhone: Eine freie Stelle auf dem Home-Bildschirm gedrückt halten, <b>Bearbeiten → Widget hinzufügen</b> tippen, nach Coralline suchen und klein oder mittel wählen. Android: Den Startbildschirm gedrückt halten, <b>Widgets</b> tippen und Coralline darauf ziehen.</p>
+<p>Das Widget zeigt deine letzten Werte mit Status und wie viele Tage die KH schon stabil ist. Es aktualisiert sich, wenn du einen Test einträgst. Ein Tipp öffnet Coralline.</p>
+<p>Wenn du das App-Symbol gedrückt hältst, gibt es zwei Kurzbefehle: <b>Test eintragen</b> und <b>KH anheben</b>.</p>
 </details>
 <details><summary>Ist die Zahl der Tests begrenzt?</summary>
 <p>Nein, und das bleibt so. Die Gratis-Version speichert unbegrenzt Tests für ein Becken und behält sie alle. Gratis zeigen die Diagramme die letzten 30 Tage; ältere Tests bleiben gespeichert und erscheinen mit Pro in den Diagrammen. Wenn die 7 Testtage vorbei sind, wird nichts gelöscht.</p>

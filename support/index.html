@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Support: Coralline</title>
-<meta name="description" content="Help for Coralline: moving to a new phone, backups, units, how the dosing math works, restoring Pro, contact.">
+<meta name="description" content="Help for Coralline: moving to a new phone, automatic backups, CSV import, widgets, units, how the dosing math works, restoring Pro.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Support: Coralline">
-<meta property="og:description" content="Help for Coralline: moving to a new phone, backups, units, how the dosing math works, restoring Pro, contact.">
+<meta property="og:description" content="Help for Coralline: moving to a new phone, automatic backups, CSV import, widgets, units, how the dosing math works, restoring Pro.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="en_US">
@@ -39,18 +39,33 @@
 <h1>Support</h1>
 <p class="lead">Answers to what reefers ask most. Still stuck? Send an email and a real person answers.</p>
 <details open><summary>How do I move my data to a new phone?</summary>
-<p>Your log lives only on your phone, so a backup file is how it moves. Nothing is lost on the way if you follow these steps.</p>
+<p>Your log lives on your phone, and Coralline backs it up there every day. There are two ways to move it.</p>
+<p><b>With the phone's own backup.</b> Coralline's data and its daily backups are part of your iCloud or computer backup on iPhone, and of the Android device backup. Set up the new phone from that backup, install Coralline, and your tanks are there.</p>
+<p><b>With a backup file.</b></p>
 <ol>
-<li>On the old phone: Tank tab → gear icon → <b>Settings → Back up to a file</b>. Save the file to Files, iCloud Drive or Google Drive, or send it to yourself.</li>
-<li>On the new phone: install Coralline, open <b>Settings → Restore from a file</b> and pick that file.</li>
-<li>Before anything changes, Coralline shows how many tanks and tests the file holds and when it was made. Restoring replaces what is on the new phone.</li>
-<li>Pro belongs to your Apple ID or Google account, not to the file. On the new phone tap <b>Restore purchases</b> on the Pro screen.</li>
+<li>On the old phone: Tank tab → <b>Settings</b> (gear icon) → <b>Back up to a file</b>, or <b>Settings → Import → Show backups</b> and share the newest one. Save it to Files, iCloud Drive or Google Drive, or send it to yourself.</li>
+<li>On the new phone: install Coralline, open <b>Settings → Restore from a file</b> and pick that file. Coralline shows how many tanks and tests it holds before anything changes. Restoring replaces what is on the new phone.</li>
 </ol>
-<p>The backup file works between iPhone and Android. A purchase can't move between Apple and Google, though.</p>
+<p>Pro belongs to your Apple ID or Google account, not to the file. On the new phone tap <b>Restore purchases</b> on the Pro screen. The backup file works between iPhone and Android; a purchase can't move between Apple and Google.</p>
 </details>
-<details><summary>How often should I back up? What if I lose my phone?</summary>
-<p>There is no server and no account, so nobody can recover your log for you. The backup file you keep somewhere else is your only copy. Back up after a round of tests, or once a week. Settings shows when you made the last one.</p>
-<p>Uninstalling Coralline deletes its data. Back up first.</p>
+<details><summary>How do the automatic backups work?</summary>
+<p>Once a day, when you open the app, Coralline writes a backup file and keeps the last 7. On iPhone you find them in the Files app under On My iPhone › Coralline › Backups. On Android they sit in the app's own storage.</p>
+<p><b>Settings → Import → Show backups</b> lists them. Tap one to share it, or <b>Restore</b> it to go back to that day (tests logged since then are lost). <b>Back up now</b> makes a fresh one.</p>
+<p>There is no server and no account, so nobody can recover your log for you. The daily files live on the same phone, so if the phone may get lost, keep a copy somewhere else now and then. Uninstalling Coralline deletes its data and its backups.</p>
+</details>
+<details><summary>Can I bring my tests from another app or a spreadsheet?</summary>
+<p>Yes, free. Export your tests as CSV from the old app, or save your spreadsheet as CSV. Then <b>Settings → Import → From a CSV file</b>.</p>
+<ul>
+<li>Comma, semicolon or tab separated. Column names in any of the 7 app languages. Dates like 2026-10-18, 18.10.2026 or 10/18/2026; if a date could be read two ways, Coralline asks.</li>
+<li>Pick the date column, then tell Coralline which parameter and unit each column holds. Columns it doesn't know can become new parameters.</li>
+<li>Import into an existing tank or a new one. Tests already in Coralline are skipped, and <b>Undo import</b> removes the whole import again.</li>
+</ul>
+<p>ICP results (Pro): <b>Settings → Import → ICP results</b>, then paste the text of the lab report. Calcium, magnesium, potassium, nitrate and phosphate go to their parameters; every other element gets its own trend. The text is read on your phone.</p>
+</details>
+<details><summary>How do I add the widget?</summary>
+<p>iPhone: touch and hold an empty spot on the Home Screen, tap <b>Edit → Add Widget</b>, search for Coralline and pick the small or medium size. Android: touch and hold the home screen, tap <b>Widgets</b> and drag Coralline onto it.</p>
+<p>The widget shows your latest values with their status and how many days alkalinity has held steady. It updates when you log a test. Tap it to open Coralline.</p>
+<p>Touch and hold the app icon for two shortcuts: <b>Log test</b> and <b>Raise alkalinity</b>.</p>
 </details>
 <details><summary>Is the number of tests limited?</summary>
 <p>No, and it never will be. The free version logs unlimited tests for one tank and keeps all of them. Free charts show the last 30 days; older tests are still saved and appear in the charts with Pro. When the 7-day trial ends, nothing is deleted.</p>

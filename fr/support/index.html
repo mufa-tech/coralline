@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aide : Coralline</title>
-<meta name="description" content="Aide pour Coralline : passer à un nouveau téléphone, sauvegardes, unités, comment les calculs sont faits, restaurer Pro, contact.">
+<meta name="description" content="Aide pour Coralline : nouveau téléphone, sauvegardes automatiques, import CSV, widgets, unités, calculs, restaurer Pro.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
@@ -23,7 +23,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coralline">
 <meta property="og:title" content="Aide : Coralline">
-<meta property="og:description" content="Aide pour Coralline : passer à un nouveau téléphone, sauvegardes, unités, comment les calculs sont faits, restaurer Pro, contact.">
+<meta property="og:description" content="Aide pour Coralline : nouveau téléphone, sauvegardes automatiques, import CSV, widgets, unités, calculs, restaurer Pro.">
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/fr/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="fr_FR">
@@ -39,18 +39,33 @@
 <h1>Aide</h1>
 <p class="lead">Les réponses aux questions les plus fréquentes. Toujours bloqué ? Envoyez un e-mail, une vraie personne vous répond.</p>
 <details open><summary>Comment passer mes données sur un nouveau téléphone ?</summary>
-<p>Votre journal n’existe que sur votre téléphone : c’est un fichier de sauvegarde qui le transporte. En suivant ces étapes, rien ne se perd.</p>
+<p>Votre journal est sur votre téléphone, et Coralline le sauvegarde là chaque jour. Il y a deux façons de le déplacer.</p>
+<p><b>Avec la sauvegarde du téléphone.</b> Les données de Coralline et ses sauvegardes quotidiennes font partie de la sauvegarde iCloud ou ordinateur sur iPhone, et de la sauvegarde de l’appareil sur Android. Configurez le nouveau téléphone depuis cette sauvegarde, installez Coralline, et vos bacs sont là.</p>
+<p><b>Avec un fichier de sauvegarde.</b></p>
 <ol>
-<li>Sur l’ancien téléphone : onglet Bac → roue dentée → <b>Réglages → Sauvegarder dans un fichier</b>. Enregistrez le fichier dans Fichiers, iCloud Drive ou Google Drive, ou envoyez-le-vous.</li>
-<li>Sur le nouveau téléphone : installez Coralline, ouvrez <b>Réglages → Restaurer depuis un fichier</b> et choisissez ce fichier.</li>
-<li>Avant tout changement, Coralline affiche le nombre de bacs et de tests du fichier et sa date. La restauration remplace ce qui se trouve sur le nouveau téléphone.</li>
-<li>Pro est lié à votre identifiant Apple ou à votre compte Google, pas au fichier. Sur le nouveau téléphone, touchez <b>Restaurer les achats</b> sur l’écran Pro.</li>
+<li>Sur l’ancien téléphone : onglet Bac → <b>Réglages</b> (roue dentée) → <b>Sauvegarder dans un fichier</b>, ou <b>Réglages → Importer → Voir les sauvegardes</b> et partagez la plus récente. Enregistrez-la dans Fichiers, iCloud Drive ou Google Drive, ou envoyez-la-vous.</li>
+<li>Sur le nouveau téléphone : installez Coralline, ouvrez <b>Réglages → Restaurer depuis un fichier</b> et choisissez le fichier. Avant tout changement, Coralline affiche le nombre de bacs et de tests qu’il contient. La restauration remplace ce qui se trouve sur le nouveau téléphone.</li>
 </ol>
-<p>Le fichier de sauvegarde passe entre iPhone et Android. Un achat, lui, ne passe pas d’Apple à Google.</p>
+<p>Pro est lié à votre identifiant Apple ou à votre compte Google, pas au fichier. Sur le nouveau téléphone, touchez <b>Restaurer les achats</b> sur l’écran Pro. Le fichier passe entre iPhone et Android ; un achat, lui, ne passe pas d’Apple à Google.</p>
 </details>
-<details><summary>Je sauvegarde tous les combien ? Et si je perds mon téléphone ?</summary>
-<p>Il n’y a ni serveur ni compte : personne ne peut récupérer votre journal à votre place. Le fichier de sauvegarde gardé ailleurs est votre seule copie. Sauvegardez après une série de tests, ou une fois par semaine. Les Réglages indiquent la date de la dernière sauvegarde.</p>
-<p>Désinstaller Coralline efface ses données. Sauvegardez avant.</p>
+<details><summary>Comment marchent les sauvegardes automatiques ?</summary>
+<p>Une fois par jour, à l’ouverture de l’app, Coralline écrit un fichier de sauvegarde et garde les 7 derniers. Sur iPhone, ils sont dans l’app Fichiers, sous Sur mon iPhone › Coralline › Backups. Sur Android, ils restent dans le stockage de l’app.</p>
+<p><b>Réglages → Importer → Voir les sauvegardes</b> les liste. Touchez-en une pour la partager, ou pour la restaurer et revenir à ce jour-là (les tests notés depuis sont perdus). <b>Sauvegarder maintenant</b> en crée une tout de suite.</p>
+<p>Il n’y a ni serveur ni compte : personne ne peut récupérer votre journal à votre place. Les fichiers quotidiens sont sur le même téléphone, alors gardez de temps en temps une copie ailleurs. Désinstaller Coralline efface ses données et ses sauvegardes.</p>
+</details>
+<details><summary>Puis-je reprendre mes tests d’une autre app ou d’un tableur ?</summary>
+<p>Oui, gratuitement. Exportez vos tests en CSV depuis l’ancienne app, ou enregistrez votre tableur en CSV. Puis <b>Réglages → Importer → Depuis un fichier CSV</b>.</p>
+<ul>
+<li>Séparateur virgule, point-virgule ou tabulation. Noms de colonnes dans l’une des 7 langues de l’app. Dates comme 2026-10-18, 18.10.2026 ou 10/18/2026 ; si une date peut se lire de deux façons, Coralline demande.</li>
+<li>Choisissez la colonne de date, puis indiquez pour chaque colonne le paramètre et l’unité. Les colonnes inconnues peuvent devenir de nouveaux paramètres.</li>
+<li>Import dans un bac existant ou un nouveau bac. Les tests déjà présents sont ignorés, et <b>Annuler l’import</b> retire tout l’import.</li>
+</ul>
+<p>Analyses ICP (Pro) : <b>Réglages → Importer → Résultats ICP</b>, puis collez le texte du rapport du labo. Calcium, magnésium, potassium, nitrates et phosphates vont dans leurs paramètres ; chaque autre élément a sa propre courbe. Le texte est lu sur le téléphone.</p>
+</details>
+<details><summary>Comment ajouter le widget ?</summary>
+<p>iPhone : maintenez le doigt sur un espace vide de l’écran d’accueil, touchez <b>Modifier → Ajouter un widget</b>, cherchez Coralline et choisissez la petite ou la moyenne taille. Android : maintenez le doigt sur l’écran d’accueil, touchez <b>Widgets</b> et faites glisser Coralline.</p>
+<p>Le widget affiche vos dernières valeurs avec leur état et depuis combien de jours le KH est stable. Il se met à jour quand vous notez un test. Touchez-le pour ouvrir Coralline.</p>
+<p>Un appui long sur l’icône de l’app donne deux raccourcis : <b>Saisir un test</b> et <b>Remonter le KH</b>.</p>
 </details>
 <details><summary>Le nombre de tests est-il limité ?</summary>
 <p>Non, et ça ne changera pas. La version gratuite enregistre des tests illimités pour un bac et les garde tous. Les graphiques gratuits montrent les 30 derniers jours ; les tests plus anciens restent enregistrés et apparaissent dans les graphiques avec Pro. À la fin des 7 jours d’essai, rien n’est effacé.</p>
