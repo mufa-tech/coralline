@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moving to Coralline from another app</title>
+<meta name="description" content="How to export your tests from another reef log app, import the CSV into Coralline and keep your own backup from now on.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/switch/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/switch/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/switch/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/switch/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/switch/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/switch/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/switch/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/switch/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/switch/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Moving to Coralline from another app">
+<meta property="og:description" content="How to export your tests from another reef log app, import the CSV into Coralline and keep your own backup from now on.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/switch/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<nav class="lang" aria-label="Language"><a href="../switch/" hreflang="en" lang="en" aria-current="page">EN</a><a href="../de/switch/" hreflang="de" lang="de">DE</a><a href="../fr/switch/" hreflang="fr" lang="fr">FR</a><a href="../nl/switch/" hreflang="nl" lang="nl">NL</a><a href="../it/switch/" hreflang="it" lang="it">IT</a><a href="../es/switch/" hreflang="es" lang="es">ES</a><a href="../tr/switch/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap prose">
+<h1>Coming from another app? Bring your tank with you.</h1>
+<p class="lead">If your current app has started limiting how many tests you can log, wants an account, or you just want your data in a file you control, this takes about 15 minutes. Your old history comes along.</p>
+<h2>1. Get your data out of the old app first</h2>
+<p>Do this today, before you install anything. Apps change their rules.</p>
+<ul>
+<li>Look for “Export”, “Backup” or “Download data”. It is usually in the settings, on the tank screen or on the app's website. Most reef log apps export CSV, which is a plain spreadsheet file.</li>
+<li>Export only in the paid plan? Check whether a free trial includes it, or log in on the web version and download from there.</li>
+<li>No export at all? Take screenshots of the history list for each parameter. That is enough to re-enter the part that matters (step 3).</li>
+<li>Save the file somewhere you control: iCloud Drive, Google Drive or your computer. Put the date in the name, for example <code>reef-export-2026-10-20.csv</code>.</li>
+</ul>
+<h2>2. Set up Coralline (about 30 seconds)</h2>
+<ol>
+<li>Install it from the <a href="https://apps.apple.com/app/id6824690192">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a>.</li>
+<li>Create your tank: name, <b>Net water volume</b> (the water actually in the system, not the glass size) and <b>Tank type</b>.</li>
+<li>Pick your units in <b>Settings → Units</b>: dKH, meq/L or ppm for alkalinity, litres or gallons, °C or °F, SG or ppt for salinity.</li>
+<li>Check your target ranges. The defaults are common reef ranges; change them to what you already aim for, with <b>Edit target</b> on any chart or under <b>Settings → Tanks</b> → your tank → <b>Parameters</b>.</li>
+</ol>
+<p>There is no account. Nothing to sign up for.</p>
+<h2>3. Bring your history over</h2>
+<p><b>Have a CSV?</b> Open <b>Settings → Import → From a CSV file</b> and pick it. This is free and has no limit.</p>
+<ul>
+<li>Comma, semicolon or tab separated. Column names in any of the 7 app languages. Dates like 2026-10-18, 18.10.2026 or 10/18/2026; if a date could be read two ways, Coralline asks.</li>
+<li>Pick the date column, then tell Coralline which parameter and unit each column holds. Columns it doesn't know can become new parameters. Check that screen once; column names differ from app to app.</li>
+<li>Import into an existing tank or a new one. Tests already in Coralline are skipped, and <b>Undo import</b> removes the whole import again.</li>
+</ul>
+<p>ICP lab results go in the same way, as text (Pro): <b>Settings → Import → ICP results</b>, then paste the report.</p>
+<p><b>No export from the old app?</b> You don't need years of data. The last few weeks are what count: trends and the stability card start working after a few entries, and the dose suggestion needs at least 3 tests over 5 days per parameter. Two weeks of Alk, Ca and Mg is plenty.</p>
+<ul>
+<li>Backdate each entry. On the <b>Log test</b> screen, tap <b>Set date and time</b> and enter when the test was actually done. Oldest first.</li>
+<li>Start with what drives dosing: Alk, Ca, Mg, then NO<sub>3</sub> and PO<sub>4</sub>. Salinity and temperature can wait.</li>
+<li>Your last values are pre-filled. For a parameter that barely moves, you change one digit per entry.</li>
+<li>One entry per test session, with every parameter you tested that day in it.</li>
+<li>Old units: if the old app stored phosphorus as ppb P, convert before entering: ppm PO<sub>4</sub> = ppb P × 3.066 ÷ 1000, so 30 ppb = 0.09 ppm. Nitrate given as N: × 4.427. The <b>Test kits</b> tool (Pro) does both; on Free, use the formula.</li>
+</ul>
+<p>A realistic target: the last 14 days of Alk, Ca and Mg plus the last 4 NO<sub>3</sub> and PO<sub>4</sub> tests. About 10 minutes of typing.</p>
+<p><b>Do you dose daily?</b> Set the dose on the <b>Dosing</b> tab under <b>Daily plan</b>. The plan starts on the day you save it, and the dose suggestion only counts tests from that day on, so set it now and keep testing. That is what lets Coralline tell “the tank uses 0.3 dKH a day” from “my dose adds 0.25”.</p>
+<h2>4. Keep your own backup from now on</h2>
+<ul>
+<li>Coralline writes a backup on your phone every day and keeps the last 7. For a copy somewhere else: <b>Settings → Back up to a file</b>, then save it to iCloud Drive or Google Drive. One JSON file with everything in it.</li>
+<li>New phone? Install Coralline, then <b>Settings → Restore from a file</b> and pick that file.</li>
+<li>Keep the old CSV export too. You can import it at any time; a test with the same time and values as one already in Coralline is skipped.</li>
+<li>Want your tests out again? <b>Settings → Export tests as CSV</b> (Pro), or the backup file. Nothing is locked in.</li>
+</ul>
+<h2>What is free and what is Pro</h2>
+<ul>
+<li><b>Free, with no limit on logging:</b> 1 tank, unlimited tests, 30-day charts, raise to target for Alk, Ca and Mg, water change, salinity and unit converters, 3 reminders, backup and restore, CSV import.</li>
+<li><b>Pro, one payment</b> ($14.99 launch price for the first 60 days, then $19.99): unlimited tanks, full history charts with dose markers, kalkwasser, product calibration, dose suggestion from your consumption, test kit conversions, unlimited reminders, CSV export, all themes. 7-day free trial.</li>
+<li>No subscription. If you never buy Pro, your data stays fully editable.</li>
+</ul>
+<h2>Questions</h2>
+<p>Email <a href="mailto:hello@mufatech.com">hello@mufatech.com</a>. If you send me a sample of your export file with the values removed (the header row and two lines are enough), I'll make sure the importer reads that format.</p>
+</main>
+<footer><div class="wrap">
+<span>Coralline is a water test log and dosing calculator for reef aquariums. No cookies or trackers on this site.</span>
+<nav><a href="../">Home</a><a href="../support/">Support</a><a href="../switch/">Switching apps</a><a href="../privacy/">Privacy</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+</body>
+</html>

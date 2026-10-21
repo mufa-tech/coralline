@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Başka bir uygulamadan Coralline'e geçiş</title>
+<meta name="description" content="Testlerini başka bir deniz akvaryumu uygulamasından nasıl çıkarırsın, CSV'yi Coralline'e nasıl alırsın ve bundan sonra kendi yedeğini nasıl tutarsın.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/tr/switch/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/switch/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/switch/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/switch/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/switch/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/switch/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/switch/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/switch/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/switch/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Başka bir uygulamadan Coralline'e geçiş">
+<meta property="og:description" content="Testlerini başka bir deniz akvaryumu uygulamasından nasıl çıkarırsın, CSV'yi Coralline'e nasıl alırsın ve bundan sonra kendi yedeğini nasıl tutarsın.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/tr/switch/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../tr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<nav class="lang" aria-label="Dil"><a href="../../switch/" hreflang="en" lang="en">EN</a><a href="../../de/switch/" hreflang="de" lang="de">DE</a><a href="../../fr/switch/" hreflang="fr" lang="fr">FR</a><a href="../../nl/switch/" hreflang="nl" lang="nl">NL</a><a href="../../it/switch/" hreflang="it" lang="it">IT</a><a href="../../es/switch/" hreflang="es" lang="es">ES</a><a href="../../tr/switch/" hreflang="tr" lang="tr" aria-current="page">TR</a></nav>
+</div></header>
+<main class="wrap prose">
+<h1>Başka bir uygulamadan mı geliyorsun? Akvaryumunu yanında getir.</h1>
+<p class="lead">Şu anki uygulaman test sayısını sınırlamaya başladıysa, hesap istiyorsa ya da verini sadece senin kontrolündeki bir dosyada istiyorsan, bu iş yaklaşık 15 dakika sürer. Eski geçmişin seninle gelir.</p>
+<h2>1. Önce verini eski uygulamadan çıkar</h2>
+<p>Bunu bugün yap, bir şey yüklemeden önce. Uygulamalar kurallarını değiştirir.</p>
+<ul>
+<li>"Dışa aktar", "Yedekle" ya da "Verileri indir" ara. Genelde ayarlarda, akvaryum ekranında ya da uygulamanın web sitesindedir. Bu tür uygulamaların çoğu CSV verir; düz bir tablo dosyası.</li>
+<li>Dışa aktarma yalnızca ücretli planda mı? Ücretsiz denemenin kapsayıp kapsamadığına bak ya da web sürümüne girip oradan indir.</li>
+<li>Hiç dışa aktarma yok mu? Her parametrenin geçmiş listesinin ekran görüntüsünü al. Önemli kısmı yeniden girmeye yeter (3. adım).</li>
+<li>Dosyayı senin kontrolündeki bir yere kaydet: iCloud Drive, Google Drive ya da bilgisayarın. Adına tarihi koy, örneğin <code>resif-export-2026-10-20.csv</code>.</li>
+</ul>
+<h2>2. Coralline'i kur (yaklaşık 30 saniye)</h2>
+<ol>
+<li><a href="https://apps.apple.com/app/id6824690192">App Store</a> ya da <a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a>'den yükle.</li>
+<li>Akvaryumunu oluştur: ad, <b>Net su hacmi</b> (cam ölçüsü değil, sistemde gerçekten olan su) ve <b>Tank türü</b>.</li>
+<li>Birimlerini <b>Ayarlar → Birimler</b>'den seç: KH için dKH, meq/L ya da ppm; litre ya da galon; °C ya da °F; tuzluluk için SG ya da ppt.</li>
+<li>Hedef aralıklarını kontrol et. Varsayılanlar yaygın resif aralıkları; zaten hedeflediğin değerlere çek: herhangi bir grafikte <b>Hedefi düzenle</b> ya da <b>Ayarlar → Tanklar</b> → akvaryumun → <b>Parametreler</b>.</li>
+</ol>
+<p>Hesap yok. Kaydolacak bir şey yok.</p>
+<h2>3. Geçmişini getir</h2>
+<p><b>CSV'n var mı?</b> <b>Ayarlar → İçe aktar → CSV dosyasından</b>'ı aç ve dosyayı seç. Ücretsiz, sınır yok.</p>
+<ul>
+<li>Virgül, noktalı virgül ya da sekmeyle ayrılmış. Sütun adları uygulamanın 7 dilinden herhangi birinde. 2026-10-18, 18.10.2026 ya da 10/18/2026 gibi tarihler; bir tarih iki türlü okunabiliyorsa Coralline sorar.</li>
+<li>Tarih sütununu seç, sonra her sütunun hangi parametre ve birim olduğunu belirt. Tanınmayan sütunlar yeni parametre olabilir. O ekrana bir kez göz at; sütun adları uygulamadan uygulamaya değişir.</li>
+<li>Var olan bir akvaryuma ya da yeni birine aktar. Coralline'de zaten olan testler atlanır, <b>Aktarmayı geri al</b> tüm aktarımı geri alır.</li>
+</ul>
+<p>ICP sonuçları da aynı yoldan, metin olarak girer (Pro): <b>Ayarlar → İçe aktar → ICP sonuçları</b>, raporu yapıştır.</p>
+<p><b>Eski uygulama dışa aktarmıyor mu?</b> Yıllarca veri gerekmez. Son birkaç hafta yeter: grafikler ve istikrar kartı birkaç kayıttan sonra çalışır, doz önerisi ise parametre başına en az 5 güne yayılmış 3 test ister. İki haftalık KH, Ca ve Mg fazlasıyla yeter.</p>
+<ul>
+<li>Her kaydın tarihini geriye al. <b>Test kaydet</b> ekranında <b>Tarih ve saat seç</b>'e dokun ve testin gerçekten yapıldığı günü gir. Önce en eskisi.</li>
+<li>Dozajı belirleyenlerden başla: KH, Ca, Mg, sonra NO<sub>3</sub> ve PO<sub>4</sub>. Tuzluluk ve sıcaklık bekleyebilir.</li>
+<li>Son değerlerin dolu gelir. Neredeyse hiç oynamayan bir parametrede kayıt başına tek rakam değiştirirsin.</li>
+<li>Her test seansı için tek kayıt; o gün ölçtüğün bütün parametreler aynı kayıtta.</li>
+<li>Eski birimler: eski uygulama fosforu ppb P olarak tutuyorsa girmeden önce çevir: ppm PO<sub>4</sub> = ppb P × 3,066 ÷ 1000, yani 30 ppb = 0,09 ppm. N olarak verilen nitrat: × 4,427. <b>Test kitleri</b> aracı (Pro) ikisini de yapar; ücretsiz sürümde formülü kullan.</li>
+</ul>
+<p>Gerçekçi bir hedef: son 14 günün KH, Ca ve Mg değerleri artı son 4 NO<sub>3</sub> ve PO<sub>4</sub> testi. Yaklaşık 10 dakikalık yazma.</p>
+<p><b>Her gün doz veriyor musun?</b> Dozu <b>Dozaj</b> sekmesinde <b>Günlük plan</b> altında gir. Plan kaydettiğin gün başlar ve doz önerisi yalnızca o günden sonraki testleri sayar; o yüzden şimdi gir ve test etmeye devam et. Coralline "akvaryum günde 0,3 dKH tüketiyor" ile "dozum 0,25 ekliyor"u ancak böyle ayırabilir.</p>
+<h2>4. Bundan sonra kendi yedeğini tut</h2>
+<ul>
+<li>Coralline her gün telefonuna bir yedek yazar ve son 7'sini saklar. Başka bir yerde kopya için: <b>Ayarlar → Dosyaya yedekle</b>, sonra iCloud Drive ya da Google Drive'a kaydet. Her şeyin içinde olduğu tek bir JSON dosyası.</li>
+<li>Yeni telefon mu? Coralline'i kur, sonra <b>Ayarlar → Dosyadan geri yükle</b> ve o dosyayı seç.</li>
+<li>Eski CSV dışa aktarımını da sakla. İstediğin zaman içe alabilirsin; Coralline'de zaten olan bir testle aynı saat ve aynı değerlere sahip test atlanır.</li>
+<li>Testlerini yeniden dışarı mı almak istiyorsun? <b>Ayarlar → Testleri CSV olarak dışa aktar</b> (Pro) ya da yedek dosyası. Hiçbir şey kilitli değil.</li>
+</ul>
+<h2>Neler ücretsiz, neler Pro</h2>
+<ul>
+<li><b>Ücretsiz, kayıtta sınır yok:</b> 1 akvaryum, sınırsız test, 30 günlük grafikler, KH, Ca ve Mg için hedefe yükselt, su değişimi, tuzluluk ve birim çeviriciler, 3 hatırlatıcı, yedekleme ve geri yükleme, CSV içe aktarma.</li>
+<li><b>Pro, tek ödeme</b> (ilk 60 gün 399,99 ₺ lansman fiyatı, sonra 549,99 ₺): sınırsız akvaryum, doz işaretleriyle tüm geçmiş grafikleri, kalkwasser, ürün kalibrasyonu, tüketimine göre doz önerisi, test kiti dönüşümleri, sınırsız hatırlatıcı, CSV dışa aktarma, tüm temalar. 7 gün ücretsiz deneme.</li>
+<li>Abonelik yok. Pro'yu hiç almasan da verin tamamen düzenlenebilir kalır.</li>
+</ul>
+<h2>Sorular</h2>
+<p><a href="mailto:hello@mufatech.com">hello@mufatech.com</a> adresine yaz. Dışa aktarım dosyandan değerleri silinmiş bir parça gönderirsen (başlık satırı ve iki satır yeter), içe aktarmanın o biçimi okumasını sağlarım.</p>
+</main>
+<footer><div class="wrap">
+<span>Coralline, deniz akvaryumu için su testi günlüğü ve dozaj hesaplayıcısıdır. Bu sitede çerez ve izleyici yok.</span>
+<nav><a href="../../tr/">Ana sayfa</a><a href="../../tr/support/">Destek</a><a href="../../tr/switch/">Uygulama değiştirme</a><a href="../../tr/privacy/">Gizlilik</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+</body>
+</html>
