@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Coralline : journal de tests et calcul de dosage pour aquarium récifal</title>
 <meta name="description" content="Journal de tests hors ligne et calculateur de dosage pour aquarium récifal. Tests illimités, sans compte, sans abonnement.">
 <meta name="color-scheme" content="light dark">
@@ -27,12 +28,19 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/fr/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../fr/"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../fr/calculateurs/">Calculateurs</a>
 <nav class="lang" aria-label="Langue"><a href="../" hreflang="en" lang="en">EN</a><a href="../de/" hreflang="de" lang="de">DE</a><a href="../fr/" hreflang="fr" lang="fr" aria-current="page">FR</a><a href="../nl/" hreflang="nl" lang="nl">NL</a><a href="../it/" hreflang="it" lang="it">IT</a><a href="../es/" hreflang="es" lang="es">ES</a><a href="../tr/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap hero">
@@ -43,17 +51,22 @@
 <a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline"><small>Disponible sur</small><b>Google Play</b></a>
 </div>
 <p class="promise">Sans compte. Sans abonnement. Hors ligne.</p>
-<p class="note">Gratuit pour un bac avec des tests illimités. Pro se paie une fois, avec 7 jours d’essai gratuit.</p>
+<p class="note">Gratuit pour un bac avec des tests illimités. Pro se paie une fois, avec 7 jours d’essai gratuit.</p>
 <ul class="features">
 <li>Notez KH, Ca, Mg, nitrates, phosphates et plus en une dizaine de secondes. Vos dernières valeurs sont déjà remplies.</li>
 <li>Des graphiques avec votre plage cible, une carte de stabilité et une prévision du moment où une valeur sortira de sa plage.</li>
-<li>Calculateurs de remontée à la cible, de changement d’eau et de salinité (EOS-80). Pro ajoute le kalkwasser, le calibrage des produits et un conseil de dosage selon votre consommation réelle.</li>
+<li>Calculateurs de remontée à la cible, de changement d’eau et de salinité (<span class="nw">EOS-80</span>). Pro ajoute le kalkwasser, le calibrage des produits et un conseil de dosage selon votre consommation réelle.</li>
 </ul>
-<p class="note" style="margin-top:28px">Des questions ? Voir l’<a href="../fr/support/">aide</a>. Ce que deviennent vos données : <a href="../fr/privacy/">confidentialité</a>.</p>
+<section class="card home-calcs" aria-labelledby="hc-h">
+<h2 id="hc-h">Calculateurs récifaux gratuits</h2>
+<p>Besoin d’un chiffre tout de suite ? dKH en ppm, bicarbonate pour votre volume, doses de calcium et de magnésium, salinité en densité, phosphore Hanna en phosphates, kalkwasser. Ça marche dans le navigateur, rien à installer.</p>
+<p><a class="btn" href="../fr/calculateurs/">Ouvrir les calculateurs<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+</section>
+<p class="note gap">Des questions ? Voir l’<a href="../fr/support/">aide</a>. Ce que deviennent vos données : <a href="../fr/privacy/">confidentialité</a>.</p>
 </main>
 <footer><div class="wrap">
 <span>Coralline est un journal de tests et un calculateur de dosage pour aquarium récifal. Ce site n’utilise ni cookies ni traceurs.</span>
-<nav><a href="../fr/">Accueil</a><a href="../fr/support/">Aide</a><a href="../fr/switch/">Changer d’app</a><a href="../fr/privacy/">Confidentialité</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../fr/">Accueil</a><a href="../fr/calculateurs/">Calculateurs</a><a href="../fr/support/">Aide</a><a href="../fr/switch/">Changer d’app</a><a href="../fr/privacy/">Confidentialité</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

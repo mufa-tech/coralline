@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calculadora de kalkwasser: calcio y dKH al día con la reposición</title>
+<meta name="description" content="Cuánto calcio y KH aporta al día tu reposición con kalkwasser, y cuántos litros de agua de cal cubren el consumo de KH de tu acuario marino.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/es/calculadora-kalkwasser/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/kalkwasser-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/kalkwasser-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-kalkwasser/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/kalkwater-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-kalkwasser/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-kalkwasser/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalkwasser-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/kalkwasser-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calculadora de kalkwasser: calcio y dKH al día con la reposición">
+<meta property="og:description" content="Cuánto calcio y KH aporta al día tu reposición con kalkwasser, y cuántos litros de agua de cal cubren el consumo de KH de tu acuario marino.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/es/calculadora-kalkwasser/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../es/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../es/calculadoras/" aria-current="page">Calculadoras</a>
+<nav class="lang" aria-label="Idioma"><a href="../../kalkwasser-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/kalkwasser-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-kalkwasser/" hreflang="fr" lang="fr">FR</a><a href="../../nl/kalkwater-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-kalkwasser/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-kalkwasser/" hreflang="es" lang="es" aria-current="page">ES</a><a href="../../tr/kalkwasser-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../es/calculadoras/">Calculadoras</a></p>
+<h1>Calculadora de kalkwasser</h1>
+<p class="lead">El kalkwasser saturado lleva unos 800 ppm de calcio y 40 meq/L (112 dKH) de alcalinidad. 2 L al día en un sistema de 400 L aportan 4 ppm de calcio y 0,56 dKH al día.</p>
+<div id="calc-nojs" class="callout"><p>La calculadora necesita JavaScript. La fórmula y el ejemplo de abajo sirven sin él.</p></div>
+<section class="calc" aria-labelledby="h-kalk">
+<h2 id="h-kalk">Kalkwasser</h2>
+<form class="panel" data-calc="kalk" novalidate>
+<div class="field"><label for="kk-vol">Volumen neto de agua</label>
+<div class="joined"><input id="kk-vol" name="kk-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="kk-vol-hint kk-vol-err">
+<select id="kk-vol-unit" name="kk-vol-unit" aria-label="Unidad de volumen"><option value="L" selected>litros</option><option value="gal">galones de EE. UU.</option></select></div>
+<span class="hint" id="kk-vol-hint">El agua que hay de verdad en el sistema: acuario principal, sump y tuberías, menos rocas y arena.</span><span class="err" id="kk-vol-err" hidden></span></div>
+<div class="field"><label for="kk-top">Reposición con kalkwasser al día</label>
+<div class="joined"><input id="kk-top" name="kk-top" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kk-top-err">
+<select id="kk-top-unit" name="kk-top-unit" aria-label="Unidad de la reposición"><option value="L" selected>litros</option><option value="gal">galones de EE. UU.</option></select></div><span class="err" id="kk-top-err" hidden></span></div>
+<div class="field-row two"><div class="field "><label for="kk-sat">Saturación (%)</label>
+<input id="kk-sat" name="kk-sat" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="100" aria-describedby="kk-sat-hint kk-sat-err">
+<span class="hint" id="kk-sat-hint">100 para agua de cal recién preparada y bien saturada. Si está vieja o diluida, lleva menos.</span><span class="err" id="kk-sat-err" hidden></span></div><div class="field "><label for="kk-use">Tu consumo de KH (dKH al día, opcional)</label>
+<input id="kk-use" name="kk-use" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kk-use-hint kk-use-err">
+<span class="hint" id="kk-use-hint">Sale de tus pruebas: cuánto baja el KH al día sin dosificar.</span><span class="err" id="kk-use-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-kalk" aria-live="polite" hidden><h3 class="sr">Resultado</h3></div>
+</section>
+<p class="note">Funciona en tu navegador. Nada de lo que escribes se guarda ni se envía.</p>
+<script type="application/json" id="calc-i18n">{"locale":"es-ES","decimal":",","errNumber":"Escribe un número, por ejemplo 8,5","errRange":"Entre {min} y {max}","fillIn":"Completa los campos de arriba para ver el resultado.","fixErrors":"Revisa el campo marcado.","flags":{"warn":"Cuidado","info":"Nota","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"día","other":"días"},"page":{"caH":"Calcio","alkH":"KH","perDay":"al día","ca":"+{ca} ppm de calcio al día","alk":"+{dkh} dKH ({meq} meq/L) al día","need":"Para cubrir {use} dKH al día necesitas {top} de kalkwasser al día.","noUse":"Con ese ajuste tu reposición no aporta nada.","fast":"Eso aporta más de {cap} al día. Revisa tus números y gotéalo despacio."}}</script>
+
+<div class="prose">
+<h2>Cómo se calcula</h2>
+<h3>Qué lleva el agua de cal</h3>
+<p>El agua de cal es hidróxido de calcio, Ca(OH)<sub>2</sub>, disuelto en agua de ósmosis (RO/DI). Saturada a temperatura ambiente tiene unos 800 mg/L de calcio. Cada calcio viene con dos iones hidróxido, que en el acuario se convierten en alcalinidad: 800 ÷ 40,078 × 2 = 40 meq/L, unos 112 dKH. Por eso el kalkwasser aporta calcio y KH en equilibrio.</p>
+<h3>Al día</h3>
+<p class="f">Ca ppm al día = 800 × saturación × litros de reposición ÷ litros del sistema<br>KH meq/L al día = 40 × saturación × litros de reposición ÷ litros del sistema</p>
+<p>Para cubrir un consumo de KH que ya conoces, dale la vuelta: litros al día = consumo en meq/L × litros del sistema ÷ (40 × saturación).</p>
+<h3>Límites</h3>
+<p>La evaporación marca el techo: el kalkwasser solo entra como reposición. También sube el pH, así que gotéalo despacio y nunca dosifiques la parte turbia. Si tu acuario consume más de lo que cubre la evaporación, añade un sistema de dos partes u otro suplemento para el resto.</p>
+<h2>Ejemplo práctico</h2>
+<p>Sistema de 400 L, 2 L de evaporación al día, todo repuesto con kalkwasser saturado del todo.</p>
+<p class="f">Ca: 800 × 2 ÷ 400 = 4 ppm al día<br>KH: 40 × 2 ÷ 400 = 0,2 meq/L = 0,56 dKH al día</p>
+<p>Si tu KH baja 1 dKH al día (0,357 meq/L), necesitarías 0,357 × 400 ÷ 40 = 3,57 L de kalkwasser al día, más que los 2 L que se evaporan.</p>
+<p class="callout">Son estimaciones. Los kits de prueba tienen tolerancias y cada acuario consume distinto: reparte la dosis en varias tomas y vuelve a medir antes de la siguiente.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Guarda los números, no solo el resultado</h2>
+<p>Coralline tiene esta misma calculadora de kalkwasser en la app (Pro), junto a tus pruebas, para comparar lo que debería aportar la reposición con lo que hace de verdad tu acuario. El registro es gratis e ilimitado, sin cuenta ni suscripción, y funciona sin conexión. Pro es un solo pago.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Disponible en</small><b>Google Play</b></a><span class="soon">Versión para iPhone en camino</span></div>
+</aside>
+<h2>Fuentes</h2>
+<ol class="sources"><li><a href="http://reefkeeping.com/issues/2005-01/rhf/index.php" rel="noopener">R. Holmes-Farley, What Your Grandmother Never Told You About Lime. Reefkeeping, enero de 2005</a></li><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, noviembre de 2002 (copia archivada)</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, pesos atómicos estándar (Ca 40,078)</a></li></ol>
+<p class="updated">Comprobado con las fuentes: 2026-11-02</p>
+<p class="more"><b>Más calculadoras:</b> <a href="../../es/calculadora-kh-alcalinidad/">KH (alcalinidad)</a> · <a href="../../es/calculadora-calcio-magnesio/">Calcio y magnesio</a> · <a href="../../es/calculadora-salinidad-densidad/">Salinidad y densidad</a> · <a href="../../es/fosfato-ppb-ppm-conversion/">Kits de fósforo y nitrato</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline es un registro de parámetros y una calculadora de dosis para acuarios marinos. Este sitio no usa cookies ni rastreadores.</span>
+<nav><a href="../../es/">Inicio</a><a href="../../es/calculadoras/">Calculadoras</a><a href="../../es/support/">Ayuda</a><a href="../../es/switch/">Cambiar de app</a><a href="../../es/privacy/">Privacidad</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Coralline: Meerwasser-Logbuch und Dosierrechner</title>
 <meta name="description" content="Offline-Logbuch für Wasserwerte und Dosierrechner fürs Meerwasseraquarium. Unbegrenzt Messwerte, kein Konto, kein Abo.">
 <meta name="color-scheme" content="light dark">
@@ -27,12 +28,19 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/de/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../de/"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../de/rechner/">Rechner</a>
 <nav class="lang" aria-label="Sprache"><a href="../" hreflang="en" lang="en">EN</a><a href="../de/" hreflang="de" lang="de" aria-current="page">DE</a><a href="../fr/" hreflang="fr" lang="fr">FR</a><a href="../nl/" hreflang="nl" lang="nl">NL</a><a href="../it/" hreflang="it" lang="it">IT</a><a href="../es/" hreflang="es" lang="es">ES</a><a href="../tr/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap hero">
@@ -43,17 +51,22 @@
 <a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline"><small>Jetzt bei</small><b>Google Play</b></a>
 </div>
 <p class="promise">Kein Konto. Kein Abo. Offline.</p>
-<p class="note">Gratis für ein Becken mit unbegrenzt Tests. Pro ist eine Einmalzahlung, mit 7 Tagen gratis zum Testen.</p>
+<p class="note">Gratis für ein Becken mit unbegrenzt Tests. Pro ist eine Einmalzahlung, mit 7 Tagen gratis zum Testen.</p>
 <ul class="features">
 <li>KH, Ca, Mg, Nitrat, Phosphat und mehr in rund zehn Sekunden eintragen. Die letzten Werte sind schon vorausgefüllt.</li>
 <li>Diagramme mit deinem Zielbereich, eine Stabilitätskarte und eine Prognose, wann ein Wert aus dem Bereich läuft.</li>
-<li>Rechner für Zielwert, Wasserwechsel und Salzgehalt (EOS-80). Pro bringt Kalkwasser, Produktkalibrierung und eine Dosierempfehlung aus deinem echten Verbrauch.</li>
+<li>Rechner für Zielwert, Wasserwechsel und Salzgehalt (<span class="nw">EOS-80</span>). Pro bringt Kalkwasser, Produktkalibrierung und eine Dosierempfehlung aus deinem echten Verbrauch.</li>
 </ul>
-<p class="note" style="margin-top:28px">Fragen? Siehe <a href="../de/support/">Hilfe</a>. Was mit deinen Daten passiert: <a href="../de/privacy/">Datenschutz</a>.</p>
+<section class="card home-calcs" aria-labelledby="hc-h">
+<h2 id="hc-h">Kostenlose Meerwasser-Rechner</h2>
+<p>Du brauchst nur schnell eine Zahl? dKH in ppm, Natron für dein Volumen, Calcium- und Magnesiumdosis, Salzgehalt in Dichte, Hanna-Phosphor in Phosphat, Kalkwasser. Läuft im Browser, ohne Installation.</p>
+<p><a class="btn" href="../de/rechner/">Zu den Rechnern<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+</section>
+<p class="note gap">Fragen? Siehe <a href="../de/support/">Hilfe</a>. Was mit deinen Daten passiert: <a href="../de/privacy/">Datenschutz</a>.</p>
 </main>
 <footer><div class="wrap">
 <span>Coralline ist Logbuch und Dosierrechner fürs Meerwasseraquarium. Diese Seite nutzt keine Cookies und kein Tracking.</span>
-<nav><a href="../de/">Start</a><a href="../de/support/">Hilfe</a><a href="../de/switch/">App-Wechsel</a><a href="../de/privacy/">Datenschutz</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../de/">Start</a><a href="../de/rechner/">Rechner</a><a href="../de/support/">Hilfe</a><a href="../de/switch/">App-Wechsel</a><a href="../de/privacy/">Datenschutz</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

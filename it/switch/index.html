@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Passare a Coralline da un’altra app</title>
 <meta name="description" content="Come esportare i test da un’altra app per acquario marino, importare il CSV in Coralline e tenere da ora il tuo backup.">
 <meta name="color-scheme" content="light dark">
@@ -27,17 +28,24 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/it/switch/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../../it/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../it/calcolatori/">Calcolatori</a>
 <nav class="lang" aria-label="Lingua"><a href="../../switch/" hreflang="en" lang="en">EN</a><a href="../../de/switch/" hreflang="de" lang="de">DE</a><a href="../../fr/switch/" hreflang="fr" lang="fr">FR</a><a href="../../nl/switch/" hreflang="nl" lang="nl">NL</a><a href="../../it/switch/" hreflang="it" lang="it" aria-current="page">IT</a><a href="../../es/switch/" hreflang="es" lang="es">ES</a><a href="../../tr/switch/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap prose">
 <h1>Vieni da un’altra app? Porta la vasca con te.</h1>
-<p class="lead">Se la tua app attuale ha iniziato a limitare i test, vuole un account, o vuoi solo i tuoi dati in un file che controlli tu, ci vogliono circa 15 minuti. Lo storico viene con te.</p>
+<p class="lead">Se la tua app attuale ha iniziato a limitare i test, vuole un account, o vuoi solo i tuoi dati in un file che controlli tu, ci vogliono circa 15 minuti. Lo storico viene con te.</p>
 <h2>1. Prima tira fuori i dati dalla vecchia app</h2>
 <p>Fallo oggi, prima di installare qualsiasi cosa. Le app cambiano le regole.</p>
 <ul>
@@ -46,7 +54,7 @@
 <li>Nessuna esportazione? Fai screenshot dello storico di ogni parametro. Basta per reinserire la parte che conta (passo 3).</li>
 <li>Salva il file dove lo controlli tu: iCloud Drive, Google Drive o il computer. Metti la data nel nome, per esempio <code>export-reef-2026-10-20.csv</code>.</li>
 </ul>
-<h2>2. Configura Coralline (circa 30 secondi)</h2>
+<h2>2. Configura Coralline (circa 30 secondi)</h2>
 <ol>
 <li>Installala dall’App Store o da <a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a>.</li>
 <li>Crea la vasca: nome, <b>Volume netto d’acqua</b> (l’acqua davvero nel sistema, non le misure del vetro) e <b>Tipo di vasca</b>.</li>
@@ -57,21 +65,21 @@
 <h2>3. Porta con te lo storico</h2>
 <p><b>Hai un CSV?</b> Apri <b>Impostazioni → Importa → Da un file CSV</b> e scegli il file. È gratis e senza limiti.</p>
 <ul>
-<li>Separatore virgola, punto e virgola o tab. Nomi delle colonne in una qualsiasi delle 7 lingue dell’app. Date come 2026-10-18, 18.10.2026 o 10/18/2026; se una data si può leggere in due modi, Coralline chiede.</li>
+<li>Separatore virgola, punto e virgola o tab. Nomi delle colonne in una qualsiasi delle 7 lingue dell’app. Date come 2026-10-18, 18.10.2026 o 10/18/2026; se una data si può leggere in due modi, Coralline chiede.</li>
 <li>Scegli la colonna della data, poi indica per ogni colonna parametro e unità. Le colonne sconosciute possono diventare nuovi parametri. Dai un’occhiata a quella schermata: i nomi delle colonne cambiano da app ad app.</li>
 <li>Importa in una vasca esistente o in una nuova. I test già presenti vengono saltati, e <b>Annulla importazione</b> toglie l’intera importazione.</li>
 </ul>
 <p>Le analisi ICP entrano allo stesso modo, come testo (Pro): <b>Impostazioni → Importa → Risultati ICP</b>, poi incolla il referto.</p>
-<p><b>La vecchia app non esporta?</b> Non ti servono anni di dati. Contano le ultime settimane: grafici e scheda stabilità funzionano dopo pochi inserimenti, e il consiglio di dosaggio vuole almeno 3 test in 5 giorni per parametro. Due settimane di KH, Ca e Mg bastano e avanzano.</p>
+<p><b>La vecchia app non esporta?</b> Non ti servono anni di dati. Contano le ultime settimane: grafici e scheda stabilità funzionano dopo pochi inserimenti, e il consiglio di dosaggio vuole almeno 3 test in 5 giorni per parametro. Due settimane di KH, Ca e Mg bastano e avanzano.</p>
 <ul>
 <li>Retrodata ogni inserimento. Nella schermata <b>Registra test</b> tocca <b>Imposta data e ora</b> e metti quando hai fatto davvero il test. Prima i più vecchi.</li>
 <li>Parti da quello che guida il dosaggio: KH, Ca, Mg, poi NO<sub>3</sub> e PO<sub>4</sub>. Salinità e temperatura possono aspettare.</li>
 <li>Gli ultimi valori sono già compilati. Per un parametro che si muove appena, cambi una cifra per inserimento.</li>
 <li>Un inserimento per sessione di test, con tutti i parametri misurati quel giorno.</li>
-<li>Vecchie unità: se la vecchia app salvava il fosforo in ppb P, converti prima di inserire: ppm PO<sub>4</sub> = ppb P × 3,066 ÷ 1000, quindi 30 ppb = 0,09 ppm. Nitrati dati come N: × 4,427. Lo strumento <b>Test kit</b> (Pro) fa entrambe le cose; con la versione gratuita usa la formula.</li>
+<li>Vecchie unità: se la vecchia app salvava il fosforo in ppb P, converti prima di inserire: ppm PO<sub>4</sub> = ppb P × 3,066 ÷ 1000, quindi 30 ppb = 0,09 ppm. Nitrati dati come N: × 4,427. Lo strumento <b>Test kit</b> (Pro) fa entrambe le cose; con la versione gratuita usa la formula.</li>
 </ul>
-<p>Un obiettivo realistico: gli ultimi 14 giorni di KH, Ca e Mg più gli ultimi 4 test di NO<sub>3</sub> e PO<sub>4</sub>. Circa 10 minuti di digitazione.</p>
-<p><b>Dosi ogni giorno?</b> Imposta la dose nella scheda <b>Dosaggio</b>, sotto <b>Piano giornaliero</b>. Il piano parte dal giorno in cui lo salvi, e il consiglio di dosaggio conta solo i test da quel giorno in poi: impostalo adesso e continua a testare. È così che Coralline distingue «la vasca consuma 0,3 dKH al giorno» da «la mia dose ne aggiunge 0,25».</p>
+<p>Un obiettivo realistico: gli ultimi 14 giorni di KH, Ca e Mg più gli ultimi 4 test di NO<sub>3</sub> e PO<sub>4</sub>. Circa 10 minuti di digitazione.</p>
+<p><b>Dosi ogni giorno?</b> Imposta la dose nella scheda <b>Dosaggio</b>, sotto <b>Piano giornaliero</b>. Il piano parte dal giorno in cui lo salvi, e il consiglio di dosaggio conta solo i test da quel giorno in poi: impostalo adesso e continua a testare. È così che Coralline distingue «la vasca consuma 0,3 dKH al giorno» da «la mia dose ne aggiunge 0,25».</p>
 <h2>4. Da ora tieni il tuo backup</h2>
 <ul>
 <li>Coralline scrive ogni giorno un backup sul telefono e tiene gli ultimi 7. Per una copia altrove: <b>Impostazioni → Backup su file</b>, poi salvalo in iCloud Drive o Google Drive. Un solo file JSON con tutto dentro.</li>
@@ -81,8 +89,8 @@
 </ul>
 <h2>Cosa è gratis e cosa è Pro</h2>
 <ul>
-<li><b>Gratis, senza limiti di registrazione:</b> 1 vasca, test illimitati, grafici a 30 giorni, porta all’obiettivo per KH, Ca e Mg, cambio d’acqua, convertitori di salinità e unità, 3 promemoria, backup e ripristino, importazione CSV.</li>
-<li><b>Pro, un solo pagamento</b> (14,99 € prezzo di lancio per i primi 60 giorni, poi 19,99 €): vasche illimitate, tutto lo storico nei grafici con i segni delle dosi, kalkwasser, calibrazione dei prodotti, consiglio di dosaggio dal tuo consumo, conversioni dei test kit, promemoria illimitati, esportazione CSV, tutti i temi. 7 giorni di prova gratuita.</li>
+<li><b>Gratis, senza limiti di registrazione:</b> 1 vasca, test illimitati, grafici a 30 giorni, porta all’obiettivo per KH, Ca e Mg, cambio d’acqua, convertitori di salinità e unità, 3 promemoria, backup e ripristino, importazione CSV.</li>
+<li><b>Pro, un solo pagamento</b> (14,99 € prezzo di lancio per i primi 60 giorni, poi 19,99 €): vasche illimitate, tutto lo storico nei grafici con i segni delle dosi, kalkwasser, calibrazione dei prodotti, consiglio di dosaggio dal tuo consumo, conversioni dei test kit, promemoria illimitati, esportazione CSV, tutti i temi. 7 giorni di prova gratuita.</li>
 <li>Niente abbonamento. Se non compri mai Pro, i tuoi dati restano del tutto modificabili.</li>
 </ul>
 <h2>Domande</h2>
@@ -90,7 +98,7 @@
 </main>
 <footer><div class="wrap">
 <span>Coralline è un diario dei valori e un calcolatore di dosaggi per l’acquario marino. Questo sito non usa cookie né tracker.</span>
-<nav><a href="../../it/">Home</a><a href="../../it/support/">Assistenza</a><a href="../../it/switch/">Cambiare app</a><a href="../../it/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../../it/">Home</a><a href="../../it/calcolatori/">Calcolatori</a><a href="../../it/support/">Assistenza</a><a href="../../it/switch/">Cambiare app</a><a href="../../it/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

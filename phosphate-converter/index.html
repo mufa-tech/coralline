@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Hanna phosphorus ppb to phosphate ppm converter (and NO3-N)</title>
+<meta name="description" content="Convert a Hanna phosphorus reading in ppb (P) to phosphate in ppm (PO4), and nitrate as nitrogen (NO3-N) to nitrate (NO3), for reef tanks.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/phosphate-converter/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/phosphate-converter/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/phosphat-ppb-ppm-umrechnen/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/phosphate-ppb-ppm-conversion/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/fosfaat-ppb-ppm-omrekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/fosfati-ppb-ppm-conversione/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/fosfato-ppb-ppm-conversion/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/fosfat-ppb-ppm-donusturme/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/phosphate-converter/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Hanna phosphorus ppb to phosphate ppm converter (and NO3-N)">
+<meta property="og:description" content="Convert a Hanna phosphorus reading in ppb (P) to phosphate in ppm (PO4), and nitrate as nitrogen (NO3-N) to nitrate (NO3), for reef tanks.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/phosphate-converter/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../calculators/" aria-current="page">Calculators</a>
+<nav class="lang" aria-label="Language"><a href="../phosphate-converter/" hreflang="en" lang="en" aria-current="page">EN</a><a href="../de/phosphat-ppb-ppm-umrechnen/" hreflang="de" lang="de">DE</a><a href="../fr/phosphate-ppb-ppm-conversion/" hreflang="fr" lang="fr">FR</a><a href="../nl/fosfaat-ppb-ppm-omrekenen/" hreflang="nl" lang="nl">NL</a><a href="../it/fosfati-ppb-ppm-conversione/" hreflang="it" lang="it">IT</a><a href="../es/fosfato-ppb-ppm-conversion/" hreflang="es" lang="es">ES</a><a href="../tr/fosfat-ppb-ppm-donusturme/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../calculators/">Calculators</a></p>
+<h1>Phosphorus ppb to phosphate ppm, and <span class="nw">NO3-N</span> to nitrate</h1>
+<p class="lead">Phosphate (PO4) in ppm = phosphorus (P) in ppb × 3.066 ÷ 1000. 30 ppb of phosphorus is 0.092 ppm of phosphate. Nitrate (NO3) = nitrate as nitrogen (<span class="nw">NO3-N</span>) × 4.427.</p>
+<div id="calc-nojs" class="callout"><p>The calculator needs JavaScript. The formula and the worked example below work without it.</p></div>
+<section class="calc" aria-labelledby="h-po4">
+<h2 id="h-po4">Phosphorus to phosphate</h2>
+<form class="panel" data-calc="po4" novalidate>
+<div class="field-row two"><div class="field "><label for="kt-p">Phosphorus, P (ppb)</label>
+<input id="kt-p" name="kt-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="30" aria-describedby="kt-p-hint kt-p-err">
+<span class="hint" id="kt-p-hint">What an ultra low range phosphorus checker like the Hanna HI736 shows.</span><span class="err" id="kt-p-err" hidden></span></div><div class="field "><label for="kt-po4">Phosphate, PO4 (ppm)</label>
+<input id="kt-po4" name="kt-po4" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kt-po4-err">
+<span class="err" id="kt-po4-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-po4" aria-live="polite" hidden><h3 class="sr">Result</h3></div>
+</section><section class="calc" aria-labelledby="h-no3">
+<h2 id="h-no3">Nitrate as nitrogen to nitrate</h2>
+<form class="panel" data-calc="no3" novalidate>
+<div class="field-row two"><div class="field "><label for="kt-n">Nitrate as nitrogen, <span class="nw">NO3-N</span> (ppm)</label>
+<input id="kt-n" name="kt-n" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kt-n-hint kt-n-err">
+<span class="hint" id="kt-n-hint">Some kits and lab reports give nitrate as nitrogen. Check the label.</span><span class="err" id="kt-n-err" hidden></span></div><div class="field "><label for="kt-no3">Nitrate, NO3 (ppm)</label>
+<input id="kt-no3" name="kt-no3" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kt-no3-err">
+<span class="err" id="kt-no3-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-no3" aria-live="polite" hidden><h3 class="sr">Result</h3></div>
+</section>
+<p class="note">Runs in your browser. Nothing you type is stored or sent.</p>
+<script type="application/json" id="calc-i18n">{"locale":"en-US","decimal":".","errNumber":"Enter a number, like 8.5","errRange":"Between {min} and {max}","fillIn":"Fill in the fields above to see the result.","fixErrors":"Check the marked field.","flags":{"warn":"Careful","info":"Note","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"day","other":"days"},"page":{"po4":"{p} ppb P = {po4} ppm PO4","no3":"{n} ppm NO3-N = {no3} ppm NO3"}}</script>
+<div class="prose"><h2 id="table-h">Phosphorus ppb to phosphate ppm</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">P (ppb)</th><th scope="col">PO4 (ppm)</th></tr></thead>
+<tbody><tr><td>10</td><td>0.031</td></tr><tr><td>20</td><td>0.061</td></tr><tr><td>30</td><td>0.092</td></tr><tr><td>50</td><td>0.153</td></tr><tr><td>100</td><td>0.307</td></tr><tr><td>200</td><td>0.613</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>How it is calculated</h2>
+<h3>Why the numbers differ</h3>
+<p>A phosphorus checker counts only the phosphorus atom. A phosphate test counts the whole PO<sub>4</sub> ion, which also carries four oxygen atoms. The ratio of their molar masses is 94.971 ÷ 30.974 = 3.066, and ppb ÷ 1000 gives ppm:</p>
+<p class="f">PO<sub>4</sub> ppm = P ppb × 3.066 ÷ 1000<br>P ppb = PO<sub>4</sub> ppm × 1000 ÷ 3.066</p>
+<h3>Nitrate</h3>
+<p>Nitrate as nitrogen counts only the nitrogen atom of NO<sub>3</sub>. The ratio is 62.004 ÷ 14.007 = 4.427:</p>
+<p class="f">NO<sub>3</sub> = NO<sub>3</sub>-N × 4.427</p>
+<p>So a lab result of 2 ppm NO<sub>3</sub>-N is 8.85 ppm nitrate. Reef target ranges are almost always written as NO<sub>3</sub>.</p>
+<h2>Worked example</h2>
+<p>Your checker reads 30 ppb.</p>
+<p class="f">30 × 3.066 ÷ 1000 = 0.092 ppm PO<sub>4</sub></p>
+<p>That sits in the 0.03 to 0.10 ppm range many reefers aim for. 100 ppb would be 0.31 ppm, high for most SPS tanks.</p>
+<p class="callout">These are estimates. Test kits have tolerances and every tank uses a little differently: dose in parts and test again before the next dose.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Keep the numbers, not just the answer</h2>
+<p>Coralline takes phosphate in ppm, ppb or ppb as phosphorus straight from the checker and stores it as PO4, so your chart stays in one unit even if you change kits. Nitrate works the same way with <span class="nw">NO3-N</span>. Logging is free and unlimited, no account, no subscription, works offline. Pro is one payment.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Get it on</small><b>Google Play</b></a><span class="soon">iPhone version coming</span></div>
+</aside>
+<h2>Sources</h2>
+<ol class="sources"><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Standard atomic weights (P 30.974, O 15.999, N 14.007)</a></li><li><a href="http://reefkeeping.com/issues/2005-08/rhf/index.php" rel="noopener">R. Holmes-Farley, The Units of Measure of Reefkeeping. Reefkeeping, August 2005</a></li></ol>
+<p class="updated">Checked against the sources: 2026-11-02</p>
+<p class="more"><b>More calculators:</b> <a href="../alkalinity-calculator/">Alkalinity (dKH)</a> · <a href="../calcium-magnesium-calculator/">Calcium and magnesium</a> · <a href="../salinity-calculator/">Salinity and SG</a> · <a href="../kalkwasser-calculator/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline is a water test log and dosing calculator for reef aquariums. No cookies or trackers on this site.</span>
+<nav><a href="../">Home</a><a href="../calculators/">Calculators</a><a href="../support/">Support</a><a href="../switch/">Switching apps</a><a href="../privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../assets/calc-ui.js"></script>
+</body>
+</html>

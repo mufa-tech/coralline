@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Kalkwater berekenen: calcium en dKH per dag uit je bijvulling</title>
+<meta name="description" content="Hoeveel calcium en KH je bijvulling met kalkwasser per dag toevoegt, en hoeveel liter kalkwater het KH-verbruik van je bak dekt.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/nl/kalkwater-berekenen/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/kalkwasser-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/kalkwasser-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-kalkwasser/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/kalkwater-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-kalkwasser/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-kalkwasser/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalkwasser-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/kalkwasser-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Kalkwater berekenen: calcium en dKH per dag uit je bijvulling">
+<meta property="og:description" content="Hoeveel calcium en KH je bijvulling met kalkwasser per dag toevoegt, en hoeveel liter kalkwater het KH-verbruik van je bak dekt.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/nl/kalkwater-berekenen/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../nl/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../nl/rekenhulp/" aria-current="page">Rekenhulp</a>
+<nav class="lang" aria-label="Taal"><a href="../../kalkwasser-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/kalkwasser-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-kalkwasser/" hreflang="fr" lang="fr">FR</a><a href="../../nl/kalkwater-berekenen/" hreflang="nl" lang="nl" aria-current="page">NL</a><a href="../../it/calcolo-kalkwasser/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-kalkwasser/" hreflang="es" lang="es">ES</a><a href="../../tr/kalkwasser-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../nl/rekenhulp/">Rekenhulp</a></p>
+<h1>Kalkwater berekenen (kalkwasser)</h1>
+<p class="lead">Verzadigd kalkwater bevat ongeveer 800 ppm calcium en 40 meq/L (112 dKH) KH. 2 L per dag in een systeem van 400 L geeft 4 ppm calcium en 0,56 dKH per dag.</p>
+<div id="calc-nojs" class="callout"><p>De calculator heeft JavaScript nodig. De formule en het rekenvoorbeeld hieronder werken ook zonder.</p></div>
+<section class="calc" aria-labelledby="h-kalk">
+<h2 id="h-kalk">Kalkwasser</h2>
+<form class="panel" data-calc="kalk" novalidate>
+<div class="field"><label for="kk-vol">Netto watervolume</label>
+<div class="joined"><input id="kk-vol" name="kk-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="kk-vol-hint kk-vol-err">
+<select id="kk-vol-unit" name="kk-vol-unit" aria-label="Eenheid volume"><option value="L" selected>liter</option><option value="gal">US gallons</option></select></div>
+<span class="hint" id="kk-vol-hint">Het water dat echt in het systeem zit: bak, sump en leidingen, min steen en zand.</span><span class="err" id="kk-vol-err" hidden></span></div>
+<div class="field"><label for="kk-top">Bijvulling met kalkwater per dag</label>
+<div class="joined"><input id="kk-top" name="kk-top" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kk-top-err">
+<select id="kk-top-unit" name="kk-top-unit" aria-label="Eenheid bijvulling"><option value="L" selected>liter</option><option value="gal">US gallons</option></select></div><span class="err" id="kk-top-err" hidden></span></div>
+<div class="field-row two"><div class="field "><label for="kk-sat">Verzadiging (%)</label>
+<input id="kk-sat" name="kk-sat" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="100" aria-describedby="kk-sat-hint kk-sat-err">
+<span class="hint" id="kk-sat-hint">100 voor vers, helder, volledig verzadigd kalkwater. Oud of verdund kalkwater bevat minder.</span><span class="err" id="kk-sat-err" hidden></span></div><div class="field "><label for="kk-use">Je KH-verbruik (dKH per dag, optioneel)</label>
+<input id="kk-use" name="kk-use" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kk-use-hint kk-use-err">
+<span class="hint" id="kk-use-hint">Uit je tests: hoeveel je KH per dag zakt zonder te doseren.</span><span class="err" id="kk-use-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-kalk" aria-live="polite" hidden><h3 class="sr">Uitkomst</h3></div>
+</section>
+<p class="note">Draait in je browser. Wat je invult wordt niet opgeslagen of verstuurd.</p>
+<script type="application/json" id="calc-i18n">{"locale":"nl-NL","decimal":",","errNumber":"Vul een getal in, bijvoorbeeld 8,5","errRange":"Tussen {min} en {max}","fillIn":"Vul de velden hierboven in, dan zie je de uitkomst.","fixErrors":"Kijk het gemarkeerde veld na.","flags":{"warn":"Let op","info":"Info","good":"In orde"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"dag","other":"dagen"},"page":{"caH":"Calcium","alkH":"KH","perDay":"per dag","ca":"+{ca} ppm calcium per dag","alk":"+{dkh} dKH ({meq} meq/L) per dag","need":"Om {use} dKH per dag te dekken heb je {top} kalkwater per dag nodig.","noUse":"Met deze instelling voegt je bijvulling niets toe.","fast":"Dat is meer dan {cap} per dag. Controleer je getallen en laat het langzaam indruppelen."}}</script>
+
+<div class="prose">
+<h2>Zo wordt het berekend</h2>
+<h3>Wat er in kalkwater zit</h3>
+<p>Kalkwater is calciumhydroxide, Ca(OH)<sub>2</sub>, opgelost in osmosewater. Verzadigd bij kamertemperatuur bevat het ongeveer 800 mg/L calcium. Bij elk calciumion horen twee hydroxide-ionen, die in de bak KH worden: 800 ÷ 40,078 × 2 = 40 meq/L, of ongeveer 112 dKH. Daarom voegt kalkwasser calcium en KH in balans toe.</p>
+<h3>Per dag</h3>
+<p class="f">Ca ppm per dag = 800 × verzadiging × liter bijvulling ÷ liter systeem<br>KH meq/L per dag = 40 × verzadiging × liter bijvulling ÷ liter systeem</p>
+<p>Om een bekend KH-verbruik te dekken draai je het om: liter per dag = verbruik in meq/L × liter systeem ÷ (40 × verzadiging).</p>
+<h3>Grenzen</h3>
+<p>Je verdamping is het plafond: kalkwater gaat er alleen in als bijvulwater. Het trekt ook de pH omhoog, dus laat het langzaam indruppelen en doseer nooit het troebele deel. Verbruikt je bak meer dan de verdamping kan aanvoeren, vul de rest dan aan met de Balling-methode, two-part of een ander supplement.</p>
+<h2>Rekenvoorbeeld</h2>
+<p>Systeem van 400 L, 2 L verdamping per dag, alles bijgevuld met volledig verzadigd kalkwater.</p>
+<p class="f">Ca: 800 × 2 ÷ 400 = 4 ppm per dag<br>KH: 40 × 2 ÷ 400 = 0,2 meq/L = 0,56 dKH per dag</p>
+<p>Zakt je KH 1 dKH per dag (0,357 meq/L), dan heb je 0,357 × 400 ÷ 40 = 3,57 L kalkwater per dag nodig, meer dan de 2 L die verdampt.</p>
+<p class="callout">Dit zijn schattingen. Testkits hebben toleranties en elke bak verbruikt net iets anders: doseer in delen en meet opnieuw voor de volgende dosis.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Bewaar je waarden, niet alleen de uitkomst</h2>
+<p>Coralline heeft dezelfde kalkwasser-calculator in de app (Pro), naast je ingevoerde tests. Zo vergelijk je wat de bijvulling zou moeten toevoegen met wat je bak echt doet. Invoeren is gratis en onbeperkt, zonder account of abonnement, en werkt offline. Pro betaal je één keer.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Ontdek het op</small><b>Google Play</b></a><span class="soon">iPhone-versie volgt binnenkort</span></div>
+</aside>
+<h2>Bronnen</h2>
+<ol class="sources"><li><a href="http://reefkeeping.com/issues/2005-01/rhf/index.php" rel="noopener">R. Holmes-Farley, What Your Grandmother Never Told You About Lime. Reefkeeping, januari 2005</a></li><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, november 2002 (gearchiveerde kopie)</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, standaard atoomgewichten (Ca 40,078)</a></li></ol>
+<p class="updated">Gecontroleerd aan de hand van de bronnen: 2026-11-02</p>
+<p class="more"><b>Andere calculators:</b> <a href="../../nl/kh-alkaliniteit-berekenen/">KH (dKH)</a> · <a href="../../nl/calcium-magnesium-berekenen/">Calcium en magnesium</a> · <a href="../../nl/zoutgehalte-soortelijk-gewicht/">Zoutgehalte en SG</a> · <a href="../../nl/fosfaat-ppb-ppm-omrekenen/">Fosfor- en nitraattests</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline is een logboek en doseercalculator voor je zeewateraquarium. Deze site gebruikt geen cookies of trackers.</span>
+<nav><a href="../../nl/">Home</a><a href="../../nl/rekenhulp/">Rekenhulp</a><a href="../../nl/support/">Hulp</a><a href="../../nl/switch/">Overstappen</a><a href="../../nl/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

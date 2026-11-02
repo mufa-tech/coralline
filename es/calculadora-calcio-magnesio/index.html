@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calculadora de calcio y magnesio para acuario marino</title>
+<meta name="description" content="Gramos de cloruro de calcio (dihidratado o anhidro) y de cloruro de magnesio o sal de Epsom para subir el calcio y el magnesio del acuario de arrecife, repartidos en días.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/es/calculadora-calcio-magnesio/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/calcium-magnesium-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-calcium-magnesium/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/calcium-magnesium-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-calcio-magnesio/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-calcio-magnesio/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalsiyum-magnezyum-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calculadora de calcio y magnesio para acuario marino">
+<meta property="og:description" content="Gramos de cloruro de calcio (dihidratado o anhidro) y de cloruro de magnesio o sal de Epsom para subir el calcio y el magnesio del acuario de arrecife, repartidos en días.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/es/calculadora-calcio-magnesio/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../es/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../es/calculadoras/" aria-current="page">Calculadoras</a>
+<nav class="lang" aria-label="Idioma"><a href="../../calcium-magnesium-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/calcium-magnesium-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-calcium-magnesium/" hreflang="fr" lang="fr">FR</a><a href="../../nl/calcium-magnesium-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-calcio-magnesio/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-calcio-magnesio/" hreflang="es" lang="es" aria-current="page">ES</a><a href="../../tr/kalsiyum-magnezyum-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../es/calculadoras/">Calculadoras</a></p>
+<h1>Calculadora de calcio y magnesio</h1>
+<p class="lead">Subir el calcio de 400 a 430 ppm en 300 L pide 33 g de cloruro de calcio dihidratado. Pon tu volumen y tus valores para ver tus propios números. Deja un elemento en blanco para saltarlo.</p>
+<div id="calc-nojs" class="callout"><p>La calculadora necesita JavaScript. La fórmula y el ejemplo de abajo sirven sin él.</p></div>
+<section class="calc" aria-labelledby="h-camg">
+<h2 id="h-camg">Calcio y magnesio</h2>
+<form class="panel" data-calc="camg" novalidate>
+<div class="field"><label for="cm-vol">Volumen neto de agua</label>
+<div class="joined"><input id="cm-vol" name="cm-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="cm-vol-hint cm-vol-err">
+<select id="cm-vol-unit" name="cm-vol-unit" aria-label="Unidad de volumen"><option value="L" selected>litros</option><option value="gal">galones de EE. UU.</option></select></div>
+<span class="hint" id="cm-vol-hint">El agua que hay de verdad en el sistema: acuario principal, sump y tuberías, menos rocas y arena.</span><span class="err" id="cm-vol-err" hidden></span></div>
+<h3 class="form-h">Calcio</h3>
+<div class="field-row two"><div class="field "><label for="cm-ca-cur">Calcio actual (ppm)</label>
+<input id="cm-ca-cur" name="cm-ca-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-ca-cur-err">
+<span class="err" id="cm-ca-cur-err" hidden></span></div><div class="field "><label for="cm-ca-tgt">Calcio objetivo (ppm)</label>
+<input id="cm-ca-tgt" name="cm-ca-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="430" aria-describedby="cm-ca-tgt-hint cm-ca-tgt-err">
+<span class="hint" id="cm-ca-tgt-hint">El agua de mar natural tiene unos 420. La mayoría de los acuarios de arrecife van entre 380 y 450.</span><span class="err" id="cm-ca-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Cloruro de calcio</legend><div class="pills"><label class="pill"><input type="radio" name="cm-ca-salt" value="dihydrate" checked><span>Dihidratado (CaCl2·2H2O)</span></label><label class="pill"><input type="radio" name="cm-ca-salt" value="anhydrous"><span>Anhidro (CaCl2)</span></label></div></fieldset>
+<h3 class="form-h">Magnesio</h3>
+<div class="field-row two"><div class="field "><label for="cm-mg-cur">Magnesio actual (ppm)</label>
+<input id="cm-mg-cur" name="cm-mg-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-mg-cur-err">
+<span class="err" id="cm-mg-cur-err" hidden></span></div><div class="field "><label for="cm-mg-tgt">Magnesio objetivo (ppm)</label>
+<input id="cm-mg-tgt" name="cm-mg-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="1350" aria-describedby="cm-mg-tgt-hint cm-mg-tgt-err">
+<span class="hint" id="cm-mg-tgt-hint">El agua de mar natural tiene unos 1300. La mayoría de los acuarios de arrecife van entre 1250 y 1350.</span><span class="err" id="cm-mg-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Sal de magnesio</legend><div class="pills"><label class="pill"><input type="radio" name="cm-mg-salt" value="chloride" checked><span>Cloruro (MgCl2·6H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="sulfate"><span>Sal de Epsom (MgSO4·7H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="mix"><span>Mezcla de las dos</span></label></div></fieldset>
+<div data-show="mix" hidden><div class="field "><label for="cm-mg-mix">Magnesio que viene del cloruro (%)</label>
+<input id="cm-mg-mix" name="cm-mg-mix" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="50" aria-describedby="cm-mg-mix-hint cm-mg-mix-err">
+<span class="hint" id="cm-mg-mix-hint">La parte del magnesio que aporta el cloruro de magnesio. El resto lo pone la sal de Epsom.</span><span class="err" id="cm-mg-mix-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-camg" aria-live="polite" hidden><h3 class="sr">Resultado</h3></div>
+</section>
+<p class="note">Funciona en tu navegador. Nada de lo que escribes se guarda ni se envía.</p>
+<script type="application/json" id="calc-i18n">{"locale":"es-ES","decimal":",","errNumber":"Escribe un número, por ejemplo 8,5","errRange":"Entre {min} y {max}","fillIn":"Completa los campos de arriba para ver el resultado.","fixErrors":"Revisa el campo marcado.","flags":{"warn":"Cuidado","info":"Nota","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"día","other":"días"},"page":{"caH":"Calcio {from} → {to} ppm","mgH":"Magnesio {from} → {to} ppm","add":"de {salt}","both":"{a} de cloruro y {b} de sal de Epsom","split":"Más de {cap} ppm al día. Repártelo: {perDay} al día durante {n} {days}, unos {rise} ppm al día.","oneDay":"Dentro de {cap} ppm al día. Añádelo en varias tomas y vuelve a medir.","noRaise":"Ya está en el objetivo o por encima, así que no hay nada que añadir. Para bajarlo, deja que el acuario lo consuma o haz un cambio de agua.","caNote":"Una dosis grande de calcio puede bajar el KH. Mide también el KH.","salts":{"dihydrate":"cloruro de calcio dihidratado","anhydrous":"cloruro de calcio anhidro","chloride":"cloruro de magnesio","sulfate":"sal de Epsom"}}}</script>
+
+<div class="prose">
+<h2>Cómo se calcula</h2>
+<h3>Calcio</h3>
+<p>La masa molar del calcio es 40,078 g/mol. La subida en ppm por el volumen en litros, dividida entre 40,078, da los milimoles de calcio que necesitas. Cada uno llega con una unidad de la sal:</p>
+<p class="f">gramos = subida en ppm × litros ÷ 40,078 × 147,01 ÷ 1000 (dihidratado)<br>gramos = subida en ppm × litros ÷ 40,078 × 110,98 ÷ 1000 (anhidro)</p>
+<p>Mira el envase. Casi todo el cloruro de calcio que se vende para deshielo o para acuarios es dihidratado (escamas, del 77 al 80 % de CaCl<sub>2</sub>). Las perlas anhidras se calientan al disolverse.</p>
+<h3>Magnesio</h3>
+<p>La misma idea con 24,305 g/mol para el magnesio, y 203,30 g/mol para el cloruro de magnesio hexahidratado o 246,47 g/mol para el sulfato de magnesio heptahidratado (sal de Epsom). En una mezcla, cada sal aporta su parte del magnesio.</p>
+<p>La sal de Epsom también añade sulfato. Para correcciones grandes o repetidas, casi todos usan sobre todo cloruro y algo de sulfato, como en las recetas caseras clásicas de dos partes.</p>
+<h3>A qué ritmo</h3>
+<p>La calculadora se queda por debajo de 20 ppm de calcio y 100 ppm de magnesio al día, y reparte lo que pase de ahí a partes iguales en varios días. Subir mucho el calcio de una vez también puede bajar el KH, así que mide los dos.</p>
+<p>¿El objetivo está por debajo de lo que tienes? No hay nada que añadir. Deja que el acuario lo consuma o haz un cambio de agua.</p>
+<h2>Ejemplo práctico</h2>
+<p>Sistema de 300 L. Calcio a 400 ppm, objetivo 430. Magnesio a 1250 ppm, objetivo 1350.</p>
+<p class="f">Calcio: 30 × 300 ÷ 40,078 × 147,01 ÷ 1000 = 33,01 g de dihidratado<br>Magnesio: 100 × 300 ÷ 24,305 × 203,30 ÷ 1000 = 250,9 g de cloruro</p>
+<p>30 ppm de calcio pasan del límite diario de 20 ppm, así que son 16,51 g al día durante 2 días. Los 100 ppm de magnesio caben en un día. Solo con sal de Epsom, el magnesio pediría 304,2 g.</p>
+<p class="callout">Son estimaciones. Los kits de prueba tienen tolerancias y cada acuario consume distinto: reparte la dosis en varias tomas y vuelve a medir antes de la siguiente.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Guarda los números, no solo el resultado</h2>
+<p>Coralline guarda tu historial de calcio y magnesio junto al KH, así ves cuándo uno se desvía mientras los otros aguantan. Te avisa si una dosis subiría más rápido que tu límite diario y te la reparte. El registro es gratis e ilimitado, sin cuenta ni suscripción, y funciona sin conexión. Pro es un solo pago.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Disponible en</small><b>Google Play</b></a><span class="soon">Versión para iPhone en camino</span></div>
+</aside>
+<h2>Fuentes</h2>
+<ol class="sources"><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, noviembre de 2002 (copia archivada)</a></li><li><a href="http://reefkeeping.com/issues/2006-02/rhf/index.php" rel="noopener">R. Holmes-Farley, An Improved Do-it-Yourself Two-Part Calcium and Alkalinity Supplement System. Reefkeeping, febrero de 2006</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, pesos atómicos estándar (masas molares)</a></li></ol>
+<p class="updated">Comprobado con las fuentes: 2026-11-02</p>
+<p class="more"><b>Más calculadoras:</b> <a href="../../es/calculadora-kh-alcalinidad/">KH (alcalinidad)</a> · <a href="../../es/calculadora-salinidad-densidad/">Salinidad y densidad</a> · <a href="../../es/fosfato-ppb-ppm-conversion/">Kits de fósforo y nitrato</a> · <a href="../../es/calculadora-kalkwasser/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline es un registro de parámetros y una calculadora de dosis para acuarios marinos. Este sitio no usa cookies ni rastreadores.</span>
+<nav><a href="../../es/">Inicio</a><a href="../../es/calculadoras/">Calculadoras</a><a href="../../es/support/">Ayuda</a><a href="../../es/switch/">Cambiar de app</a><a href="../../es/privacy/">Privacidad</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

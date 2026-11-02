@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calcium und Magnesium Rechner fürs Meerwasser (Balling-Salze)</title>
+<meta name="description" content="Wie viel Gramm Calciumchlorid (Dihydrat oder wasserfrei) und Magnesiumchlorid oder Bittersalz Calcium und Magnesium im Riffbecken anheben, auf Tage verteilt. Die Salze der Balling-Methode.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/de/calcium-magnesium-rechner/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/calcium-magnesium-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-calcium-magnesium/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/calcium-magnesium-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-calcio-magnesio/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-calcio-magnesio/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalsiyum-magnezyum-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calcium und Magnesium Rechner fürs Meerwasser (Balling-Salze)">
+<meta property="og:description" content="Wie viel Gramm Calciumchlorid (Dihydrat oder wasserfrei) und Magnesiumchlorid oder Bittersalz Calcium und Magnesium im Riffbecken anheben, auf Tage verteilt. Die Salze der Balling-Methode.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/de/calcium-magnesium-rechner/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../de/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../de/rechner/" aria-current="page">Rechner</a>
+<nav class="lang" aria-label="Sprache"><a href="../../calcium-magnesium-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/calcium-magnesium-rechner/" hreflang="de" lang="de" aria-current="page">DE</a><a href="../../fr/calcul-calcium-magnesium/" hreflang="fr" lang="fr">FR</a><a href="../../nl/calcium-magnesium-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-calcio-magnesio/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-calcio-magnesio/" hreflang="es" lang="es">ES</a><a href="../../tr/kalsiyum-magnezyum-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../de/rechner/">Rechner</a></p>
+<h1>Calcium- und Magnesium-Rechner</h1>
+<p class="lead">Um Calcium in 300 L von 400 auf 430 ppm anzuheben, brauchst du 33 g Calciumchlorid-Dihydrat. Trag Volumen und Werte ein, dann bekommst du deine eigenen Zahlen, auch für die Balling-Salze. Lass ein Element leer, wenn du es nicht brauchst.</p>
+<div id="calc-nojs" class="callout"><p>Der Rechner braucht JavaScript. Formel und Rechenbeispiel unten funktionieren auch ohne.</p></div>
+<section class="calc" aria-labelledby="h-camg">
+<h2 id="h-camg">Calcium und Magnesium</h2>
+<form class="panel" data-calc="camg" novalidate>
+<div class="field"><label for="cm-vol">Netto-Wasservolumen</label>
+<div class="joined"><input id="cm-vol" name="cm-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="cm-vol-hint cm-vol-err">
+<select id="cm-vol-unit" name="cm-vol-unit" aria-label="Volumeneinheit"><option value="L" selected>Liter</option><option value="gal">US-Gallonen</option></select></div>
+<span class="hint" id="cm-vol-hint">Das Wasser, das wirklich im System ist: Becken, Technikbecken und Leitungen, abzüglich Gestein und Sand.</span><span class="err" id="cm-vol-err" hidden></span></div>
+<h3 class="form-h">Calcium</h3>
+<div class="field-row two"><div class="field "><label for="cm-ca-cur">Calcium jetzt (ppm)</label>
+<input id="cm-ca-cur" name="cm-ca-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-ca-cur-err">
+<span class="err" id="cm-ca-cur-err" hidden></span></div><div class="field "><label for="cm-ca-tgt">Calcium-Zielwert (ppm)</label>
+<input id="cm-ca-tgt" name="cm-ca-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="430" aria-describedby="cm-ca-tgt-hint cm-ca-tgt-err">
+<span class="hint" id="cm-ca-tgt-hint">Natürliches Meerwasser hat etwa 420. Die meisten Riffbecken liegen bei 380 bis 450.</span><span class="err" id="cm-ca-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Calciumchlorid</legend><div class="pills"><label class="pill"><input type="radio" name="cm-ca-salt" value="dihydrate" checked><span>Dihydrat (CaCl2·2H2O)</span></label><label class="pill"><input type="radio" name="cm-ca-salt" value="anhydrous"><span>Wasserfrei (CaCl2)</span></label></div></fieldset>
+<h3 class="form-h">Magnesium</h3>
+<div class="field-row two"><div class="field "><label for="cm-mg-cur">Magnesium jetzt (ppm)</label>
+<input id="cm-mg-cur" name="cm-mg-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-mg-cur-err">
+<span class="err" id="cm-mg-cur-err" hidden></span></div><div class="field "><label for="cm-mg-tgt">Magnesium-Zielwert (ppm)</label>
+<input id="cm-mg-tgt" name="cm-mg-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="1.350" aria-describedby="cm-mg-tgt-hint cm-mg-tgt-err">
+<span class="hint" id="cm-mg-tgt-hint">Natürliches Meerwasser hat etwa 1300. Die meisten Riffbecken liegen bei 1250 bis 1350.</span><span class="err" id="cm-mg-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Magnesiumsalz</legend><div class="pills"><label class="pill"><input type="radio" name="cm-mg-salt" value="chloride" checked><span>Chlorid (MgCl2·6H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="sulfate"><span>Bittersalz (MgSO4·7H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="mix"><span>Mischung aus beiden</span></label></div></fieldset>
+<div data-show="mix" hidden><div class="field "><label for="cm-mg-mix">Magnesium aus dem Chlorid (%)</label>
+<input id="cm-mg-mix" name="cm-mg-mix" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="50" aria-describedby="cm-mg-mix-hint cm-mg-mix-err">
+<span class="hint" id="cm-mg-mix-hint">Der Anteil des Magnesiums, der aus Magnesiumchlorid kommt. Der Rest kommt aus Bittersalz.</span><span class="err" id="cm-mg-mix-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-camg" aria-live="polite" hidden><h3 class="sr">Ergebnis</h3></div>
+</section>
+<p class="note">Läuft in deinem Browser. Was du eingibst, wird weder gespeichert noch verschickt.</p>
+<script type="application/json" id="calc-i18n">{"locale":"de-DE","decimal":",","errNumber":"Gib eine Zahl ein, zum Beispiel 8,5","errRange":"Zwischen {min} und {max}","fillIn":"Füll die Felder oben aus, dann erscheint das Ergebnis.","fixErrors":"Prüf das markierte Feld.","flags":{"warn":"Vorsicht","info":"Hinweis","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"Tag","other":"Tage"},"page":{"caH":"Calcium {from} → {to} ppm","mgH":"Magnesium {from} → {to} ppm","add":"{salt}","both":"{a} Chlorid und {b} Bittersalz","split":"Mehr als {cap} ppm am Tag. Also aufteilen: {perDay} am Tag für {n} {days}, etwa {rise} ppm pro Tag.","oneDay":"Bleibt im Rahmen von {cap} ppm am Tag. In ein paar Portionen zugeben, dann nachmessen.","noRaise":"Schon auf oder über dem Zielwert, es gibt also nichts zu dosieren. Um den Wert zu senken, lass das Becken den Überschuss verbrauchen oder mach einen Wasserwechsel.","caNote":"Eine große Calciumgabe kann die KH drücken. Miss die KH auch.","salts":{"dihydrate":"Calciumchlorid-Dihydrat","anhydrous":"wasserfreies Calciumchlorid","chloride":"Magnesiumchlorid","sulfate":"Bittersalz"}}}</script>
+
+<div class="prose">
+<h2>So wird gerechnet</h2>
+<h3>Calcium</h3>
+<p>Calcium hat eine Molmasse von 40,078 g/mol. Anstieg in ppm mal Volumen in Litern, geteilt durch 40,078, ergibt die Millimol Calcium, die du brauchst. Zu jedem Millimol gehört eine Formeleinheit des Salzes:</p>
+<p class="f">Gramm = Anstieg in ppm × Liter ÷ 40,078 × 147,01 ÷ 1000 (Dihydrat)<br>Gramm = Anstieg in ppm × Liter ÷ 40,078 × 110,98 ÷ 1000 (wasserfrei)</p>
+<p>Schau auf die Packung. Das meiste Calciumchlorid für Balling und fürs Riff ist Calciumchlorid-Dihydrat (Schuppen, 77 bis 80 % CaCl<sub>2</sub>). Wasserfreie Kügelchen werden beim Auflösen heiß.</p>
+<h3>Magnesium</h3>
+<p>Gleiches Prinzip mit 24,305 g/mol für Magnesium und 203,30 g/mol für Magnesiumchlorid-Hexahydrat oder 246,47 g/mol für Magnesiumsulfat-Heptahydrat (Bittersalz). Bei einer Mischung trägt jedes Salz seinen Anteil am Magnesium.</p>
+<p>Bittersalz bringt auch Sulfat ins Becken. Für große oder wiederholte Korrekturen nehmen die meisten vor allem Chlorid und etwas Sulfat, so wie es die klassischen Balling-Rezepte machen.</p>
+<h3>Wie schnell</h3>
+<p>Der Rechner bleibt pro Tag unter 20 ppm Calcium und 100 ppm Magnesium und verteilt alles Größere gleichmäßig auf mehrere Tage. Calcium auf einen Schlag stark anzuheben kann außerdem die KH drücken, also beides messen.</p>
+<p>Zielwert niedriger als dein Messwert? Dann gibt es nichts zu dosieren. Lass das Becken den Überschuss verbrauchen oder mach einen Wasserwechsel.</p>
+<h2>Rechenbeispiel</h2>
+<p>System mit 300 L. Calcium 400 ppm, Ziel 430. Magnesium 1250 ppm, Ziel 1350.</p>
+<p class="f">Calcium: 30 × 300 ÷ 40,078 × 147,01 ÷ 1000 = 33,01 g Dihydrat<br>Magnesium: 100 × 300 ÷ 24,305 × 203,30 ÷ 1000 = 250,9 g Chlorid</p>
+<p>30 ppm Calcium liegen über der Tagesgrenze von 20 ppm, also 16,51 g am Tag für 2 Tage. 100 ppm Magnesium passen in einen Tag. Nur mit Bittersalz wären es 304,2 g.</p>
+<p class="callout">Das sind Schätzwerte. Testkits haben Toleranzen, und jedes Becken verbraucht etwas anders: in Teilmengen dosieren und vor der nächsten Gabe nachmessen.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Behalte deine Werte, nicht nur das Ergebnis</h2>
+<p>Coralline zeigt deinen Calcium- und Magnesium-Verlauf direkt neben der KH. So siehst du, wenn ein Wert wegläuft, während die anderen halten. Steigt eine Dosis schneller als deine Tagesgrenze, warnt die App und teilt sie für dich auf. Eintragen ist gratis und unbegrenzt, ohne Konto, ohne Abo, läuft offline. Pro ist eine Einmalzahlung.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Jetzt bei</small><b>Google Play</b></a><span class="soon">iPhone-Version kommt bald</span></div>
+</aside>
+<h2>Quellen</h2>
+<ol class="sources"><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, November 2002 (archivierte Kopie)</a></li><li><a href="http://reefkeeping.com/issues/2006-02/rhf/index.php" rel="noopener">R. Holmes-Farley, An Improved Do-it-Yourself Two-Part Calcium and Alkalinity Supplement System. Reefkeeping, Februar 2006</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Standard-Atomgewichte (Molmassen)</a></li></ol>
+<p class="updated">Mit den Quellen abgeglichen: 2026-11-02</p>
+<p class="more"><b>Weitere Rechner:</b> <a href="../../de/kh-rechner/">KH (dKH)</a> · <a href="../../de/salzgehalt-dichte-rechner/">Salzgehalt und Dichte</a> · <a href="../../de/phosphat-ppb-ppm-umrechnen/">Phosphor- und Nitrattests</a> · <a href="../../de/kalkwasser-rechner/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline ist Logbuch und Dosierrechner fürs Meerwasseraquarium. Diese Seite nutzt keine Cookies und kein Tracking.</span>
+<nav><a href="../../de/">Start</a><a href="../../de/rechner/">Rechner</a><a href="../../de/support/">Hilfe</a><a href="../../de/switch/">App-Wechsel</a><a href="../../de/privacy/">Datenschutz</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

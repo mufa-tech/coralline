@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calculadora de KH (alcalinidad): dKH a ppm, meq/L y dosis de bicarbonato</title>
+<meta name="description" content="Convierte dKH a ppm de CaCO3 y meq/L, y calcula los gramos de bicarbonato o carbonato de sodio para subir el KH del acuario marino, con un límite de 1,4 dKH al día.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/es/calculadora-kh-alcalinidad/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/alkalinity-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/kh-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-kh-alcalinite/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/kh-alkaliniteit-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-kh-alcalinita/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-kh-alcalinidad/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kh-alkalinite-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/alkalinity-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calculadora de KH (alcalinidad): dKH a ppm, meq/L y dosis de bicarbonato">
+<meta property="og:description" content="Convierte dKH a ppm de CaCO3 y meq/L, y calcula los gramos de bicarbonato o carbonato de sodio para subir el KH del acuario marino, con un límite de 1,4 dKH al día.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/es/calculadora-kh-alcalinidad/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../es/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../es/calculadoras/" aria-current="page">Calculadoras</a>
+<nav class="lang" aria-label="Idioma"><a href="../../alkalinity-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/kh-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-kh-alcalinite/" hreflang="fr" lang="fr">FR</a><a href="../../nl/kh-alkaliniteit-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-kh-alcalinita/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-kh-alcalinidad/" hreflang="es" lang="es" aria-current="page">ES</a><a href="../../tr/kh-alkalinite-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../es/calculadoras/">Calculadoras</a></p>
+<h1>Calculadora de KH: dKH, meq/L, ppm y bicarbonato</h1>
+<p class="lead">1 dKH = 0,357 meq/L = 17,9 ppm de CaCO3. Escribe en cualquier unidad para convertir, o pon el volumen de tu acuario y te da los gramos de bicarbonato o carbonato de sodio para llegar al objetivo.</p>
+<div id="calc-nojs" class="callout"><p>La calculadora necesita JavaScript. La fórmula y el ejemplo de abajo sirven sin él.</p></div>
+<section class="calc" aria-labelledby="h-alkconv">
+<h2 id="h-alkconv">Convertir unidades de KH</h2>
+<form class="panel" data-calc="alkconv" novalidate>
+<div class="field-row three"><div class="field "><label for="ac-dkh">dKH</label>
+<input id="ac-dkh" name="ac-dkh" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="8,5" aria-describedby="ac-dkh-err">
+<span class="err" id="ac-dkh-err" hidden></span></div><div class="field "><label for="ac-meq">meq/L</label>
+<input id="ac-meq" name="ac-meq" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="ac-meq-err">
+<span class="err" id="ac-meq-err" hidden></span></div><div class="field "><label for="ac-ppm">ppm CaCO3</label>
+<input id="ac-ppm" name="ac-ppm" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="ac-ppm-err">
+<span class="err" id="ac-ppm-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-alkconv" aria-live="polite" hidden><h3 class="sr">Resultado</h3></div>
+</section><section class="calc" aria-labelledby="h-alkraise">
+<h2 id="h-alkraise">Subir el KH al objetivo</h2>
+<form class="panel" data-calc="alkraise" novalidate>
+<div class="field"><label for="ar-vol">Volumen neto de agua</label>
+<div class="joined"><input id="ar-vol" name="ar-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="ar-vol-hint ar-vol-err">
+<select id="ar-vol-unit" name="ar-vol-unit" aria-label="Unidad de volumen"><option value="L" selected>litros</option><option value="gal">galones de EE. UU.</option></select></div>
+<span class="hint" id="ar-vol-hint">El agua que hay de verdad en el sistema: acuario principal, sump y tuberías, menos rocas y arena.</span><span class="err" id="ar-vol-err" hidden></span></div>
+<div class="field"><label for="ar-unit">Unidad de tu test</label><select id="ar-unit" name="ar-unit"><option value="dkh" selected>dKH</option><option value="meq">meq/L</option><option value="ppm">ppm CaCO3</option></select></div>
+<div class="field-row two"><div class="field "><label for="ar-cur">KH actual</label>
+<input id="ar-cur" name="ar-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="ar-cur-err">
+<span class="err" id="ar-cur-err" hidden></span></div><div class="field "><label for="ar-tgt">Objetivo</label>
+<input id="ar-tgt" name="ar-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="8,5" aria-describedby="ar-tgt-hint ar-tgt-err">
+<span class="hint" id="ar-tgt-hint">La mayoría de los acuarios de arrecife van entre 7 y 11 dKH. Elige un objetivo y mantenlo estable.</span><span class="err" id="ar-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Qué dosificas</legend><div class="pills"><label class="pill"><input type="radio" name="ar-salt" value="bicarb" checked><span>Bicarbonato de sodio (NaHCO3)</span></label><label class="pill"><input type="radio" name="ar-salt" value="sodaash"><span>Carbonato de sodio (Na2CO3)</span></label></div></fieldset>
+</form>
+<div class="res" id="res-alkraise" aria-live="polite" hidden><h3 class="sr">Resultado</h3></div>
+</section>
+<p class="note">Funciona en tu navegador. Nada de lo que escribes se guarda ni se envía.</p>
+<script type="application/json" id="calc-i18n">{"locale":"es-ES","decimal":",","errNumber":"Escribe un número, por ejemplo 8,5","errRange":"Entre {min} y {max}","fillIn":"Completa los campos de arriba para ver el resultado.","fixErrors":"Revisa el campo marcado.","flags":{"warn":"Cuidado","info":"Nota","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"día","other":"días"},"page":{"conv":"{dkh} dKH = {meq} meq/L = {ppm} ppm CaCO3","add":"de {salt}","total":"En total, para pasar de {from} a {to}.","split":"Esa subida pasa de {cap} al día. Repártela: {perDay} al día durante {n} {days}, unos {rise} al día.","oneDay":"Dentro de {cap} al día. Añádelo en varias tomas a lo largo del día y vuelve a medir.","noRaise":"Tu KH ya está en el objetivo o por encima, así que no hay nada que añadir. Para bajarlo, para de dosificar KH y deja que el acuario lo consuma, o haz un cambio de agua.","sodaNote":"El carbonato de sodio sube el pH más que el bicarbonato. Disuélvelo por completo y añádelo despacio.","salts":{"bicarb":"bicarbonato de sodio","sodaash":"carbonato de sodio"},"units":{"dkh":"dKH","meq":"meq/L","ppm":"ppm"}}}</script>
+<div class="prose"><h2 id="table-h">dKH a meq/L y ppm</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">dKH</th><th scope="col">meq/L</th><th scope="col">ppm CaCO3</th></tr></thead>
+<tbody><tr><td>6</td><td>2,14</td><td>107</td></tr><tr><td>7</td><td>2,50</td><td>125</td></tr><tr><td>7,5</td><td>2,68</td><td>134</td></tr><tr><td>8</td><td>2,86</td><td>143</td></tr><tr><td>8,5</td><td>3,04</td><td>152</td></tr><tr><td>9</td><td>3,21</td><td>161</td></tr><tr><td>10</td><td>3,57</td><td>179</td></tr><tr><td>11</td><td>3,93</td><td>196</td></tr><tr><td>12</td><td>4,29</td><td>214</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>Cómo se calcula</h2>
+<h3>Unidades</h3>
+<p>1 meq/L = 2,8 dKH = 50 ppm de CaCO<sub>3</sub>. Así que dKH ÷ 2,8 da meq/L, y meq/L × 50 da ppm. 8,5 dKH son 3,04 meq/L o 152 ppm.</p>
+<h3>Gramos que hay que añadir</h3>
+<p>1 mmol de bicarbonato de sodio (NaHCO<sub>3</sub>, 84,007 g/mol) aporta 1 meq de alcalinidad. 1 mmol de carbonato de sodio (Na<sub>2</sub>CO<sub>3</sub>, 105,988 g/mol) aporta 2 meq. Por tanto:</p>
+<p class="f">gramos = subida en meq/L × litros × 84,007 ÷ 1000 (bicarbonato)<br>gramos = subida en meq/L × litros × 52,994 ÷ 1000 (carbonato)</p>
+<p>El carbonato de sodio es bicarbonato pasado por el horno: para la misma subida pesa cerca de un 37 % menos y sube el pH, mientras que el bicarbonato lo baja un poco.</p>
+<h3>A qué ritmo</h3>
+<p>La calculadora no pasa de 1,4 dKH (0,5 meq/L) de subida al día. Una corrección mayor se reparte a partes iguales en varios días. A los corales les sienta peor un cambio brusco que un valor algo desviado, así que ir despacio es lo seguro.</p>
+<p>¿El objetivo está por debajo de lo que tienes? No hay nada que añadir. Para de dosificar KH y deja que el acuario lo consuma, o haz un cambio de agua con sal preparada a un KH más bajo.</p>
+<h2>Ejemplo práctico</h2>
+<p>Un acuario de 300 L mide 7,0 dKH y quieres llegar a 8,5. La subida es de 1,5 dKH = 0,536 meq/L.</p>
+<p class="f">1,5 ÷ 2,8 × 300 × 84,007 ÷ 1000 = 13,50 g de bicarbonato de sodio</p>
+<p>1,5 dKH es más que 1,4 en un día, así que la calculadora lo reparte: 6,75 g al día durante 2 días, 0,75 dKH al día. Disuelve cada dosis en agua de ósmosis (RO/DI) y añádela despacio en una zona con buena corriente.</p>
+<p class="callout">Son estimaciones. Los kits de prueba tienen tolerancias y cada acuario consume distinto: reparte la dosis en varias tomas y vuelve a medir antes de la siguiente.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Guarda los números, no solo el resultado</h2>
+<p>Coralline guarda cada prueba de KH y la dibuja contra tu rango objetivo, con una tarjeta que te dice cuántos días lleva estable. Cuando apuntas tu dosis diaria, calcula cuánto consume de verdad tu acuario y te propone la dosis que mantiene el objetivo. El registro es gratis e ilimitado, sin cuenta ni suscripción, y funciona sin conexión. Pro es un solo pago.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Disponible en</small><b>Google Play</b></a><span class="soon">Versión para iPhone en camino</span></div>
+</aside>
+<h2>Fuentes</h2>
+<ol class="sources"><li><a href="https://web.archive.org/web/20180110095902/http://www.advancedaquarist.com/2002/2/chemistry" rel="noopener">R. Holmes-Farley, Chemistry and the Aquarium: What is Alkalinity? Advanced Aquarist, febrero de 2002 (copia archivada)</a></li><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, noviembre de 2002 (copia archivada)</a></li><li><a href="http://reefkeeping.com/issues/2006-02/rhf/index.php" rel="noopener">R. Holmes-Farley, An Improved Do-it-Yourself Two-Part Calcium and Alkalinity Supplement System. Reefkeeping, febrero de 2006</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, pesos atómicos estándar (masas molares)</a></li></ol>
+<p class="updated">Comprobado con las fuentes: 2026-11-02</p>
+<p class="more"><b>Más calculadoras:</b> <a href="../../es/calculadora-calcio-magnesio/">Calcio y magnesio</a> · <a href="../../es/calculadora-salinidad-densidad/">Salinidad y densidad</a> · <a href="../../es/fosfato-ppb-ppm-conversion/">Kits de fósforo y nitrato</a> · <a href="../../es/calculadora-kalkwasser/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline es un registro de parámetros y una calculadora de dosis para acuarios marinos. Este sitio no usa cookies ni rastreadores.</span>
+<nav><a href="../../es/">Inicio</a><a href="../../es/calculadoras/">Calculadoras</a><a href="../../es/support/">Ayuda</a><a href="../../es/switch/">Cambiar de app</a><a href="../../es/privacy/">Privacidad</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

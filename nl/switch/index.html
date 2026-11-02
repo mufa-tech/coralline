@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Overstappen naar Coralline vanuit een andere app</title>
 <meta name="description" content="Zo exporteer je je tests uit een andere logboek-app, importeer je de CSV in Coralline en houd je voortaan je eigen back-up.">
 <meta name="color-scheme" content="light dark">
@@ -27,17 +28,24 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/nl/switch/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../../nl/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../nl/rekenhulp/">Rekenhulp</a>
 <nav class="lang" aria-label="Taal"><a href="../../switch/" hreflang="en" lang="en">EN</a><a href="../../de/switch/" hreflang="de" lang="de">DE</a><a href="../../fr/switch/" hreflang="fr" lang="fr">FR</a><a href="../../nl/switch/" hreflang="nl" lang="nl" aria-current="page">NL</a><a href="../../it/switch/" hreflang="it" lang="it">IT</a><a href="../../es/switch/" hreflang="es" lang="es">ES</a><a href="../../tr/switch/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap prose">
 <h1>Kom je van een andere app? Neem je bak mee.</h1>
-<p class="lead">Begrenst je huidige app het aantal tests, wil hij een account, of wil je je gegevens gewoon in een bestand dat van jou is? Dit kost ongeveer 15 minuten. Je oude geschiedenis gaat mee.</p>
+<p class="lead">Begrenst je huidige app het aantal tests, wil hij een account, of wil je je gegevens gewoon in een bestand dat van jou is? Dit kost ongeveer 15 minuten. Je oude geschiedenis gaat mee.</p>
 <h2>1. Haal eerst je gegevens uit de oude app</h2>
 <p>Doe dit vandaag, voordat je iets installeert. Apps veranderen hun regels.</p>
 <ul>
@@ -46,7 +54,7 @@
 <li>Helemaal geen export? Maak schermafbeeldingen van de geschiedenis per parameter. Dat is genoeg om het belangrijkste opnieuw in te voeren (stap 3).</li>
 <li>Bewaar het bestand op een plek die van jou is: iCloud Drive, Google Drive of je computer. Zet de datum in de naam, bijvoorbeeld <code>rif-export-2026-10-20.csv</code>.</li>
 </ul>
-<h2>2. Coralline instellen (ongeveer 30 seconden)</h2>
+<h2>2. Coralline instellen (ongeveer 30 seconden)</h2>
 <ol>
 <li>Installeer de app uit de App Store of <a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a>.</li>
 <li>Maak je bak aan: naam, <b>Netto watervolume</b> (het water dat echt in het systeem zit, niet de glasmaat) en <b>Type bak</b>.</li>
@@ -57,21 +65,21 @@
 <h2>3. Neem je geschiedenis mee</h2>
 <p><b>Heb je een CSV?</b> Open <b>Instellingen → Importeren → Uit een CSV-bestand</b> en kies het bestand. Gratis en zonder limiet.</p>
 <ul>
-<li>Gescheiden door komma, puntkomma of tab. Kolomnamen in elk van de 7 talen van de app. Datums zoals 2026-10-18, 18.10.2026 of 10/18/2026; kan een datum op twee manieren gelezen worden, dan vraagt Coralline het.</li>
+<li>Gescheiden door komma, puntkomma of tab. Kolomnamen in elk van de 7 talen van de app. Datums zoals 2026-10-18, 18.10.2026 of 10/18/2026; kan een datum op twee manieren gelezen worden, dan vraagt Coralline het.</li>
 <li>Kies de datumkolom en geef per kolom de parameter en eenheid aan. Onbekende kolommen kunnen nieuwe parameters worden. Kijk dat scherm één keer na; kolomnamen verschillen per app.</li>
 <li>Importeer in een bestaande of een nieuwe bak. Tests die al in Coralline staan worden overgeslagen, en <b>Import ongedaan maken</b> haalt de hele import weer weg.</li>
 </ul>
 <p>ICP-uitslagen gaan op dezelfde manier, als tekst (Pro): <b>Instellingen → Importeren → ICP-uitslag</b>, plak het rapport.</p>
-<p><b>Geen export uit de oude app?</b> Je hebt geen jaren aan gegevens nodig. De laatste weken tellen: grafieken en de stabiliteitskaart werken na een paar invoeren, en het doseeradvies heeft per parameter minstens 3 tests over 5 dagen nodig. Twee weken KH, Ca en Mg is ruim genoeg.</p>
+<p><b>Geen export uit de oude app?</b> Je hebt geen jaren aan gegevens nodig. De laatste weken tellen: grafieken en de stabiliteitskaart werken na een paar invoeren, en het doseeradvies heeft per parameter minstens 3 tests over 5 dagen nodig. Twee weken KH, Ca en Mg is ruim genoeg.</p>
 <ul>
 <li>Zet elke invoer op de juiste datum. Tik op het scherm <b>Test invoeren</b> op <b>Datum en tijd kiezen</b> en vul in wanneer de test echt was. Oudste eerst.</li>
 <li>Begin met wat je dosering bepaalt: KH, Ca, Mg, dan NO<sub>3</sub> en PO<sub>4</sub>. Zoutgehalte en temperatuur kunnen wachten.</li>
 <li>Je laatste waarden staan er al. Bij een parameter die nauwelijks beweegt verander je één cijfer per invoer.</li>
 <li>Eén invoer per testsessie, met alle parameters die je die dag hebt gemeten.</li>
-<li>Oude eenheden: sloeg de oude app fosfor op als ppb P, reken dan om voor je invoert: ppm PO<sub>4</sub> = ppb P × 3,066 ÷ 1000, dus 30 ppb = 0,09 ppm. Nitraat als N: × 4,427. De tool <b>Testkits</b> (Pro) doet allebei; gratis gebruik je de formule.</li>
+<li>Oude eenheden: sloeg de oude app fosfor op als ppb P, reken dan om voor je invoert: ppm PO<sub>4</sub> = ppb P × 3,066 ÷ 1000, dus 30 ppb = 0,09 ppm. Nitraat als N: × 4,427. De tool <b>Testkits</b> (Pro) doet allebei; gratis gebruik je de formule.</li>
 </ul>
-<p>Een realistisch doel: de laatste 14 dagen KH, Ca en Mg plus de laatste 4 tests NO<sub>3</sub> en PO<sub>4</sub>. Zo’n 10 minuten typen.</p>
-<p><b>Doseer je dagelijks?</b> Stel de dosis in op het tabblad <b>Doseren</b> onder <b>Dagplan</b>. Het plan begint op de dag dat je het opslaat, en het doseeradvies telt alleen tests vanaf die dag. Stel het dus nu in en blijf testen. Zo kan Coralline ‘de bak verbruikt 0,3 dKH per dag’ scheiden van ‘mijn dosis voegt 0,25 toe’.</p>
+<p>Een realistisch doel: de laatste 14 dagen KH, Ca en Mg plus de laatste 4 tests NO<sub>3</sub> en PO<sub>4</sub>. Zo’n 10 minuten typen.</p>
+<p><b>Doseer je dagelijks?</b> Stel de dosis in op het tabblad <b>Doseren</b> onder <b>Dagplan</b>. Het plan begint op de dag dat je het opslaat, en het doseeradvies telt alleen tests vanaf die dag. Stel het dus nu in en blijf testen. Zo kan Coralline ‘de bak verbruikt 0,3 dKH per dag’ scheiden van ‘mijn dosis voegt 0,25 toe’.</p>
 <h2>4. Houd voortaan je eigen back-up</h2>
 <ul>
 <li>Coralline schrijft elke dag een back-up op je telefoon en houdt de laatste 7. Voor een kopie ergens anders: <b>Instellingen → Back-up naar bestand</b>, en bewaar hem in iCloud Drive of Google Drive. Eén JSON-bestand met alles erin.</li>
@@ -81,8 +89,8 @@
 </ul>
 <h2>Wat gratis is en wat Pro</h2>
 <ul>
-<li><b>Gratis, zonder limiet op invoeren:</b> 1 bak, onbeperkt tests, grafieken van 30 dagen, ophogen naar doel voor KH, Ca en Mg, waterverversing, zoutgehalte- en eenhedencalculators, 3 herinneringen, back-up en terugzetten, CSV-import.</li>
-<li><b>Pro, één keer betalen</b> (14,99 € introductieprijs in de eerste 60 dagen, daarna 19,99 €): onbeperkt bakken, de volledige geschiedenis in de grafieken met doseermarkeringen, kalkwasser, productkalibratie, doseeradvies op basis van je verbruik, testkit-omrekening, onbeperkt herinneringen, CSV-export, alle thema’s. 7 dagen gratis proberen.</li>
+<li><b>Gratis, zonder limiet op invoeren:</b> 1 bak, onbeperkt tests, grafieken van 30 dagen, ophogen naar doel voor KH, Ca en Mg, waterverversing, zoutgehalte- en eenhedencalculators, 3 herinneringen, back-up en terugzetten, CSV-import.</li>
+<li><b>Pro, één keer betalen</b> (14,99 € introductieprijs in de eerste 60 dagen, daarna 19,99 €): onbeperkt bakken, de volledige geschiedenis in de grafieken met doseermarkeringen, kalkwasser, productkalibratie, doseeradvies op basis van je verbruik, testkit-omrekening, onbeperkt herinneringen, CSV-export, alle thema’s. 7 dagen gratis proberen.</li>
 <li>Geen abonnement. Koop je Pro nooit, dan blijven je gegevens volledig bewerkbaar.</li>
 </ul>
 <h2>Vragen</h2>
@@ -90,7 +98,7 @@
 </main>
 <footer><div class="wrap">
 <span>Coralline is een logboek en doseercalculator voor je zeewateraquarium. Deze site gebruikt geen cookies of trackers.</span>
-<nav><a href="../../nl/">Home</a><a href="../../nl/support/">Hulp</a><a href="../../nl/switch/">Overstappen</a><a href="../../nl/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../../nl/">Home</a><a href="../../nl/rekenhulp/">Rekenhulp</a><a href="../../nl/support/">Hulp</a><a href="../../nl/switch/">Overstappen</a><a href="../../nl/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Coralline: registro de parámetros y calculadora de dosis para acuario marino</title>
 <meta name="description" content="Registro de parámetros sin conexión y calculadora de dosis para acuario de arrecife. Pruebas ilimitadas, sin cuenta, sin suscripción.">
 <meta name="color-scheme" content="light dark">
@@ -27,12 +28,19 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/es/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../es/"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../es/calculadoras/">Calculadoras</a>
 <nav class="lang" aria-label="Idioma"><a href="../" hreflang="en" lang="en">EN</a><a href="../de/" hreflang="de" lang="de">DE</a><a href="../fr/" hreflang="fr" lang="fr">FR</a><a href="../nl/" hreflang="nl" lang="nl">NL</a><a href="../it/" hreflang="it" lang="it">IT</a><a href="../es/" hreflang="es" lang="es" aria-current="page">ES</a><a href="../tr/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap hero">
@@ -43,17 +51,22 @@
 <a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline"><small>Disponible en</small><b>Google Play</b></a>
 </div>
 <p class="promise">Sin cuenta. Sin suscripción. Sin conexión.</p>
-<p class="note">Gratis para un acuario con pruebas ilimitadas. Pro es un solo pago, con 7 días de prueba gratis.</p>
+<p class="note">Gratis para un acuario con pruebas ilimitadas. Pro es un solo pago, con 7 días de prueba gratis.</p>
 <ul class="features">
 <li>Apunta KH, Ca, Mg, nitratos, fosfatos y más en unos diez segundos. Tus últimos valores ya vienen rellenados.</li>
 <li>Gráficas con tu rango objetivo, una tarjeta de estabilidad y una previsión de cuándo un valor saldrá de su rango.</li>
-<li>Calculadoras para subir al objetivo, cambio de agua y salinidad (EOS-80). Pro añade kalkwasser, calibración de productos y consejo de dosis según tu consumo real.</li>
+<li>Calculadoras para subir al objetivo, cambio de agua y salinidad (<span class="nw">EOS-80</span>). Pro añade kalkwasser, calibración de productos y consejo de dosis según tu consumo real.</li>
 </ul>
-<p class="note" style="margin-top:28px">¿Dudas? Mira la <a href="../es/support/">ayuda</a>. Qué pasa con tus datos: <a href="../es/privacy/">privacidad</a>.</p>
+<section class="card home-calcs" aria-labelledby="hc-h">
+<h2 id="hc-h">Calculadoras gratis para acuario marino</h2>
+<p>¿Necesitas un número ahora mismo? dKH a ppm, bicarbonato para tu volumen, dosis de calcio y magnesio, salinidad a densidad, fósforo del Hanna a fosfato, kalkwasser. Funcionan en el navegador, sin instalar nada.</p>
+<p><a class="btn" href="../es/calculadoras/">Abrir las calculadoras<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+</section>
+<p class="note gap">¿Dudas? Mira la <a href="../es/support/">ayuda</a>. Qué pasa con tus datos: <a href="../es/privacy/">privacidad</a>.</p>
 </main>
 <footer><div class="wrap">
 <span>Coralline es un registro de parámetros y una calculadora de dosis para acuarios marinos. Este sitio no usa cookies ni rastreadores.</span>
-<nav><a href="../es/">Inicio</a><a href="../es/support/">Ayuda</a><a href="../es/switch/">Cambiar de app</a><a href="../es/privacy/">Privacidad</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../es/">Inicio</a><a href="../es/calculadoras/">Calculadoras</a><a href="../es/support/">Ayuda</a><a href="../es/switch/">Cambiar de app</a><a href="../es/privacy/">Privacidad</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

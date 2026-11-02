@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calculadora de salinidad: de ppt a densidad (EOS-80)</title>
+<meta name="description" content="Convierte la salinidad del acuario marino de ppt a densidad y al revés con la ecuación del agua de mar EOS-80, a 25/25 °C, 60/60 °F o 77/77 °F.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/es/calculadora-salinidad-densidad/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/salinity-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/salzgehalt-dichte-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/salinite-densite-calcul/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/zoutgehalte-soortelijk-gewicht/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/salinita-densita-calcolo/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-salinidad-densidad/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/tuzluluk-yogunluk-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/salinity-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calculadora de salinidad: de ppt a densidad (EOS-80)">
+<meta property="og:description" content="Convierte la salinidad del acuario marino de ppt a densidad y al revés con la ecuación del agua de mar EOS-80, a 25/25 °C, 60/60 °F o 77/77 °F.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/es/calculadora-salinidad-densidad/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../es/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../es/calculadoras/" aria-current="page">Calculadoras</a>
+<nav class="lang" aria-label="Idioma"><a href="../../salinity-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/salzgehalt-dichte-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/salinite-densite-calcul/" hreflang="fr" lang="fr">FR</a><a href="../../nl/zoutgehalte-soortelijk-gewicht/" hreflang="nl" lang="nl">NL</a><a href="../../it/salinita-densita-calcolo/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-salinidad-densidad/" hreflang="es" lang="es" aria-current="page">ES</a><a href="../../tr/tuzluluk-yogunluk-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../es/calculadoras/">Calculadoras</a></p>
+<h1>Calculadora de salinidad: de ppt a densidad</h1>
+<p class="lead">35 ppt son una densidad de 1,0264 a 25/25 °C y de 1,0269 a 60/60 °F. Escribe ppt o densidad, elige la temperatura de referencia de tu refractómetro o densímetro y obtén el otro valor.</p>
+<div id="calc-nojs" class="callout"><p>La calculadora necesita JavaScript. La fórmula y el ejemplo de abajo sirven sin él.</p></div>
+<section class="calc" aria-labelledby="h-sal">
+<h2 id="h-sal">Salinidad y densidad</h2>
+<form class="panel" data-calc="sal" novalidate>
+<fieldset class="choice"><legend>Temperatura de referencia</legend><div class="pills"><label class="pill"><input type="radio" name="sl-ref" value="c25" checked><span>25/25 °C</span></label><label class="pill"><input type="radio" name="sl-ref" value="f60"><span>60/60 °F</span></label><label class="pill"><input type="radio" name="sl-ref" value="f77"><span>77/77 °F</span></label></div></fieldset>
+<p class="hint">Viene impresa en el refractómetro o en su manual. 77/77 °F es lo mismo que 25/25 °C.</p>
+<div class="field-row two"><div class="field "><label for="sl-ppt">Salinidad (ppt)</label>
+<input id="sl-ppt" name="sl-ppt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="35" aria-describedby="sl-ppt-err">
+<span class="err" id="sl-ppt-err" hidden></span></div><div class="field "><label for="sl-sg">Densidad (SG)</label>
+<input id="sl-sg" name="sl-sg" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="sl-sg-err">
+<span class="err" id="sl-sg-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-sal" aria-live="polite" hidden><h3 class="sr">Resultado</h3></div>
+</section>
+<p class="note">Funciona en tu navegador. Nada de lo que escribes se guarda ni se envía.</p>
+<script type="application/json" id="calc-i18n">{"locale":"es-ES","decimal":",","errNumber":"Escribe un número, por ejemplo 8,5","errRange":"Entre {min} y {max}","fillIn":"Completa los campos de arriba para ver el resultado.","fixErrors":"Revisa el campo marcado.","flags":{"warn":"Cuidado","info":"Nota","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"día","other":"días"},"page":{"result":"{ppt} ppt = densidad {sg} a {ref}","density":"Densidad absoluta a la temperatura de referencia: {rho} kg/m³.","seawater":"El agua de mar natural tiene unos 35 ppt (densidad {sg35} a {ref}).","outOfRange":"Ningún agua de mar entre 0 y 50 ppt tiene esa densidad. Revisa la lectura y la temperatura de referencia.","refs":{"c25":"25/25 °C","f60":"60/60 °F","f77":"77/77 °F"}}}</script>
+<div class="prose"><h2 id="table-h">ppt a densidad</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">ppt</th><th scope="col">Densidad 25/25 °C</th><th scope="col">Densidad 60/60 °F</th></tr></thead>
+<tbody><tr><td>30</td><td>1,0226</td><td>1,0230</td></tr><tr><td>31</td><td>1,0233</td><td>1,0238</td></tr><tr><td>32</td><td>1,0241</td><td>1,0245</td></tr><tr><td>33</td><td>1,0249</td><td>1,0253</td></tr><tr><td>34</td><td>1,0256</td><td>1,0261</td></tr><tr><td>35</td><td>1,0264</td><td>1,0269</td></tr><tr><td>36</td><td>1,0271</td><td>1,0276</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>Cómo se calcula</h2>
+<h3>Qué es la densidad</h3>
+<p>La densidad que marca un refractómetro o un densímetro es relativa (SG, del inglés specific gravity): la densidad del agua del acuario dividida entre la del agua pura, las dos a una temperatura de referencia. La misma agua da una densidad algo distinta a 25/25 °C que a 60/60 °F; por eso un 1,025 en un aparato y un 1,025 en otro no siempre son la misma salinidad.</p>
+<h3>La ecuación</h3>
+<p>La calculadora usa <span class="nw">EOS-80</span>, la ecuación internacional de estado del agua de mar a una atmósfera (UNESCO 1981; Millero y Poisson 1981). Da la densidad del agua de mar a partir de la salinidad y la temperatura:</p>
+<p class="f">ρ = ρw + A·S + B·S<sup>1,5</sup> + C·S²</p>
+<p>donde ρw es la del agua pura y A, B y C son polinomios de la temperatura. A 35 ppt y 25 °C da 1023,343 kg/m³, frente a 997,048 del agua pura: densidad 1,0264. Para pasar de densidad a ppt, la calculadora recorre la ecuación por bisección hasta que coincide con tu lectura.</p>
+<h3>A qué apuntar</h3>
+<p>El agua de mar natural tiene unos 35 ppt. Casi todos mantienen entre 33 y 35,5, y les importa más que sea estable que el número exacto. Calibra el refractómetro con líquido de calibración de 35 ppt, no solo con agua de ósmosis.</p>
+<h2>Ejemplo práctico</h2>
+<p>Tu refractómetro está ajustado a 25/25 °C y marca 1,025. La calculadora da 33,2 ppt, unos 1,8 ppt por debajo del agua de mar natural. Para llegar a 35 ppt repondrías con agua salada, no dulce, hasta que marque 1,0264.</p>
+<p>Esos mismos 35 ppt en un densímetro calibrado a 60/60 °F marcan 1,0269.</p>
+<p class="callout">Son estimaciones. Los kits de prueba tienen tolerancias y cada acuario consume distinto: reparte la dosis en varias tomas y vuelve a medir antes de la siguiente.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Guarda los números, no solo el resultado</h2>
+<p>En Coralline apuntas la salinidad en ppt o en densidad, a 25/25 °C o 60/60 °F, y si cambias de unidad se convierten todas las lecturas antiguas. La gráfica de salinidad enseña la deriva por evaporación antes de que acabe siendo un problema de dosis. El registro es gratis e ilimitado, sin cuenta ni suscripción, y funciona sin conexión. Pro es un solo pago.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Disponible en</small><b>Google Play</b></a><span class="soon">Versión para iPhone en camino</span></div>
+</aside>
+<h2>Fuentes</h2>
+<ol class="sources"><li><a href="https://marineinfo.org/doc/publication/246046" rel="noopener">UNESCO (1981). Tenth report of the Joint Panel on Oceanographic Tables and Standards. UNESCO Technical Papers in Marine Science 36 (<span class="nw">EOS-80</span>)</a></li><li><a href="https://doi.org/10.1016/0198-0149(81)90122-9" rel="noopener">F. J. Millero y A. Poisson (1981). International one-atmosphere equation of state of seawater. Deep-Sea Research 28A, 625–629</a></li></ol>
+<p class="updated">Comprobado con las fuentes: 2026-11-02</p>
+<p class="more"><b>Más calculadoras:</b> <a href="../../es/calculadora-kh-alcalinidad/">KH (alcalinidad)</a> · <a href="../../es/calculadora-calcio-magnesio/">Calcio y magnesio</a> · <a href="../../es/fosfato-ppb-ppm-conversion/">Kits de fósforo y nitrato</a> · <a href="../../es/calculadora-kalkwasser/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline es un registro de parámetros y una calculadora de dosis para acuarios marinos. Este sitio no usa cookies ni rastreadores.</span>
+<nav><a href="../../es/">Inicio</a><a href="../../es/calculadoras/">Calculadoras</a><a href="../../es/support/">Ayuda</a><a href="../../es/switch/">Cambiar de app</a><a href="../../es/privacy/">Privacidad</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

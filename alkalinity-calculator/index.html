@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Alkalinity calculator: dKH to ppm, meq/L and baking soda dose</title>
+<meta name="description" content="Convert dKH to ppm CaCO3 and meq/L, and work out grams of baking soda or soda ash to raise reef tank alkalinity, with a 1.4 dKH a day limit.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/alkalinity-calculator/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/alkalinity-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/kh-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-kh-alcalinite/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/kh-alkaliniteit-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-kh-alcalinita/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-kh-alcalinidad/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kh-alkalinite-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/alkalinity-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Alkalinity calculator: dKH to ppm, meq/L and baking soda dose">
+<meta property="og:description" content="Convert dKH to ppm CaCO3 and meq/L, and work out grams of baking soda or soda ash to raise reef tank alkalinity, with a 1.4 dKH a day limit.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/alkalinity-calculator/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../calculators/" aria-current="page">Calculators</a>
+<nav class="lang" aria-label="Language"><a href="../alkalinity-calculator/" hreflang="en" lang="en" aria-current="page">EN</a><a href="../de/kh-rechner/" hreflang="de" lang="de">DE</a><a href="../fr/calcul-kh-alcalinite/" hreflang="fr" lang="fr">FR</a><a href="../nl/kh-alkaliniteit-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../it/calcolo-kh-alcalinita/" hreflang="it" lang="it">IT</a><a href="../es/calculadora-kh-alcalinidad/" hreflang="es" lang="es">ES</a><a href="../tr/kh-alkalinite-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../calculators/">Calculators</a></p>
+<h1>Alkalinity calculator: dKH, meq/L, ppm and baking soda</h1>
+<p class="lead">1 dKH = 0.357 meq/L = 17.9 ppm CaCO3. Type in any unit to convert, or enter your tank volume to get grams of baking soda or soda ash for your target.</p>
+<div id="calc-nojs" class="callout"><p>The calculator needs JavaScript. The formula and the worked example below work without it.</p></div>
+<section class="calc" aria-labelledby="h-alkconv">
+<h2 id="h-alkconv">Convert alkalinity units</h2>
+<form class="panel" data-calc="alkconv" novalidate>
+<div class="field-row three"><div class="field "><label for="ac-dkh">dKH</label>
+<input id="ac-dkh" name="ac-dkh" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="8.5" aria-describedby="ac-dkh-err">
+<span class="err" id="ac-dkh-err" hidden></span></div><div class="field "><label for="ac-meq">meq/L</label>
+<input id="ac-meq" name="ac-meq" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="ac-meq-err">
+<span class="err" id="ac-meq-err" hidden></span></div><div class="field "><label for="ac-ppm">ppm CaCO3</label>
+<input id="ac-ppm" name="ac-ppm" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="ac-ppm-err">
+<span class="err" id="ac-ppm-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-alkconv" aria-live="polite" hidden><h3 class="sr">Result</h3></div>
+</section><section class="calc" aria-labelledby="h-alkraise">
+<h2 id="h-alkraise">Raise alkalinity to target</h2>
+<form class="panel" data-calc="alkraise" novalidate>
+<div class="field"><label for="ar-vol">Net water volume</label>
+<div class="joined"><input id="ar-vol" name="ar-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="75" aria-describedby="ar-vol-hint ar-vol-err">
+<select id="ar-vol-unit" name="ar-vol-unit" aria-label="Volume unit"><option value="L">litres</option><option value="gal" selected>US gallons</option></select></div>
+<span class="hint" id="ar-vol-hint">The water actually in the system: display, sump and pipes, minus rock and sand.</span><span class="err" id="ar-vol-err" hidden></span></div>
+<div class="field"><label for="ar-unit">Unit you test in</label><select id="ar-unit" name="ar-unit"><option value="dkh" selected>dKH</option><option value="meq">meq/L</option><option value="ppm">ppm CaCO3</option></select></div>
+<div class="field-row two"><div class="field "><label for="ar-cur">Alkalinity now</label>
+<input id="ar-cur" name="ar-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="ar-cur-err">
+<span class="err" id="ar-cur-err" hidden></span></div><div class="field "><label for="ar-tgt">Target</label>
+<input id="ar-tgt" name="ar-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="8.5" aria-describedby="ar-tgt-hint ar-tgt-err">
+<span class="hint" id="ar-tgt-hint">Most reefs aim for 7 to 11 dKH. Pick a target and keep it steady.</span><span class="err" id="ar-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>What you dose</legend><div class="pills"><label class="pill"><input type="radio" name="ar-salt" value="bicarb" checked><span>Baking soda (NaHCO3)</span></label><label class="pill"><input type="radio" name="ar-salt" value="sodaash"><span>Soda ash (Na2CO3)</span></label></div></fieldset>
+</form>
+<div class="res" id="res-alkraise" aria-live="polite" hidden><h3 class="sr">Result</h3></div>
+</section>
+<p class="note">Runs in your browser. Nothing you type is stored or sent.</p>
+<script type="application/json" id="calc-i18n">{"locale":"en-US","decimal":".","errNumber":"Enter a number, like 8.5","errRange":"Between {min} and {max}","fillIn":"Fill in the fields above to see the result.","fixErrors":"Check the marked field.","flags":{"warn":"Careful","info":"Note","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"day","other":"days"},"page":{"conv":"{dkh} dKH = {meq} meq/L = {ppm} ppm CaCO3","add":"of {salt}","total":"Total to go from {from} to {to}.","split":"That rise is more than {cap} a day. Split it: {perDay} a day for {n} {days}, about {rise} a day.","oneDay":"Within {cap} a day. Add it in a few portions over the day, then test again.","noRaise":"Your alkalinity is already at or above the target, so there is nothing to add. To bring it down, stop dosing alkalinity and let the tank use it up, or do a water change.","sodaNote":"Soda ash raises pH more than baking soda. Dissolve it fully and add it slowly.","salts":{"bicarb":"baking soda","sodaash":"soda ash"},"units":{"dkh":"dKH","meq":"meq/L","ppm":"ppm"}}}</script>
+<div class="prose"><h2 id="table-h">dKH to meq/L and ppm</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">dKH</th><th scope="col">meq/L</th><th scope="col">ppm CaCO3</th></tr></thead>
+<tbody><tr><td>6</td><td>2.14</td><td>107</td></tr><tr><td>7</td><td>2.50</td><td>125</td></tr><tr><td>7.5</td><td>2.68</td><td>134</td></tr><tr><td>8</td><td>2.86</td><td>143</td></tr><tr><td>8.5</td><td>3.04</td><td>152</td></tr><tr><td>9</td><td>3.21</td><td>161</td></tr><tr><td>10</td><td>3.57</td><td>179</td></tr><tr><td>11</td><td>3.93</td><td>196</td></tr><tr><td>12</td><td>4.29</td><td>214</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>How it is calculated</h2>
+<h3>Units</h3>
+<p>1 meq/L = 2.8 dKH = 50 ppm CaCO<sub>3</sub>. So dKH ÷ 2.8 gives meq/L, and meq/L × 50 gives ppm. 8.5 dKH is 3.04 meq/L or 152 ppm.</p>
+<h3>Grams to add</h3>
+<p>1 mmol of baking soda (NaHCO<sub>3</sub>, 84.007 g/mol) adds 1 meq of alkalinity. 1 mmol of soda ash (Na<sub>2</sub>CO<sub>3</sub>, 105.988 g/mol) adds 2 meq. So:</p>
+<p class="f">grams = rise in meq/L × litres × 84.007 ÷ 1000 (baking soda)<br>grams = rise in meq/L × litres × 52.994 ÷ 1000 (soda ash)</p>
+<p>Soda ash is baking soda baked in the oven: it doses about 37 % less weight for the same rise and pushes pH up, where baking soda nudges it slightly down.</p>
+<h3>How fast</h3>
+<p>The calculator keeps each day’s rise at or under 1.4 dKH (0.5 meq/L). A bigger correction is split evenly over days. Corals mind a fast swing more than a level that is a bit off, so slow is the safe side.</p>
+<p>Target below what you have? There is nothing to add. Stop dosing alkalinity and let the tank use it up, or do a water change with salt mixed to a lower alkalinity.</p>
+<h2>Worked example</h2>
+<p>A 75 US gal tank (283.9 L) tests at 7.0 dKH and you want 8.5. The rise is 1.5 dKH = 0.536 meq/L.</p>
+<p class="f">1.5 ÷ 2.8 × 283.9 × 84.007 ÷ 1000 = 12.78 g of baking soda</p>
+<p>1.5 dKH is more than 1.4 in a day, so the calculator splits it: 6.39 g a day for 2 days, 0.75 dKH a day. Dissolve each dose in RO/DI water and add it slowly to a spot with good flow.</p>
+<p class="callout">These are estimates. Test kits have tolerances and every tank uses a little differently: dose in parts and test again before the next dose.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Keep the numbers, not just the answer</h2>
+<p>Coralline logs every alkalinity test and charts it against your target band, with a card that tells you how many days alk has held steady. Once you log your daily dose, it works out how much your tank really uses and suggests the dose that holds your target. Logging is free and unlimited, no account, no subscription, works offline. Pro is one payment.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Get it on</small><b>Google Play</b></a><span class="soon">iPhone version coming</span></div>
+</aside>
+<h2>Sources</h2>
+<ol class="sources"><li><a href="https://web.archive.org/web/20180110095902/http://www.advancedaquarist.com/2002/2/chemistry" rel="noopener">R. Holmes-Farley, Chemistry and the Aquarium: What is Alkalinity? Advanced Aquarist, February 2002 (archived copy)</a></li><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, November 2002 (archived copy)</a></li><li><a href="http://reefkeeping.com/issues/2006-02/rhf/index.php" rel="noopener">R. Holmes-Farley, An Improved Do-it-Yourself Two-Part Calcium and Alkalinity Supplement System. Reefkeeping, February 2006</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Standard atomic weights (molar masses)</a></li></ol>
+<p class="updated">Checked against the sources: 2026-11-02</p>
+<p class="more"><b>More calculators:</b> <a href="../calcium-magnesium-calculator/">Calcium and magnesium</a> · <a href="../salinity-calculator/">Salinity and SG</a> · <a href="../phosphate-converter/">Phosphorus and nitrate kits</a> · <a href="../kalkwasser-calculator/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline is a water test log and dosing calculator for reef aquariums. No cookies or trackers on this site.</span>
+<nav><a href="../">Home</a><a href="../calculators/">Calculators</a><a href="../support/">Support</a><a href="../switch/">Switching apps</a><a href="../privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../assets/calc-ui.js"></script>
+</body>
+</html>

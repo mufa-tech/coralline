@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calcul kalkwasser : calcium et dKH par jour via l’appoint</title>
+<meta name="description" content="Combien de calcium et de KH votre appoint en kalkwasser apporte par jour, et combien de litres d’eau de chaux couvrent la consommation de KH de votre bac.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/fr/calcul-kalkwasser/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/kalkwasser-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/kalkwasser-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-kalkwasser/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/kalkwater-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-kalkwasser/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-kalkwasser/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalkwasser-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/kalkwasser-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calcul kalkwasser : calcium et dKH par jour via l’appoint">
+<meta property="og:description" content="Combien de calcium et de KH votre appoint en kalkwasser apporte par jour, et combien de litres d’eau de chaux couvrent la consommation de KH de votre bac.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/fr/calcul-kalkwasser/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../fr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../fr/calculateurs/" aria-current="page">Calculateurs</a>
+<nav class="lang" aria-label="Langue"><a href="../../kalkwasser-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/kalkwasser-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-kalkwasser/" hreflang="fr" lang="fr" aria-current="page">FR</a><a href="../../nl/kalkwater-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-kalkwasser/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-kalkwasser/" hreflang="es" lang="es">ES</a><a href="../../tr/kalkwasser-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../fr/calculateurs/">Calculateurs</a></p>
+<h1>Calcul kalkwasser</h1>
+<p class="lead">Le kalkwasser saturé contient environ 800 ppm de calcium et 40 meq/L (112 dKH) d’alcalinité. 2 L par jour dans un système de 400 L apportent 4 ppm de calcium et 0,56 dKH par jour.</p>
+<div id="calc-nojs" class="callout"><p>Le calculateur a besoin de JavaScript. La formule et l’exemple chiffré plus bas restent lisibles sans.</p></div>
+<section class="calc" aria-labelledby="h-kalk">
+<h2 id="h-kalk">Kalkwasser</h2>
+<form class="panel" data-calc="kalk" novalidate>
+<div class="field"><label for="kk-vol">Volume d’eau net</label>
+<div class="joined"><input id="kk-vol" name="kk-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="kk-vol-hint kk-vol-err">
+<select id="kk-vol-unit" name="kk-vol-unit" aria-label="Unité de volume"><option value="L" selected>litres</option><option value="gal">gallons US</option></select></div>
+<span class="hint" id="kk-vol-hint">L’eau réellement dans le système : bac principal, décantation et tuyauterie, moins les pierres et le sable.</span><span class="err" id="kk-vol-err" hidden></span></div>
+<div class="field"><label for="kk-top">Appoint en kalkwasser par jour</label>
+<div class="joined"><input id="kk-top" name="kk-top" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kk-top-err">
+<select id="kk-top-unit" name="kk-top-unit" aria-label="Unité de l’appoint"><option value="L" selected>litres</option><option value="gal">gallons US</option></select></div><span class="err" id="kk-top-err" hidden></span></div>
+<div class="field-row two"><div class="field "><label for="kk-sat">Saturation (%)</label>
+<input id="kk-sat" name="kk-sat" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="100" aria-describedby="kk-sat-hint kk-sat-err">
+<span class="hint" id="kk-sat-hint">100 si l’eau de chaux vient d’être préparée et reste limpide. Un kalk ancien ou dilué en contient moins.</span><span class="err" id="kk-sat-err" hidden></span></div><div class="field "><label for="kk-use">Votre consommation de KH (dKH par jour, facultatif)</label>
+<input id="kk-use" name="kk-use" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kk-use-hint kk-use-err">
+<span class="hint" id="kk-use-hint">D’après vos tests : de combien le KH baisse par jour sans dosage.</span><span class="err" id="kk-use-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-kalk" aria-live="polite" hidden><h3 class="sr">Résultat</h3></div>
+</section>
+<p class="note">Le calcul se fait dans votre navigateur. Rien de ce que vous saisissez n’est enregistré ni envoyé.</p>
+<script type="application/json" id="calc-i18n">{"locale":"fr-FR","decimal":",","errNumber":"Saisissez un nombre, par exemple 8,5","errRange":"Entre {min} et {max}","fillIn":"Remplissez les champs ci-dessus pour voir le résultat.","fixErrors":"Vérifiez le champ signalé.","flags":{"warn":"Attention","info":"À noter","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"jour","other":"jours"},"page":{"caH":"Calcium","alkH":"KH","perDay":"par jour","ca":"+{ca} ppm de calcium par jour","alk":"+{dkh} dKH ({meq} meq/L) par jour","need":"Pour couvrir {use} dKH par jour, il faut {top} de kalkwasser par jour.","noUse":"Avec ce réglage, votre appoint n’apporte rien.","fast":"Ça fait plus de {cap} par jour. Vérifiez vos chiffres, et versez au goutte-à-goutte."}}</script>
+
+<div class="prose">
+<h2>Comment c’est calculé</h2>
+<h3>Ce que contient l’eau de chaux</h3>
+<p>L’eau de chaux, c’est de l’hydroxyde de calcium, Ca(OH)<sub>2</sub>, dissous dans de l’eau osmosée. Saturée à température ambiante, elle contient environ 800 mg/L de calcium. Chaque calcium arrive avec deux ions hydroxyde, qui deviennent de l’alcalinité dans le bac : 800 ÷ 40,078 × 2 = 40 meq/L, soit environ 112 dKH. C’est pour ça que le kalkwasser apporte calcium et KH en proportion.</p>
+<h3>Par jour</h3>
+<p class="f">Ca en ppm par jour = 800 × saturation × litres d’appoint ÷ litres du système<br>KH en meq/L par jour = 40 × saturation × litres d’appoint ÷ litres du système</p>
+<p>Pour couvrir une consommation connue, on inverse : litres par jour = consommation en meq/L × litres du système ÷ (40 × saturation).</p>
+<h3>Limites</h3>
+<p>C’est votre évaporation qui fixe le plafond : le kalkwasser ne passe que par l’appoint. Il fait aussi monter le pH, donc goutte à goutte, lentement, et jamais la partie trouble. Si votre bac consomme plus que l’évaporation ne peut en apporter, complétez avec la méthode Balling ou un autre supplément.</p>
+<h2>Exemple chiffré</h2>
+<p>Système de 400 L, 2 L d’évaporation par jour, entièrement compensés par du kalkwasser saturé.</p>
+<p class="f">Ca : 800 × 2 ÷ 400 = 4 ppm par jour<br>KH : 40 × 2 ÷ 400 = 0,2 meq/L = 0,56 dKH par jour</p>
+<p>Si votre KH baisse de 1 dKH par jour (0,357 meq/L), il faudrait 0,357 × 400 ÷ 40 = 3,57 L de kalkwasser par jour, plus que les 2 L qui s’évaporent.</p>
+<p class="callout">Ce sont des estimations. Les kits de test ont leurs tolérances et chaque bac consomme à sa façon : dosez en plusieurs fois et refaites un test avant la dose suivante.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Gardez l’historique, pas seulement le résultat</h2>
+<p>L’app Coralline a le même calculateur de kalkwasser (Pro), à côté de vos tests notés : vous comparez ce que l’appoint devrait apporter avec ce que fait vraiment votre bac. Saisie gratuite et illimitée, sans compte, sans abonnement, hors ligne. Pro se paie une fois.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Disponible sur</small><b>Google Play</b></a><span class="soon">Version iPhone bientôt disponible</span></div>
+</aside>
+<h2>Sources</h2>
+<ol class="sources"><li><a href="http://reefkeeping.com/issues/2005-01/rhf/index.php" rel="noopener">R. Holmes-Farley, What Your Grandmother Never Told You About Lime. Reefkeeping, janvier 2005</a></li><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, novembre 2002 (copie archivée)</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Masses atomiques standard (Ca 40,078)</a></li></ol>
+<p class="updated">Vérifié d’après les sources : 2026-11-02</p>
+<p class="more"><b>Autres calculateurs:</b> <a href="../../fr/calcul-kh-alcalinite/">KH (alcalinité)</a> · <a href="../../fr/calcul-calcium-magnesium/">Calcium et magnésium</a> · <a href="../../fr/salinite-densite-calcul/">Salinité et densité</a> · <a href="../../fr/phosphate-ppb-ppm-conversion/">Kits phosphore et nitrates</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline est un journal de tests et un calculateur de dosage pour aquarium récifal. Ce site n’utilise ni cookies ni traceurs.</span>
+<nav><a href="../../fr/">Accueil</a><a href="../../fr/calculateurs/">Calculateurs</a><a href="../../fr/support/">Aide</a><a href="../../fr/switch/">Changer d’app</a><a href="../../fr/privacy/">Confidentialité</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

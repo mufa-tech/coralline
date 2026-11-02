@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Fosfor ppb ile fosfat ppm dönüştürme (Hanna) ve NO3-N</title>
+<meta name="description" content="Hanna'nın ppb fosfor (P) okumasını ppm fosfata (PO4), azot olarak nitratı (NO3-N) nitrata (NO3) çevir. Deniz akvaryumları için.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/tr/fosfat-ppb-ppm-donusturme/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/phosphate-converter/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/phosphat-ppb-ppm-umrechnen/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/phosphate-ppb-ppm-conversion/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/fosfaat-ppb-ppm-omrekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/fosfati-ppb-ppm-conversione/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/fosfato-ppb-ppm-conversion/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/fosfat-ppb-ppm-donusturme/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/phosphate-converter/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Fosfor ppb ile fosfat ppm dönüştürme (Hanna) ve NO3-N">
+<meta property="og:description" content="Hanna'nın ppb fosfor (P) okumasını ppm fosfata (PO4), azot olarak nitratı (NO3-N) nitrata (NO3) çevir. Deniz akvaryumları için.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/tr/fosfat-ppb-ppm-donusturme/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../tr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../tr/hesaplayicilar/" aria-current="page">Hesaplayıcılar</a>
+<nav class="lang" aria-label="Dil"><a href="../../phosphate-converter/" hreflang="en" lang="en">EN</a><a href="../../de/phosphat-ppb-ppm-umrechnen/" hreflang="de" lang="de">DE</a><a href="../../fr/phosphate-ppb-ppm-conversion/" hreflang="fr" lang="fr">FR</a><a href="../../nl/fosfaat-ppb-ppm-omrekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/fosfati-ppb-ppm-conversione/" hreflang="it" lang="it">IT</a><a href="../../es/fosfato-ppb-ppm-conversion/" hreflang="es" lang="es">ES</a><a href="../../tr/fosfat-ppb-ppm-donusturme/" hreflang="tr" lang="tr" aria-current="page">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../tr/hesaplayicilar/">Hesaplayıcılar</a></p>
+<h1>Fosfor ppb'den fosfat ppm'e, <span class="nw">NO3-N</span>'den nitrata</h1>
+<p class="lead">Fosfat (PO4) ppm = fosfor (P) ppb × 3,066 ÷ 1000. 30 ppb fosfor, 0,092 ppm fosfat eder. Nitrat (NO3) = azot olarak nitrat (<span class="nw">NO3-N</span>) × 4,427.</p>
+<div id="calc-nojs" class="callout"><p>Hesaplayıcı JavaScript ister. Aşağıdaki formül ve örnek hesap onsuz da okunur.</p></div>
+<section class="calc" aria-labelledby="h-po4">
+<h2 id="h-po4">Fosfordan fosfata</h2>
+<form class="panel" data-calc="po4" novalidate>
+<div class="field-row two"><div class="field "><label for="kt-p">Fosfor, P (ppb)</label>
+<input id="kt-p" name="kt-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="30" aria-describedby="kt-p-hint kt-p-err">
+<span class="hint" id="kt-p-hint">Hanna HI736 gibi ultra düşük aralıklı bir fosfor ölçerin gösterdiği değer.</span><span class="err" id="kt-p-err" hidden></span></div><div class="field "><label for="kt-po4">Fosfat, PO4 (ppm)</label>
+<input id="kt-po4" name="kt-po4" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kt-po4-err">
+<span class="err" id="kt-po4-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-po4" aria-live="polite" hidden><h3 class="sr">Sonuç</h3></div>
+</section><section class="calc" aria-labelledby="h-no3">
+<h2 id="h-no3">Azot olarak nitrattan nitrata</h2>
+<form class="panel" data-calc="no3" novalidate>
+<div class="field-row two"><div class="field "><label for="kt-n">Azot olarak nitrat, <span class="nw">NO3-N</span> (ppm)</label>
+<input id="kt-n" name="kt-n" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kt-n-hint kt-n-err">
+<span class="hint" id="kt-n-hint">Bazı kitler ve laboratuvar raporları nitratı azot olarak verir. Etikete bak.</span><span class="err" id="kt-n-err" hidden></span></div><div class="field "><label for="kt-no3">Nitrat, NO3 (ppm)</label>
+<input id="kt-no3" name="kt-no3" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="kt-no3-err">
+<span class="err" id="kt-no3-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-no3" aria-live="polite" hidden><h3 class="sr">Sonuç</h3></div>
+</section>
+<p class="note">Tarayıcında çalışır. Yazdığın hiçbir şey kaydedilmez, hiçbir yere gönderilmez.</p>
+<script type="application/json" id="calc-i18n">{"locale":"tr-TR","decimal":",","errNumber":"Bir sayı gir, örneğin 8,5","errRange":"{min} ile {max} arasında","fillIn":"Sonucu görmek için yukarıdaki alanları doldur.","fixErrors":"İşaretli alanı kontrol et.","flags":{"warn":"Dikkat","info":"Not","good":"Tamam"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"gün","other":"gün"},"page":{"po4":"{p} ppb P = {po4} ppm PO4","no3":"{n} ppm NO3-N = {no3} ppm NO3"}}</script>
+<div class="prose"><h2 id="table-h">Fosfor ppb ve fosfat ppm tablosu</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">P (ppb)</th><th scope="col">PO4 (ppm)</th></tr></thead>
+<tbody><tr><td>10</td><td>0,031</td></tr><tr><td>20</td><td>0,061</td></tr><tr><td>30</td><td>0,092</td></tr><tr><td>50</td><td>0,153</td></tr><tr><td>100</td><td>0,307</td></tr><tr><td>200</td><td>0,613</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>Nasıl hesaplanıyor</h2>
+<h3>Sayılar neden farklı</h3>
+<p>Fosfor ölçer sadece fosfor atomunu sayar. Fosfat testi ise dört oksijen atomunu da taşıyan PO<sub>4</sub> iyonunun tamamını sayar. Mol kütlelerinin oranı 94,971 ÷ 30,974 = 3,066; ppb ÷ 1000 de ppm verir:</p>
+<p class="f">PO<sub>4</sub> ppm = P ppb × 3,066 ÷ 1000<br>P ppb = PO<sub>4</sub> ppm × 1000 ÷ 3,066</p>
+<h3>Nitrat</h3>
+<p>Azot olarak nitrat, NO<sub>3</sub> içindeki sadece azot atomunu sayar. Oran 62,004 ÷ 14,007 = 4,427:</p>
+<p class="f">NO<sub>3</sub> = NO<sub>3</sub>-N × 4,427</p>
+<p>Yani laboratuvardan gelen 2 ppm NO<sub>3</sub>-N, 8,85 ppm nitrat eder. Resif hedef aralıkları neredeyse her zaman NO<sub>3</sub> olarak yazılır.</p>
+<h2>Örnek hesap</h2>
+<p>Ölçerin 30 ppb gösteriyor.</p>
+<p class="f">30 × 3,066 ÷ 1000 = 0,092 ppm PO<sub>4</sub></p>
+<p>Bu, birçok resifçinin hedeflediği 0,03 ile 0,10 ppm aralığının içinde. 100 ppb ise 0,31 ppm olurdu; çoğu SPS akvaryumu için yüksek.</p>
+<p class="callout">Bunlar tahmindir. Test kitlerinin toleransı var ve her akvaryum biraz farklı tüketir. Dozu parça parça ver ve bir sonraki dozdan önce yeniden test et.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Sadece sonucu değil, testlerini de sakla</h2>
+<p>Coralline fosfatı ppm, ppb ya da doğrudan ölçerden okuduğun ppb fosfor olarak alır ve PO4 olarak saklar; kit değiştirsen de grafiğin tek birimde kalır. Nitratta <span class="nw">NO3-N</span> için de aynısı geçerli. Kayıt ücretsiz ve sınırsız; hesap yok, abonelik yok, internetsiz çalışır. Pro tek ödeme.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Android için</small><b>Google Play</b></a><span class="soon">iPhone sürümü yolda</span></div>
+</aside>
+<h2>Kaynaklar</h2>
+<ol class="sources"><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Standart atom ağırlıkları (P 30,974, O 15,999, N 14,007)</a></li><li><a href="http://reefkeeping.com/issues/2005-08/rhf/index.php" rel="noopener">R. Holmes-Farley, The Units of Measure of Reefkeeping. Reefkeeping, Ağustos 2005</a></li></ol>
+<p class="updated">Kaynaklarla karşılaştırıldı: 2026-11-02</p>
+<p class="more"><b>Diğer hesaplayıcılar:</b> <a href="../../tr/kh-alkalinite-hesaplama/">KH (dKH)</a> · <a href="../../tr/kalsiyum-magnezyum-hesaplama/">Kalsiyum ve magnezyum</a> · <a href="../../tr/tuzluluk-yogunluk-hesaplama/">Tuzluluk ve SG</a> · <a href="../../tr/kalkwasser-hesaplama/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline, deniz akvaryumu için su testi günlüğü ve dozaj hesaplayıcısıdır. Bu sitede çerez ve izleyici yok.</span>
+<nav><a href="../../tr/">Ana sayfa</a><a href="../../tr/hesaplayicilar/">Hesaplayıcılar</a><a href="../../tr/support/">Destek</a><a href="../../tr/switch/">Uygulama değiştirme</a><a href="../../tr/privacy/">Gizlilik</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

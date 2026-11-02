@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Support: Coralline</title>
 <meta name="description" content="Help for Coralline: moving to a new phone, automatic backups, CSV import, widgets, units, how the dosing math works, restoring Pro.">
 <meta name="color-scheme" content="light dark">
@@ -27,17 +28,25 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../calculators/">Calculators</a>
 <nav class="lang" aria-label="Language"><a href="../support/" hreflang="en" lang="en" aria-current="page">EN</a><a href="../de/support/" hreflang="de" lang="de">DE</a><a href="../fr/support/" hreflang="fr" lang="fr">FR</a><a href="../nl/support/" hreflang="nl" lang="nl">NL</a><a href="../it/support/" hreflang="it" lang="it">IT</a><a href="../es/support/" hreflang="es" lang="es">ES</a><a href="../tr/support/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap prose">
 <h1>Support</h1>
 <p class="lead">Answers to what reefers ask most. Still stuck? Send an email and a real person answers.</p>
+<p class="callout">Quick numbers without the app: <a href="../calculators/">free reef calculators</a> for alkalinity, calcium and magnesium, salinity, test kits and kalkwasser.</p>
 <details open><summary>How do I move my data to a new phone?</summary>
 <p>Your log lives on your phone, and Coralline backs it up there every day. There are two ways to move it.</p>
 <p><b>With the phone's own backup.</b> Coralline's data and its daily backups are part of your iCloud or computer backup on iPhone, and of the Android device backup. Set up the new phone from that backup, install Coralline, and your tanks are there.</p>
@@ -57,7 +66,7 @@
 <p>Coming from another app? There is a step-by-step guide: <a href="../switch/">Moving to Coralline from another app</a>.</p>
 <p>Yes, free. Export your tests as CSV from the old app, or save your spreadsheet as CSV. Then <b>Settings → Import → From a CSV file</b>.</p>
 <ul>
-<li>Comma, semicolon or tab separated. Column names in any of the 7 app languages. Dates like 2026-10-18, 18.10.2026 or 10/18/2026; if a date could be read two ways, Coralline asks.</li>
+<li>Comma, semicolon or tab separated. Column names in any of the 7 app languages. Dates like 2026-10-18, 18.10.2026 or 10/18/2026; if a date could be read two ways, Coralline asks.</li>
 <li>Pick the date column, then tell Coralline which parameter and unit each column holds. Columns it doesn't know can become new parameters.</li>
 <li>Import into an existing tank or a new one. Tests already in Coralline are skipped, and <b>Undo import</b> removes the whole import again.</li>
 </ul>
@@ -69,30 +78,30 @@
 <p>Touch and hold the app icon for two shortcuts: <b>Log test</b> and <b>Raise alkalinity</b>.</p>
 </details>
 <details><summary>Is the number of tests limited?</summary>
-<p>No, and it never will be. The free version logs unlimited tests for one tank and keeps all of them. Free charts show the last 30 days; older tests are still saved and appear in the charts with Pro. When the 7-day trial ends, nothing is deleted.</p>
+<p>No, and it never will be. The free version logs unlimited tests for one tank and keeps all of them. Free charts show the last 30 days; older tests are still saved and appear in the charts with Pro. When the 7-day trial ends, nothing is deleted.</p>
 </details>
 <details><summary>Which units can I use?</summary>
 <p><b>Settings → Units.</b></p>
 <ul>
 <li>Volume: litres or US gallons</li>
-<li>Alkalinity: dKH, meq/L or ppm CaCO<sub>3</sub>. 1 meq/L = 2.8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
+<li>Alkalinity: dKH, meq/L or ppm CaCO<sub>3</sub>. 1 meq/L = 2.8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
 <li>Calcium, magnesium, nitrate, phosphate, potassium: ppm (mg/L)</li>
 <li>Salinity: ppt or SG. Temperature: °C or °F.</li>
 </ul>
 <p>Coralline stores every value in one base unit, so switching units never changes your data.</p>
 </details>
 <details><summary>My test kit reads phosphorus in ppb. How does that compare to phosphate?</summary>
-<p>Phosphate (PO<sub>4</sub>) in ppm = phosphorus (P) in ppb × 3.066 ÷ 1000. So 100 ppb P is 0.31 ppm PO<sub>4</sub>.</p>
+<p>Phosphate (PO<sub>4</sub>) in ppm = phosphorus (P) in ppb × 3.066 ÷ 1000. So 100 ppb P is 0.31 ppm PO<sub>4</sub>.</p>
 <p>Kits that read nitrate as nitrogen: NO<sub>3</sub> = NO<sub>3</sub>-N × 4.427. The <b>Test kits</b> tool (Pro) does both for you.</p>
 </details>
 <details><summary>How are the doses and numbers calculated?</summary>
 <ul>
-<li><b>Raise to target.</b> Coralline works out the amount of the ion your tank needs from the water volume and the change, then the grams of the salt you pick. Alkalinity: each meq/L needs 84.0 mg per litre of sodium bicarbonate or 53.0 mg per litre of sodium carbonate. Calcium and magnesium use the molar mass of your salt: calcium chloride dihydrate 147.01 g/mol or anhydrous 110.98, magnesium chloride hexahydrate 203.30, magnesium sulfate heptahydrate 246.47.</li>
-<li><b>Daily limits.</b> Big corrections are split over several days. Defaults per day: Alk 1.4 dKH, Ca 20 ppm, Mg 100 ppm, following Randy Holmes-Farley's conservative guidance. Change them in Settings → Dosing safety.</li>
-<li><b>Kalkwasser.</b> Saturated limewater holds about 800 ppm calcium and 40 meq/L (about 112 dKH) of alkalinity. Your daily top-off in litres, scaled by the saturation you set, gives the daily rise in your tank.</li>
-<li><b>Dose from consumption.</b> The slope of your recent tests (least squares) plus the daily dose you logged gives your tank's real daily use. It needs at least 3 tests over 5 days; with less it says it needs more data.</li>
+<li><b>Raise to target.</b> Coralline works out the amount of the ion your tank needs from the water volume and the change, then the grams of the salt you pick. Alkalinity: each meq/L needs 84.0 mg per litre of sodium bicarbonate or 53.0 mg per litre of sodium carbonate. Calcium and magnesium use the molar mass of your salt: calcium chloride dihydrate 147.01 g/mol or anhydrous 110.98, magnesium chloride hexahydrate 203.30, magnesium sulfate heptahydrate 246.47.</li>
+<li><b>Daily limits.</b> Big corrections are split over several days. Defaults per day: Alk 1.4 dKH, Ca 20 ppm, Mg 100 ppm, following Randy Holmes-Farley's conservative guidance. Change them in Settings → Dosing safety.</li>
+<li><b>Kalkwasser.</b> Saturated limewater holds about 800 ppm calcium and 40 meq/L (about 112 dKH) of alkalinity. Your daily top-off in litres, scaled by the saturation you set, gives the daily rise in your tank.</li>
+<li><b>Dose from consumption.</b> The slope of your recent tests (least squares) plus the daily dose you logged gives your tank's real daily use. It needs at least 3 tests over 5 days; with less it says it needs more data.</li>
 <li><b>Water change.</b> New value = old × (1 − f) + new salt mix × f, where f = changed volume ÷ system volume.</li>
-<li><b>Salinity.</b> The EOS-80 equation of state of seawater (UNESCO 1981). At 35 ppt and 25 °C it gives 1023.34 kg/m³ and SG 1.0264 (25/25). Reference temperatures 25/25 °C, 60/60 °F and 77/77 °F.</li>
+<li><b>Salinity.</b> The <span class="nw">EOS-80</span> equation of state of seawater (UNESCO 1981). At 35 ppt and 25 °C it gives 1023.34 kg/m³ and SG 1.0264 (25/25). Reference temperatures 25/25 °C, 60/60 °F and 77/77 °F.</li>
 </ul>
 <p>Every formula is unit tested against hand-worked values. Sources are listed below.</p>
 </details>
@@ -100,7 +109,7 @@
 <p>Open the Pro screen (Settings → Coralline Pro, or tap any Pro feature) and tap <b>Restore purchases</b>. Use the Apple ID or Google account you bought Pro with. It needs a connection for a moment; after that Pro works offline.</p>
 </details>
 <details><summary>How does the 7-day trial work?</summary>
-<p>Every Pro feature for 7 days. Nothing renews and nothing is charged automatically. When it ends, Coralline goes back to Free and keeps everything you logged.</p>
+<p>Every Pro feature for 7 days. Nothing renews and nothing is charged automatically. When it ends, Coralline goes back to Free and keeps everything you logged.</p>
 </details>
 <details><summary>My reminders come late or not at all.</summary>
 <p>Allow notifications for Coralline in your phone's settings. On Android, reminders arrive at an approximate time to save battery, so one can be a few minutes late. Battery savers that close apps can delay them more.</p>
@@ -110,7 +119,7 @@
 </details>
 <h2>Sources</h2>
 <ol class="sources">
-<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (EOS-80)</li>
+<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (<span class="nw">EOS-80</span>)</li>
 <li>Millero, F. J. &amp; Poisson, A. (1981). International one-atmosphere equation of state of seawater. <i>Deep-Sea Research</i> 28A, 625–629.</li>
 <li>Holmes-Farley, R. (2002). Solving calcium and alkalinity problems. <i>Advanced Aquarist</i>.</li>
 <li>Holmes-Farley, R. (2004). Reef aquarium water parameters. <i>Reefkeeping Magazine</i>.</li>
@@ -123,7 +132,7 @@
 </main>
 <footer><div class="wrap">
 <span>Coralline is a water test log and dosing calculator for reef aquariums. No cookies or trackers on this site.</span>
-<nav><a href="../">Home</a><a href="../support/">Support</a><a href="../switch/">Switching apps</a><a href="../privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../">Home</a><a href="../calculators/">Calculators</a><a href="../support/">Support</a><a href="../switch/">Switching apps</a><a href="../privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

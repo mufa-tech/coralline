@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Coralline: logboek en doseercalculator voor je zeewateraquarium</title>
 <meta name="description" content="Offline logboek voor waterwaarden en doseercalculator voor je zeewateraquarium. Onbeperkt meten, geen account, geen abonnement.">
 <meta name="color-scheme" content="light dark">
@@ -27,12 +28,19 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/nl/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../nl/"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../nl/rekenhulp/">Rekenhulp</a>
 <nav class="lang" aria-label="Taal"><a href="../" hreflang="en" lang="en">EN</a><a href="../de/" hreflang="de" lang="de">DE</a><a href="../fr/" hreflang="fr" lang="fr">FR</a><a href="../nl/" hreflang="nl" lang="nl" aria-current="page">NL</a><a href="../it/" hreflang="it" lang="it">IT</a><a href="../es/" hreflang="es" lang="es">ES</a><a href="../tr/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap hero">
@@ -43,17 +51,22 @@
 <a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline"><small>Ontdek het op</small><b>Google Play</b></a>
 </div>
 <p class="promise">Geen account. Geen abonnement. Offline.</p>
-<p class="note">Gratis voor één bak met onbeperkt testen. Pro betaal je één keer, met 7 dagen gratis proberen.</p>
+<p class="note">Gratis voor één bak met onbeperkt testen. Pro betaal je één keer, met 7 dagen gratis proberen.</p>
 <ul class="features">
 <li>KH, Ca, Mg, nitraat, fosfaat en meer invoeren in zo’n tien seconden. Je laatste waarden staan er al.</li>
 <li>Grafieken met je doelbereik, een stabiliteitskaart en een voorspelling van wanneer een waarde buiten bereik komt.</li>
-<li>Calculators voor ophogen naar doelwaarde, waterverversing en zoutgehalte (EOS-80). Pro voegt kalkwasser, productkalibratie en doseeradvies op basis van je echte verbruik toe.</li>
+<li>Calculators voor ophogen naar doelwaarde, waterverversing en zoutgehalte (<span class="nw">EOS-80</span>). Pro voegt kalkwasser, productkalibratie en doseeradvies op basis van je echte verbruik toe.</li>
 </ul>
-<p class="note" style="margin-top:28px">Vragen? Zie <a href="../nl/support/">Hulp</a>. Wat er met je gegevens gebeurt: <a href="../nl/privacy/">Privacy</a>.</p>
+<section class="card home-calcs" aria-labelledby="hc-h">
+<h2 id="hc-h">Gratis rekenhulp voor je rifaquarium</h2>
+<p>Even snel één getal nodig? dKH naar ppm, hoeveel zuiveringszout voor jouw volume, doses calcium en magnesium, zoutgehalte naar SG, fosfor van de Hanna naar fosfaat, kalkwater. Alles werkt in je browser, je hoeft niets te installeren.</p>
+<p><a class="btn" href="../nl/rekenhulp/">Naar de rekenhulp<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+</section>
+<p class="note gap">Vragen? Zie <a href="../nl/support/">Hulp</a>. Wat er met je gegevens gebeurt: <a href="../nl/privacy/">Privacy</a>.</p>
 </main>
 <footer><div class="wrap">
 <span>Coralline is een logboek en doseercalculator voor je zeewateraquarium. Deze site gebruikt geen cookies of trackers.</span>
-<nav><a href="../nl/">Home</a><a href="../nl/support/">Hulp</a><a href="../nl/switch/">Overstappen</a><a href="../nl/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../nl/">Home</a><a href="../nl/rekenhulp/">Rekenhulp</a><a href="../nl/support/">Hulp</a><a href="../nl/switch/">Overstappen</a><a href="../nl/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

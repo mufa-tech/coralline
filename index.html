@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Coralline: reef tank log and dosing calculator</title>
 <meta name="description" content="Offline water test log and dosing calculator for reef aquariums. Unlimited tests, no account, no subscription.">
 <meta name="color-scheme" content="light dark">
@@ -27,12 +28,19 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="./assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="./"><img src="./assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="./calculators/">Calculators</a>
 <nav class="lang" aria-label="Language"><a href="./" hreflang="en" lang="en" aria-current="page">EN</a><a href="./de/" hreflang="de" lang="de">DE</a><a href="./fr/" hreflang="fr" lang="fr">FR</a><a href="./nl/" hreflang="nl" lang="nl">NL</a><a href="./it/" hreflang="it" lang="it">IT</a><a href="./es/" hreflang="es" lang="es">ES</a><a href="./tr/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap hero">
@@ -47,13 +55,18 @@
 <ul class="features">
 <li>Log Alk, Ca, Mg, nitrate, phosphate and more in about ten seconds. Your last values are already filled in.</li>
 <li>Charts with your target range, a stability card and a forecast of when a value will leave its range.</li>
-<li>Raise-to-target, water change and salinity (EOS-80) calculators. Pro adds kalkwasser, product calibration and dose advice from your real consumption.</li>
+<li>Raise-to-target, water change and salinity (<span class="nw">EOS-80</span>) calculators. Pro adds kalkwasser, product calibration and dose advice from your real consumption.</li>
 </ul>
-<p class="note" style="margin-top:28px">Questions? See <a href="./support/">Support</a>. What happens to your data: <a href="./privacy/">Privacy</a>.</p>
+<section class="card home-calcs" aria-labelledby="hc-h">
+<h2 id="hc-h">Free reef calculators</h2>
+<p>Need one number right now? dKH to ppm, baking soda for your volume, calcium and magnesium doses, salinity to SG, Hanna phosphorus to phosphate, kalkwasser. They work in your browser, no install.</p>
+<p><a class="btn" href="./calculators/">Open the calculators<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+</section>
+<p class="note gap">Questions? See <a href="./support/">Support</a>. What happens to your data: <a href="./privacy/">Privacy</a>.</p>
 </main>
 <footer><div class="wrap">
 <span>Coralline is a water test log and dosing calculator for reef aquariums. No cookies or trackers on this site.</span>
-<nav><a href="./">Home</a><a href="./support/">Support</a><a href="./switch/">Switching apps</a><a href="./privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="./">Home</a><a href="./calculators/">Calculators</a><a href="./support/">Support</a><a href="./switch/">Switching apps</a><a href="./privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

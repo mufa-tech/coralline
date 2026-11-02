@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Aide : Coralline</title>
 <meta name="description" content="Aide pour Coralline : nouveau téléphone, sauvegardes automatiques, import CSV, widgets, unités, calculs, restaurer Pro.">
 <meta name="color-scheme" content="light dark">
@@ -27,17 +28,25 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/fr/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../../fr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../fr/calculateurs/">Calculateurs</a>
 <nav class="lang" aria-label="Langue"><a href="../../support/" hreflang="en" lang="en">EN</a><a href="../../de/support/" hreflang="de" lang="de">DE</a><a href="../../fr/support/" hreflang="fr" lang="fr" aria-current="page">FR</a><a href="../../nl/support/" hreflang="nl" lang="nl">NL</a><a href="../../it/support/" hreflang="it" lang="it">IT</a><a href="../../es/support/" hreflang="es" lang="es">ES</a><a href="../../tr/support/" hreflang="tr" lang="tr">TR</a></nav>
 </div></header>
 <main class="wrap prose">
 <h1>Aide</h1>
 <p class="lead">Les réponses aux questions les plus fréquentes. Toujours bloqué ? Envoyez un e-mail, une vraie personne vous répond.</p>
+<p class="callout">Des chiffres rapides sans l’app : <a href="../../fr/calculateurs/">calculateurs récifaux gratuits</a> pour le KH, le calcium et le magnésium, la salinité, les kits de test et le kalkwasser.</p>
 <details open><summary>Comment passer mes données sur un nouveau téléphone ?</summary>
 <p>Votre journal est sur votre téléphone, et Coralline le sauvegarde là chaque jour. Il y a deux façons de le déplacer.</p>
 <p><b>Avec la sauvegarde du téléphone.</b> Les données de Coralline et ses sauvegardes quotidiennes font partie de la sauvegarde iCloud ou ordinateur sur iPhone, et de la sauvegarde de l’appareil sur Android. Configurez le nouveau téléphone depuis cette sauvegarde, installez Coralline, et vos bacs sont là.</p>
@@ -49,7 +58,7 @@
 <p>Pro est lié à votre identifiant Apple ou à votre compte Google, pas au fichier. Sur le nouveau téléphone, touchez <b>Restaurer les achats</b> sur l’écran Pro. Le fichier passe entre iPhone et Android ; un achat, lui, ne passe pas d’Apple à Google.</p>
 </details>
 <details><summary>Comment marchent les sauvegardes automatiques ?</summary>
-<p>Une fois par jour, à l’ouverture de l’app, Coralline écrit un fichier de sauvegarde et garde les 7 derniers. Sur iPhone, ils sont dans l’app Fichiers, sous Sur mon iPhone › Coralline › Backups. Sur Android, ils restent dans le stockage de l’app.</p>
+<p>Une fois par jour, à l’ouverture de l’app, Coralline écrit un fichier de sauvegarde et garde les 7 derniers. Sur iPhone, ils sont dans l’app Fichiers, sous Sur mon iPhone › Coralline › Backups. Sur Android, ils restent dans le stockage de l’app.</p>
 <p><b>Réglages → Importer → Voir les sauvegardes</b> les liste. Touchez-en une pour la partager, ou pour la restaurer et revenir à ce jour-là (les tests notés depuis sont perdus). <b>Sauvegarder maintenant</b> en crée une tout de suite.</p>
 <p>Il n’y a ni serveur ni compte : personne ne peut récupérer votre journal à votre place. Les fichiers quotidiens sont sur le même téléphone, alors gardez de temps en temps une copie ailleurs. Désinstaller Coralline efface ses données et ses sauvegardes.</p>
 </details>
@@ -57,7 +66,7 @@
 <p>Vous venez d’une autre app ? Le guide pas à pas : <a href="../../fr/switch/">Passer à Coralline depuis une autre app</a>.</p>
 <p>Oui, gratuitement. Exportez vos tests en CSV depuis l’ancienne app, ou enregistrez votre tableur en CSV. Puis <b>Réglages → Importer → Depuis un fichier CSV</b>.</p>
 <ul>
-<li>Séparateur virgule, point-virgule ou tabulation. Noms de colonnes dans l’une des 7 langues de l’app. Dates comme 2026-10-18, 18.10.2026 ou 10/18/2026 ; si une date peut se lire de deux façons, Coralline demande.</li>
+<li>Séparateur virgule, point-virgule ou tabulation. Noms de colonnes dans l’une des 7 langues de l’app. Dates comme 2026-10-18, 18.10.2026 ou 10/18/2026 ; si une date peut se lire de deux façons, Coralline demande.</li>
 <li>Choisissez la colonne de date, puis indiquez pour chaque colonne le paramètre et l’unité. Les colonnes inconnues peuvent devenir de nouveaux paramètres.</li>
 <li>Import dans un bac existant ou un nouveau bac. Les tests déjà présents sont ignorés, et <b>Annuler l’import</b> retire tout l’import.</li>
 </ul>
@@ -69,38 +78,38 @@
 <p>Un appui long sur l’icône de l’app donne deux raccourcis : <b>Saisir un test</b> et <b>Remonter le KH</b>.</p>
 </details>
 <details><summary>Le nombre de tests est-il limité ?</summary>
-<p>Non, et ça ne changera pas. La version gratuite enregistre des tests illimités pour un bac et les garde tous. Les graphiques gratuits montrent les 30 derniers jours ; les tests plus anciens restent enregistrés et apparaissent dans les graphiques avec Pro. À la fin des 7 jours d’essai, rien n’est effacé.</p>
+<p>Non, et ça ne changera pas. La version gratuite enregistre des tests illimités pour un bac et les garde tous. Les graphiques gratuits montrent les 30 derniers jours ; les tests plus anciens restent enregistrés et apparaissent dans les graphiques avec Pro. À la fin des 7 jours d’essai, rien n’est effacé.</p>
 </details>
 <details><summary>Quelles unités puis-je utiliser ?</summary>
 <p><b>Réglages → Unités.</b></p>
 <ul>
 <li>Volume : litres ou gallons US</li>
-<li>KH : dKH, meq/L ou ppm CaCO<sub>3</sub>. 1 meq/L = 2,8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
+<li>KH : dKH, meq/L ou ppm CaCO<sub>3</sub>. 1 meq/L = 2,8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
 <li>Calcium, magnésium, nitrates, phosphates, potassium : ppm (mg/L)</li>
 <li>Salinité : ppt ou densité. Température : °C ou °F.</li>
 </ul>
 <p>Coralline enregistre chaque valeur dans une unité de base : changer d’unité ne modifie jamais vos données.</p>
 </details>
 <details><summary>Mon kit mesure le phosphore en ppb. Comment le comparer aux phosphates ?</summary>
-<p>Phosphates (PO<sub>4</sub>) en ppm = phosphore (P) en ppb × 3,066 ÷ 1000. 100 ppb de P font donc 0,31 ppm de PO<sub>4</sub>.</p>
+<p>Phosphates (PO<sub>4</sub>) en ppm = phosphore (P) en ppb × 3,066 ÷ 1000. 100 ppb de P font donc 0,31 ppm de PO<sub>4</sub>.</p>
 <p>Kits qui donnent les nitrates en azote : NO<sub>3</sub> = N-NO<sub>3</sub> × 4,427. L’outil <b>Kits de test</b> (Pro) fait les deux.</p>
 </details>
 <details><summary>Comment sont faits les calculs ?</summary>
 <ul>
-<li><b>Remonter à la cible.</b> Coralline calcule la quantité d’ion nécessaire à partir du volume d’eau et de l’écart, puis les grammes du sel choisi. KH : chaque meq/L demande 84,0 mg de bicarbonate de soude ou 53,0 mg de carbonate de sodium par litre. Calcium et magnésium utilisent la masse molaire de votre sel : chlorure de calcium dihydraté 147,01 g/mol ou anhydre 110,98, chlorure de magnésium hexahydraté 203,30, sulfate de magnésium heptahydraté 246,47.</li>
-<li><b>Limites journalières.</b> Les grosses corrections sont réparties sur plusieurs jours. Par défaut, par jour : KH 1,4 dKH, Ca 20 ppm, Mg 100 ppm, selon les recommandations prudentes de Randy Holmes-Farley. Modifiables dans Réglages → Sécurité du dosage.</li>
-<li><b>Kalkwasser.</b> L’eau de chaux saturée contient environ 800 ppm de calcium et 40 meq/L (environ 112 dKH). Votre volume d’appoint quotidien en litres, multiplié par le taux de saturation réglé, donne la hausse quotidienne dans le bac.</li>
-<li><b>Dosage selon la consommation.</b> La pente de vos derniers tests (moindres carrés) plus la dose quotidienne notée donne la consommation réelle du bac. Il faut au moins 3 tests sur 5 jours ; sinon, l’app indique qu’il faut plus de données.</li>
+<li><b>Remonter à la cible.</b> Coralline calcule la quantité d’ion nécessaire à partir du volume d’eau et de l’écart, puis les grammes du sel choisi. KH : chaque meq/L demande 84,0 mg de bicarbonate de soude ou 53,0 mg de carbonate de sodium par litre. Calcium et magnésium utilisent la masse molaire de votre sel : chlorure de calcium dihydraté 147,01 g/mol ou anhydre 110,98, chlorure de magnésium hexahydraté 203,30, sulfate de magnésium heptahydraté 246,47.</li>
+<li><b>Limites journalières.</b> Les grosses corrections sont réparties sur plusieurs jours. Par défaut, par jour : KH 1,4 dKH, Ca 20 ppm, Mg 100 ppm, selon les recommandations prudentes de Randy Holmes-Farley. Modifiables dans Réglages → Sécurité du dosage.</li>
+<li><b>Kalkwasser.</b> L’eau de chaux saturée contient environ 800 ppm de calcium et 40 meq/L (environ 112 dKH). Votre volume d’appoint quotidien en litres, multiplié par le taux de saturation réglé, donne la hausse quotidienne dans le bac.</li>
+<li><b>Dosage selon la consommation.</b> La pente de vos derniers tests (moindres carrés) plus la dose quotidienne notée donne la consommation réelle du bac. Il faut au moins 3 tests sur 5 jours ; sinon, l’app indique qu’il faut plus de données.</li>
 <li><b>Changement d’eau.</b> Nouvelle valeur = ancienne × (1 − f) + eau neuve × f, avec f = volume changé ÷ volume du système.</li>
-<li><b>Salinité.</b> L’équation d’état de l’eau de mer EOS-80 (UNESCO 1981). À 35 ppt et 25 °C, elle donne 1023,34 kg/m³ et une densité de 1,0264 (25/25). Températures de référence 25/25 °C, 60/60 °F et 77/77 °F.</li>
+<li><b>Salinité.</b> L’équation d’état de l’eau de mer <span class="nw">EOS-80</span> (UNESCO 1981). À 35 ppt et 25 °C, elle donne 1023,34 kg/m³ et une densité de 1,0264 (25/25). Températures de référence 25/25 °C, 60/60 °F et 77/77 °F.</li>
 </ul>
 <p>Chaque formule est vérifiée par des tests unitaires contre des valeurs calculées à la main. Les sources sont en bas de page.</p>
 </details>
 <details><summary>Comment restaurer mon achat Pro ?</summary>
 <p>Ouvrez l’écran Pro (Réglages → Coralline Pro, ou touchez n’importe quelle fonction Pro) et touchez <b>Restaurer les achats</b>. Utilisez l’identifiant Apple ou le compte Google de l’achat. Il faut une connexion un instant ; ensuite Pro fonctionne hors ligne.</p>
 </details>
-<details><summary>Comment marche l’essai de 7 jours ?</summary>
-<p>Toutes les fonctions Pro pendant 7 jours. Rien ne se renouvelle et rien n’est prélevé automatiquement. À la fin, Coralline repasse en version gratuite et garde tout ce que vous avez noté.</p>
+<details><summary>Comment marche l’essai de 7 jours ?</summary>
+<p>Toutes les fonctions Pro pendant 7 jours. Rien ne se renouvelle et rien n’est prélevé automatiquement. À la fin, Coralline repasse en version gratuite et garde tout ce que vous avez noté.</p>
 </details>
 <details><summary>Mes rappels arrivent en retard ou pas du tout.</summary>
 <p>Autorisez les notifications pour Coralline dans les réglages du téléphone. Sur Android, les rappels arrivent à une heure approximative pour économiser la batterie : l’un d’eux peut avoir quelques minutes de retard. Les économiseurs de batterie qui ferment les apps peuvent les retarder davantage.</p>
@@ -110,7 +119,7 @@
 </details>
 <h2>Sources</h2>
 <ol class="sources">
-<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (EOS-80)</li>
+<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (<span class="nw">EOS-80</span>)</li>
 <li>Millero, F. J. &amp; Poisson, A. (1981). International one-atmosphere equation of state of seawater. <i>Deep-Sea Research</i> 28A, 625–629.</li>
 <li>Holmes-Farley, R. (2002). Solving calcium and alkalinity problems. <i>Advanced Aquarist</i>.</li>
 <li>Holmes-Farley, R. (2004). Reef aquarium water parameters. <i>Reefkeeping Magazine</i>.</li>
@@ -123,7 +132,7 @@
 </main>
 <footer><div class="wrap">
 <span>Coralline est un journal de tests et un calculateur de dosage pour aquarium récifal. Ce site n’utilise ni cookies ni traceurs.</span>
-<nav><a href="../../fr/">Accueil</a><a href="../../fr/support/">Aide</a><a href="../../fr/switch/">Changer d’app</a><a href="../../fr/privacy/">Confidentialité</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../../fr/">Accueil</a><a href="../../fr/calculateurs/">Calculateurs</a><a href="../../fr/support/">Aide</a><a href="../../fr/switch/">Changer d’app</a><a href="../../fr/privacy/">Confidentialité</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

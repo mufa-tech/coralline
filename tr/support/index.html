@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Destek: Coralline</title>
 <meta name="description" content="Coralline yardım: yeni telefona geçiş, otomatik yedekler, CSV içe aktarma, widget, birimler, hesaplar, Pro geri yükleme.">
 <meta name="color-scheme" content="light dark">
@@ -27,17 +28,25 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/tr/support/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../../tr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../tr/hesaplayicilar/">Hesaplayıcılar</a>
 <nav class="lang" aria-label="Dil"><a href="../../support/" hreflang="en" lang="en">EN</a><a href="../../de/support/" hreflang="de" lang="de">DE</a><a href="../../fr/support/" hreflang="fr" lang="fr">FR</a><a href="../../nl/support/" hreflang="nl" lang="nl">NL</a><a href="../../it/support/" hreflang="it" lang="it">IT</a><a href="../../es/support/" hreflang="es" lang="es">ES</a><a href="../../tr/support/" hreflang="tr" lang="tr" aria-current="page">TR</a></nav>
 </div></header>
 <main class="wrap prose">
 <h1>Destek</h1>
 <p class="lead">En çok sorulanların cevapları. Hâlâ takıldıysan e-posta at, gerçek bir insan cevap verir.</p>
+<p class="callout">Uygulamayı açmadan hızlı hesap için: KH, kalsiyum ve magnezyum, tuzluluk, test kitleri ve kalkwasser için <a href="../../tr/hesaplayicilar/">ücretsiz resif hesaplayıcıları</a>.</p>
 <details open><summary>Verilerimi yeni telefona nasıl taşırım?</summary>
 <p>Günlüğün telefonunda durur ve Coralline onu her gün orada yedekler. Taşımanın iki yolu var.</p>
 <p><b>Telefonun kendi yedeğiyle.</b> Coralline'in verileri ve günlük yedekleri iPhone'da iCloud ya da bilgisayar yedeğine, Android'de cihaz yedeğine dahildir. Yeni telefonu bu yedekten kur, Coralline'i yükle; akvaryumların yerinde olur.</p>
@@ -57,7 +66,7 @@
 <p>Başka bir uygulamadan mı geliyorsun? Adım adım rehber: <a href="../../tr/switch/">Başka bir uygulamadan Coralline'e geçiş</a>.</p>
 <p>Evet, ücretsiz. Eski uygulamadan testlerini CSV olarak dışa aktar ya da tablonu CSV olarak kaydet. Sonra <b>Ayarlar → İçe aktar → CSV dosyasından</b>.</p>
 <ul>
-<li>Virgül, noktalı virgül ya da sekmeyle ayrılmış. Sütun adları uygulamanın 7 dilinden herhangi birinde. 2026-10-18, 18.10.2026 ya da 10/18/2026 gibi tarihler; bir tarih iki türlü okunabiliyorsa Coralline sorar.</li>
+<li>Virgül, noktalı virgül ya da sekmeyle ayrılmış. Sütun adları uygulamanın 7 dilinden herhangi birinde. 2026-10-18, 18.10.2026 ya da 10/18/2026 gibi tarihler; bir tarih iki türlü okunabiliyorsa Coralline sorar.</li>
 <li>Tarih sütununu seç, sonra her sütunun hangi parametre ve birim olduğunu belirt. Tanınmayan sütunlar yeni parametre olabilir.</li>
 <li>Var olan bir akvaryuma ya da yeni birine aktar. Coralline'de zaten olan testler atlanır, <b>Aktarmayı geri al</b> tüm aktarımı geri alır.</li>
 </ul>
@@ -69,38 +78,38 @@
 <p>Uygulama simgesine basılı tutunca iki kısayol çıkar: <b>Test kaydet</b> ve <b>KH'yi yükselt</b>.</p>
 </details>
 <details><summary>Test sayısı sınırlı mı?</summary>
-<p>Hayır, ileride de olmayacak. Ücretsiz sürüm bir akvaryum için sınırsız test kaydeder ve hepsini saklar. Ücretsiz grafikler son 30 günü gösterir; daha eski testler kayıtlı kalır ve Pro ile grafiklerde görünür. 7 günlük deneme bitince hiçbir şey silinmez.</p>
+<p>Hayır, ileride de olmayacak. Ücretsiz sürüm bir akvaryum için sınırsız test kaydeder ve hepsini saklar. Ücretsiz grafikler son 30 günü gösterir; daha eski testler kayıtlı kalır ve Pro ile grafiklerde görünür. 7 günlük deneme bitince hiçbir şey silinmez.</p>
 </details>
 <details><summary>Hangi birimleri kullanabilirim?</summary>
 <p><b>Ayarlar → Birimler.</b></p>
 <ul>
 <li>Hacim: litre veya ABD galonu</li>
-<li>KH: dKH, meq/L veya ppm CaCO<sub>3</sub>. 1 meq/L = 2,8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
+<li>KH: dKH, meq/L veya ppm CaCO<sub>3</sub>. 1 meq/L = 2,8 dKH = 50 ppm CaCO<sub>3</sub>.</li>
 <li>Kalsiyum, magnezyum, nitrat, fosfat, potasyum: ppm (mg/L)</li>
 <li>Tuzluluk: ppt veya yoğunluk (SG). Sıcaklık: °C veya °F.</li>
 </ul>
 <p>Coralline her değeri tek bir temel birimde saklar, birim değiştirmek verini asla değiştirmez.</p>
 </details>
 <details><summary>Test kitim fosforu ppb olarak ölçüyor. Fosfatla nasıl karşılaştırırım?</summary>
-<p>Fosfat (PO<sub>4</sub>) ppm = fosfor (P) ppb × 3,066 ÷ 1000. Yani 100 ppb P, 0,31 ppm PO<sub>4</sub> eder.</p>
+<p>Fosfat (PO<sub>4</sub>) ppm = fosfor (P) ppb × 3,066 ÷ 1000. Yani 100 ppb P, 0,31 ppm PO<sub>4</sub> eder.</p>
 <p>Nitratı azot olarak veren kitler için: NO<sub>3</sub> = NO<sub>3</sub>-N × 4,427. <b>Test kitleri</b> aracı (Pro) ikisini de senin yerine yapar.</p>
 </details>
 <details><summary>Coralline nasıl hesaplıyor?</summary>
 <ul>
-<li><b>Hedefe yükselt.</b> Su hacmi ve istenen farktan gereken iyon miktarı, oradan da seçtiğin tuzun gramı çıkar. KH: her meq/L için litre başına 84,0 mg sodyum bikarbonat ya da 53,0 mg sodyum karbonat gerekir. Kalsiyum ve magnezyum tuzunun mol kütlesiyle hesaplanır: kalsiyum klorür dihidrat 147,01 g/mol veya susuz 110,98, magnezyum klorür hekzahidrat 203,30, magnezyum sülfat heptahidrat 246,47.</li>
-<li><b>Günlük sınırlar.</b> Büyük düzeltmeler birkaç güne bölünür. Varsayılan günlük sınırlar: KH 1,4 dKH, Ca 20 ppm, Mg 100 ppm; Randy Holmes-Farley'nin temkinli önerilerine göre. Ayarlar → Dozaj güvenliği'nden değişir.</li>
-<li><b>Kalkwasser.</b> Doymuş kireç suyu yaklaşık 800 ppm kalsiyum ve 40 meq/L (yaklaşık 112 dKH) alkalinite taşır. Günlük takviye suyu miktarın (litre), ayarladığın doygunluk oranıyla çarpılınca akvaryumdaki günlük artışı verir.</li>
-<li><b>Tüketimden doz.</b> Son testlerinin eğimi (en küçük kareler) artı kaydettiğin günlük doz, akvaryumun gerçek günlük tüketimini verir. En az 5 güne yayılmış 3 test gerekir; daha azında uygulama daha fazla veri gerektiğini söyler.</li>
+<li><b>Hedefe yükselt.</b> Su hacmi ve istenen farktan gereken iyon miktarı, oradan da seçtiğin tuzun gramı çıkar. KH: her meq/L için litre başına 84,0 mg sodyum bikarbonat ya da 53,0 mg sodyum karbonat gerekir. Kalsiyum ve magnezyum tuzunun mol kütlesiyle hesaplanır: kalsiyum klorür dihidrat 147,01 g/mol veya susuz 110,98, magnezyum klorür hekzahidrat 203,30, magnezyum sülfat heptahidrat 246,47.</li>
+<li><b>Günlük sınırlar.</b> Büyük düzeltmeler birkaç güne bölünür. Varsayılan günlük sınırlar: KH 1,4 dKH, Ca 20 ppm, Mg 100 ppm; Randy Holmes-Farley'nin temkinli önerilerine göre. Ayarlar → Dozaj güvenliği'nden değişir.</li>
+<li><b>Kalkwasser.</b> Doymuş kireç suyu yaklaşık 800 ppm kalsiyum ve 40 meq/L (yaklaşık 112 dKH) alkalinite taşır. Günlük takviye suyu miktarın (litre), ayarladığın doygunluk oranıyla çarpılınca akvaryumdaki günlük artışı verir.</li>
+<li><b>Tüketimden doz.</b> Son testlerinin eğimi (en küçük kareler) artı kaydettiğin günlük doz, akvaryumun gerçek günlük tüketimini verir. En az 5 güne yayılmış 3 test gerekir; daha azında uygulama daha fazla veri gerektiğini söyler.</li>
 <li><b>Su değişimi.</b> Yeni değer = eski × (1 − f) + yeni tuzlu su × f; f = değişen hacim ÷ sistem hacmi.</li>
-<li><b>Tuzluluk.</b> Deniz suyu hal denklemi EOS-80 (UNESCO 1981). 35 ppt ve 25 °C'de 1023,34 kg/m³ ve 1,0264 (25/25) yoğunluk verir. Referans sıcaklıkları 25/25 °C, 60/60 °F ve 77/77 °F.</li>
+<li><b>Tuzluluk.</b> Deniz suyu hal denklemi <span class="nw">EOS-80</span> (UNESCO 1981). 35 ppt ve 25 °C'de 1023,34 kg/m³ ve 1,0264 (25/25) yoğunluk verir. Referans sıcaklıkları 25/25 °C, 60/60 °F ve 77/77 °F.</li>
 </ul>
 <p>Her formül elle hesaplanmış değerlere karşı birim testleriyle doğrulanır. Kaynaklar aşağıda.</p>
 </details>
 <details><summary>Pro satın alımımı nasıl geri yüklerim?</summary>
 <p>Pro ekranını aç (Ayarlar → Coralline Pro ya da herhangi bir Pro özelliğine dokun) ve <b>Satın alımları geri yükle</b>'ye dokun. Pro'yu aldığın Apple kimliği veya Google hesabıyla. Bir anlık bağlantı gerekir; sonra Pro internetsiz çalışır.</p>
 </details>
-<details><summary>7 günlük deneme nasıl işliyor?</summary>
-<p>7 gün boyunca tüm Pro özellikleri. Hiçbir şey yenilenmez, otomatik ücret alınmaz. Bitince Coralline ücretsiz sürüme döner ve kaydettiğin her şeyi saklar.</p>
+<details><summary>7 günlük deneme nasıl işliyor?</summary>
+<p>7 gün boyunca tüm Pro özellikleri. Hiçbir şey yenilenmez, otomatik ücret alınmaz. Bitince Coralline ücretsiz sürüme döner ve kaydettiğin her şeyi saklar.</p>
 </details>
 <details><summary>Hatırlatıcılarım geç geliyor ya da hiç gelmiyor.</summary>
 <p>Telefonunun ayarlarından Coralline'e bildirim izni ver. Android pil tasarrufu için hatırlatıcıları yaklaşık bir saatte gönderir, yani biri birkaç dakika geç gelebilir. Uygulamaları kapatan pil tasarrufu ayarları daha da geciktirebilir.</p>
@@ -110,7 +119,7 @@
 </details>
 <h2>Kaynaklar</h2>
 <ol class="sources">
-<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (EOS-80)</li>
+<li>UNESCO (1981). <i>Tenth report of the Joint Panel on Oceanographic Tables and Standards.</i> UNESCO Technical Papers in Marine Science 36. (<span class="nw">EOS-80</span>)</li>
 <li>Millero, F. J. &amp; Poisson, A. (1981). International one-atmosphere equation of state of seawater. <i>Deep-Sea Research</i> 28A, 625–629.</li>
 <li>Holmes-Farley, R. (2002). Solving calcium and alkalinity problems. <i>Advanced Aquarist</i>.</li>
 <li>Holmes-Farley, R. (2004). Reef aquarium water parameters. <i>Reefkeeping Magazine</i>.</li>
@@ -123,7 +132,7 @@
 </main>
 <footer><div class="wrap">
 <span>Coralline, deniz akvaryumu için su testi günlüğü ve dozaj hesaplayıcısıdır. Bu sitede çerez ve izleyici yok.</span>
-<nav><a href="../../tr/">Ana sayfa</a><a href="../../tr/support/">Destek</a><a href="../../tr/switch/">Uygulama değiştirme</a><a href="../../tr/privacy/">Gizlilik</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../../tr/">Ana sayfa</a><a href="../../tr/hesaplayicilar/">Hesaplayıcılar</a><a href="../../tr/support/">Destek</a><a href="../../tr/switch/">Uygulama değiştirme</a><a href="../../tr/privacy/">Gizlilik</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>

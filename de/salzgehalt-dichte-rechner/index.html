@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Salzgehalt Rechner: ppt in Dichte umrechnen (EOS-80)</title>
+<meta name="description" content="Salzgehalt im Meerwasseraquarium von ppt in Dichte (SG) umrechnen und zurück, mit der Meerwasser-Gleichung EOS-80, bei 25/25 °C, 60/60 °F oder 77/77 °F.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/de/salzgehalt-dichte-rechner/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/salinity-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/salzgehalt-dichte-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/salinite-densite-calcul/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/zoutgehalte-soortelijk-gewicht/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/salinita-densita-calcolo/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-salinidad-densidad/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/tuzluluk-yogunluk-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/salinity-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Salzgehalt Rechner: ppt in Dichte umrechnen (EOS-80)">
+<meta property="og:description" content="Salzgehalt im Meerwasseraquarium von ppt in Dichte (SG) umrechnen und zurück, mit der Meerwasser-Gleichung EOS-80, bei 25/25 °C, 60/60 °F oder 77/77 °F.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/de/salzgehalt-dichte-rechner/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../de/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../de/rechner/" aria-current="page">Rechner</a>
+<nav class="lang" aria-label="Sprache"><a href="../../salinity-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/salzgehalt-dichte-rechner/" hreflang="de" lang="de" aria-current="page">DE</a><a href="../../fr/salinite-densite-calcul/" hreflang="fr" lang="fr">FR</a><a href="../../nl/zoutgehalte-soortelijk-gewicht/" hreflang="nl" lang="nl">NL</a><a href="../../it/salinita-densita-calcolo/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-salinidad-densidad/" hreflang="es" lang="es">ES</a><a href="../../tr/tuzluluk-yogunluk-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../de/rechner/">Rechner</a></p>
+<h1>Salzgehalt-Rechner: ppt in Dichte</h1>
+<p class="lead">35 ppt entsprechen einer Dichte von 1,0264 bei 25/25 °C und 1,0269 bei 60/60 °F. Gib ppt oder Dichte ein, wähl die Referenztemperatur deines Refraktometers oder Aräometers, und du bekommst den anderen Wert.</p>
+<div id="calc-nojs" class="callout"><p>Der Rechner braucht JavaScript. Formel und Rechenbeispiel unten funktionieren auch ohne.</p></div>
+<section class="calc" aria-labelledby="h-sal">
+<h2 id="h-sal">Salzgehalt und Dichte</h2>
+<form class="panel" data-calc="sal" novalidate>
+<fieldset class="choice"><legend>Referenztemperatur</legend><div class="pills"><label class="pill"><input type="radio" name="sl-ref" value="c25" checked><span>25/25 °C</span></label><label class="pill"><input type="radio" name="sl-ref" value="f60"><span>60/60 °F</span></label><label class="pill"><input type="radio" name="sl-ref" value="f77"><span>77/77 °F</span></label></div></fieldset>
+<p class="hint">Steht auf dem Refraktometer oder in der Anleitung. 77/77 °F ist dasselbe wie 25/25 °C.</p>
+<div class="field-row two"><div class="field "><label for="sl-ppt">Salzgehalt (ppt)</label>
+<input id="sl-ppt" name="sl-ppt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="35" aria-describedby="sl-ppt-err">
+<span class="err" id="sl-ppt-err" hidden></span></div><div class="field "><label for="sl-sg">Dichte (SG)</label>
+<input id="sl-sg" name="sl-sg" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="sl-sg-err">
+<span class="err" id="sl-sg-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-sal" aria-live="polite" hidden><h3 class="sr">Ergebnis</h3></div>
+</section>
+<p class="note">Läuft in deinem Browser. Was du eingibst, wird weder gespeichert noch verschickt.</p>
+<script type="application/json" id="calc-i18n">{"locale":"de-DE","decimal":",","errNumber":"Gib eine Zahl ein, zum Beispiel 8,5","errRange":"Zwischen {min} und {max}","fillIn":"Füll die Felder oben aus, dann erscheint das Ergebnis.","fixErrors":"Prüf das markierte Feld.","flags":{"warn":"Vorsicht","info":"Hinweis","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"Tag","other":"Tage"},"page":{"result":"{ppt} ppt = Dichte {sg} bei {ref}","density":"Absolute Dichte bei der Referenztemperatur: {rho} kg/m³.","seawater":"Natürliches Meerwasser hat etwa 35 ppt (Dichte {sg35} bei {ref}).","outOfRange":"Kein Meerwasser zwischen 0 und 50 ppt hat diese Dichte. Prüf die Messung und die Referenztemperatur.","refs":{"c25":"25/25 °C","f60":"60/60 °F","f77":"77/77 °F"}}}</script>
+<div class="prose"><h2 id="table-h">ppt in Dichte</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">ppt</th><th scope="col">SG 25/25 °C</th><th scope="col">SG 60/60 °F</th></tr></thead>
+<tbody><tr><td>30</td><td>1,0226</td><td>1,0230</td></tr><tr><td>31</td><td>1,0233</td><td>1,0238</td></tr><tr><td>32</td><td>1,0241</td><td>1,0245</td></tr><tr><td>33</td><td>1,0249</td><td>1,0253</td></tr><tr><td>34</td><td>1,0256</td><td>1,0261</td></tr><tr><td>35</td><td>1,0264</td><td>1,0269</td></tr><tr><td>36</td><td>1,0271</td><td>1,0276</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>So wird gerechnet</h2>
+<h3>Was die Dichte hier bedeutet</h3>
+<p>Die Dichte, wie sie in der Meerwasseraquaristik angegeben wird (spezifisches Gewicht, SG), ist die Dichte deines Beckenwassers geteilt durch die Dichte von reinem Wasser, beide bei einer Referenztemperatur. Dasselbe Wasser zeigt bei 25/25 °C einen etwas anderen Wert als bei 60/60 °F. Deshalb ist 1,025 auf dem einen Messgerät nicht immer derselbe Salzgehalt wie 1,025 auf einem anderen.</p>
+<h3>Die Gleichung</h3>
+<p>Der Rechner nutzt <span class="nw">EOS-80</span>, die internationale Zustandsgleichung für Meerwasser bei einer Atmosphäre (UNESCO 1981; Millero und Poisson 1981). Sie liefert die Dichte von Meerwasser aus Salzgehalt und Temperatur:</p>
+<p class="f">ρ = ρw + A·S + B·S<sup>1,5</sup> + C·S²</p>
+<p>Dabei steht ρw für reines Wasser, und A, B und C sind Polynome der Temperatur. Bei 35 ppt und 25 °C kommen 1023,343 kg/m³ heraus, gegenüber 997,048 für reines Wasser: Dichte 1,0264. Für den Weg von der Dichte zurück zu ppt sucht der Rechner per Bisektion, bis die Gleichung zu deiner Messung passt.</p>
+<h3>Welcher Wert</h3>
+<p>Natürliches Meerwasser hat etwa 35 ppt. Die meisten halten 33 bis 35,5 und achten mehr darauf, dass der Wert stabil bleibt, als auf die genaue Zahl. Kalibrier das Refraktometer mit 35-ppt-Kalibrierflüssigkeit, nicht nur mit Osmosewasser.</p>
+<h2>Rechenbeispiel</h2>
+<p>Dein Refraktometer ist auf 25/25 °C ausgelegt und zeigt 1,025. Der Rechner kommt auf 33,2 ppt, etwa 1,8 ppt unter natürlichem Meerwasser. Um auf 35 ppt zu kommen, füllst du mit Salzwasser statt Osmosewasser nach, bis es 1,0264 zeigt.</p>
+<p>Dieselben 35 ppt zeigt ein auf 60/60 °F geeichtes Aräometer als 1,0269.</p>
+<p class="callout">Das sind Schätzwerte. Testkits haben Toleranzen, und jedes Becken verbraucht etwas anders: in Teilmengen dosieren und vor der nächsten Gabe nachmessen.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Behalte deine Werte, nicht nur das Ergebnis</h2>
+<p>In Coralline trägst du den Salzgehalt in ppt oder als Dichte ein, bei 25/25 °C oder 60/60 °F, und beim Umstellen rechnet die App jede alte Messung mit um. Das Salzgehalt-Diagramm zeigt die Drift durch Verdunstung, bevor daraus ein Dosierproblem wird. Eintragen ist gratis und unbegrenzt, ohne Konto, ohne Abo, läuft offline. Pro ist eine Einmalzahlung.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Jetzt bei</small><b>Google Play</b></a><span class="soon">iPhone-Version kommt bald</span></div>
+</aside>
+<h2>Quellen</h2>
+<ol class="sources"><li><a href="https://marineinfo.org/doc/publication/246046" rel="noopener">UNESCO (1981). Tenth report of the Joint Panel on Oceanographic Tables and Standards. UNESCO Technical Papers in Marine Science 36 (<span class="nw">EOS-80</span>)</a></li><li><a href="https://doi.org/10.1016/0198-0149(81)90122-9" rel="noopener">F. J. Millero und A. Poisson (1981). International one-atmosphere equation of state of seawater. Deep-Sea Research 28A, 625–629</a></li></ol>
+<p class="updated">Mit den Quellen abgeglichen: 2026-11-02</p>
+<p class="more"><b>Weitere Rechner:</b> <a href="../../de/kh-rechner/">KH (dKH)</a> · <a href="../../de/calcium-magnesium-rechner/">Calcium und Magnesium</a> · <a href="../../de/phosphat-ppb-ppm-umrechnen/">Phosphor- und Nitrattests</a> · <a href="../../de/kalkwasser-rechner/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline ist Logbuch und Dosierrechner fürs Meerwasseraquarium. Diese Seite nutzt keine Cookies und kein Tracking.</span>
+<nav><a href="../../de/">Start</a><a href="../../de/rechner/">Rechner</a><a href="../../de/support/">Hilfe</a><a href="../../de/switch/">App-Wechsel</a><a href="../../de/privacy/">Datenschutz</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

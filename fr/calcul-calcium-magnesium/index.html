@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Calcul de dosage calcium et magnésium pour aquarium récifal</title>
+<meta name="description" content="Grammes de chlorure de calcium (dihydraté ou anhydre) et de chlorure de magnésium ou de sel d’Epsom pour remonter le calcium et le magnésium du bac, répartis sur plusieurs jours.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/fr/calcul-calcium-magnesium/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/calcium-magnesium-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-calcium-magnesium/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/calcium-magnesium-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-calcio-magnesio/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-calcio-magnesio/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalsiyum-magnezyum-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Calcul de dosage calcium et magnésium pour aquarium récifal">
+<meta property="og:description" content="Grammes de chlorure de calcium (dihydraté ou anhydre) et de chlorure de magnésium ou de sel d’Epsom pour remonter le calcium et le magnésium du bac, répartis sur plusieurs jours.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/fr/calcul-calcium-magnesium/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../fr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../fr/calculateurs/" aria-current="page">Calculateurs</a>
+<nav class="lang" aria-label="Langue"><a href="../../calcium-magnesium-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/calcium-magnesium-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-calcium-magnesium/" hreflang="fr" lang="fr" aria-current="page">FR</a><a href="../../nl/calcium-magnesium-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-calcio-magnesio/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-calcio-magnesio/" hreflang="es" lang="es">ES</a><a href="../../tr/kalsiyum-magnezyum-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../fr/calculateurs/">Calculateurs</a></p>
+<h1>Calcul calcium et magnésium</h1>
+<p class="lead">Pour passer le calcium de 400 à 430 ppm dans 300 L, il faut 33 g de chlorure de calcium dihydraté. Indiquez votre volume et vos valeurs pour avoir vos propres chiffres. Laissez un élément vide pour l’ignorer.</p>
+<div id="calc-nojs" class="callout"><p>Le calculateur a besoin de JavaScript. La formule et l’exemple chiffré plus bas restent lisibles sans.</p></div>
+<section class="calc" aria-labelledby="h-camg">
+<h2 id="h-camg">Calcium et magnésium</h2>
+<form class="panel" data-calc="camg" novalidate>
+<div class="field"><label for="cm-vol">Volume d’eau net</label>
+<div class="joined"><input id="cm-vol" name="cm-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="cm-vol-hint cm-vol-err">
+<select id="cm-vol-unit" name="cm-vol-unit" aria-label="Unité de volume"><option value="L" selected>litres</option><option value="gal">gallons US</option></select></div>
+<span class="hint" id="cm-vol-hint">L’eau réellement dans le système : bac principal, décantation et tuyauterie, moins les pierres et le sable.</span><span class="err" id="cm-vol-err" hidden></span></div>
+<h3 class="form-h">Calcium</h3>
+<div class="field-row two"><div class="field "><label for="cm-ca-cur">Calcium actuel (ppm)</label>
+<input id="cm-ca-cur" name="cm-ca-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-ca-cur-err">
+<span class="err" id="cm-ca-cur-err" hidden></span></div><div class="field "><label for="cm-ca-tgt">Cible calcium (ppm)</label>
+<input id="cm-ca-tgt" name="cm-ca-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="430" aria-describedby="cm-ca-tgt-hint cm-ca-tgt-err">
+<span class="hint" id="cm-ca-tgt-hint">L’eau de mer naturelle est à environ 420. La plupart des récifaux restent entre 380 et 450.</span><span class="err" id="cm-ca-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Chlorure de calcium</legend><div class="pills"><label class="pill"><input type="radio" name="cm-ca-salt" value="dihydrate" checked><span>Dihydraté (CaCl2·2H2O)</span></label><label class="pill"><input type="radio" name="cm-ca-salt" value="anhydrous"><span>Anhydre (CaCl2)</span></label></div></fieldset>
+<h3 class="form-h">Magnésium</h3>
+<div class="field-row two"><div class="field "><label for="cm-mg-cur">Magnésium actuel (ppm)</label>
+<input id="cm-mg-cur" name="cm-mg-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-mg-cur-err">
+<span class="err" id="cm-mg-cur-err" hidden></span></div><div class="field "><label for="cm-mg-tgt">Cible magnésium (ppm)</label>
+<input id="cm-mg-tgt" name="cm-mg-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="1 350" aria-describedby="cm-mg-tgt-hint cm-mg-tgt-err">
+<span class="hint" id="cm-mg-tgt-hint">L’eau de mer naturelle est à environ 1300. La plupart des récifaux restent entre 1250 et 1350.</span><span class="err" id="cm-mg-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Sel de magnésium</legend><div class="pills"><label class="pill"><input type="radio" name="cm-mg-salt" value="chloride" checked><span>Chlorure (MgCl2·6H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="sulfate"><span>Sel d’Epsom (MgSO4·7H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="mix"><span>Mélange des deux</span></label></div></fieldset>
+<div data-show="mix" hidden><div class="field "><label for="cm-mg-mix">Part du magnésium apportée par le chlorure (%)</label>
+<input id="cm-mg-mix" name="cm-mg-mix" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="50" aria-describedby="cm-mg-mix-hint cm-mg-mix-err">
+<span class="hint" id="cm-mg-mix-hint">La part du magnésium qui vient du chlorure de magnésium. Le reste vient du sel d’Epsom.</span><span class="err" id="cm-mg-mix-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-camg" aria-live="polite" hidden><h3 class="sr">Résultat</h3></div>
+</section>
+<p class="note">Le calcul se fait dans votre navigateur. Rien de ce que vous saisissez n’est enregistré ni envoyé.</p>
+<script type="application/json" id="calc-i18n">{"locale":"fr-FR","decimal":",","errNumber":"Saisissez un nombre, par exemple 8,5","errRange":"Entre {min} et {max}","fillIn":"Remplissez les champs ci-dessus pour voir le résultat.","fixErrors":"Vérifiez le champ signalé.","flags":{"warn":"Attention","info":"À noter","good":"OK"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"jour","other":"jours"},"page":{"caH":"Calcium {from} → {to} ppm","mgH":"Magnésium {from} → {to} ppm","add":"de {salt}","both":"{a} de chlorure et {b} de sel d’Epsom","split":"Plus de {cap} ppm par jour. Répartissez : {perDay} par jour pendant {n} {days}, soit environ {rise} ppm par jour.","oneDay":"Dans la limite de {cap} ppm par jour. Ajoutez-le en quelques fois, puis refaites un test.","noRaise":"Déjà à la cible ou au-dessus : rien à ajouter. Pour faire baisser, laissez le bac consommer ou faites un changement d’eau.","caNote":"Une grosse dose de calcium peut faire baisser le KH. Testez aussi le KH.","salts":{"dihydrate":"chlorure de calcium dihydraté","anhydrous":"chlorure de calcium anhydre","chloride":"chlorure de magnésium","sulfate":"sel d’Epsom"}}}</script>
+
+<div class="prose">
+<h2>Comment c’est calculé</h2>
+<h3>Calcium</h3>
+<p>La masse molaire du calcium est de 40,078 g/mol. La hausse en ppm multipliée par le volume en litres, divisée par 40,078, donne les millimoles de calcium nécessaires. Chacune arrive avec une unité du sel :</p>
+<p class="f">grammes = hausse en ppm × litres ÷ 40,078 × 147,01 ÷ 1000 (dihydraté)<br>grammes = hausse en ppm × litres ÷ 40,078 × 110,98 ÷ 1000 (anhydre)</p>
+<p>Regardez le sac. La plupart du chlorure de calcium vendu pour le déneigement ou pour le récifal est du dihydraté (paillettes, 77 à 80 % de CaCl<sub>2</sub>). Les granulés anhydres chauffent en se dissolvant.</p>
+<h3>Magnésium</h3>
+<p>Même principe avec 24,305 g/mol pour le magnésium, et 203,30 g/mol pour le chlorure de magnésium hexahydraté ou 246,47 g/mol pour le sulfate de magnésium heptahydraté (sel d’Epsom). Dans un mélange, chaque sel apporte sa part du magnésium.</p>
+<p>Le sel d’Epsom apporte aussi des sulfates. Pour les grosses corrections ou les corrections répétées, la plupart des récifalistes prennent surtout du chlorure et un peu de sulfate, comme dans les recettes maison classiques de la méthode Balling.</p>
+<h3>À quelle vitesse</h3>
+<p>Le calculateur reste sous 20 ppm de calcium et 100 ppm de magnésium par jour, et répartit tout écart plus grand à parts égales sur plusieurs jours. Une grosse hausse de calcium d’un coup peut aussi faire chuter le KH : testez les deux.</p>
+<p>Cible plus basse que votre valeur ? Rien à ajouter. Laissez le bac consommer ou faites un changement d’eau.</p>
+<h2>Exemple chiffré</h2>
+<p>Système de 300 L. Calcium à 400 ppm, cible 430. Magnésium à 1250 ppm, cible 1350.</p>
+<p class="f">Calcium : 30 × 300 ÷ 40,078 × 147,01 ÷ 1000 = 33,01 g de dihydraté<br>Magnésium : 100 × 300 ÷ 24,305 × 203,30 ÷ 1000 = 250,9 g de chlorure</p>
+<p>30 ppm de calcium dépassent la limite de 20 ppm par jour : ça fait 16,51 g par jour pendant 2 jours. Les 100 ppm de magnésium passent en une journée. Avec du sel d’Epsom seul, il faudrait 304,2 g pour le magnésium.</p>
+<p class="callout">Ce sont des estimations. Les kits de test ont leurs tolérances et chaque bac consomme à sa façon : dosez en plusieurs fois et refaites un test avant la dose suivante.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Gardez l’historique, pas seulement le résultat</h2>
+<p>Coralline garde l’historique du calcium et du magnésium à côté du KH : vous voyez quand l’un dérive pendant que les autres tiennent. L’app signale une dose qui monterait plus vite que votre limite quotidienne et la répartit pour vous. Saisie gratuite et illimitée, sans compte, sans abonnement, hors ligne. Pro se paie une fois.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Disponible sur</small><b>Google Play</b></a><span class="soon">Version iPhone bientôt disponible</span></div>
+</aside>
+<h2>Sources</h2>
+<ol class="sources"><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, novembre 2002 (copie archivée)</a></li><li><a href="http://reefkeeping.com/issues/2006-02/rhf/index.php" rel="noopener">R. Holmes-Farley, An Improved Do-it-Yourself Two-Part Calcium and Alkalinity Supplement System. Reefkeeping, février 2006</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Masses atomiques standard (masses molaires)</a></li></ol>
+<p class="updated">Vérifié d’après les sources : 2026-11-02</p>
+<p class="more"><b>Autres calculateurs:</b> <a href="../../fr/calcul-kh-alcalinite/">KH (alcalinité)</a> · <a href="../../fr/salinite-densite-calcul/">Salinité et densité</a> · <a href="../../fr/phosphate-ppb-ppm-conversion/">Kits phosphore et nitrates</a> · <a href="../../fr/calcul-kalkwasser/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline est un journal de tests et un calculateur de dosage pour aquarium récifal. Ce site n’utilise ni cookies ni traceurs.</span>
+<nav><a href="../../fr/">Accueil</a><a href="../../fr/calculateurs/">Calculateurs</a><a href="../../fr/support/">Aide</a><a href="../../fr/switch/">Changer d’app</a><a href="../../fr/privacy/">Confidentialité</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

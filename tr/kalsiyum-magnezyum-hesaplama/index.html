@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Deniz akvaryumu kalsiyum ve magnezyum hesaplama</title>
+<meta name="description" content="Deniz akvaryumunda kalsiyum ve magnezyumu yükseltmek için kaç gram kalsiyum klorür (dihidrat ya da susuz), magnezyum klorür veya İngiliz tuzu gerektiği, günlere bölünmüş olarak.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/tr/kalsiyum-magnezyum-hesaplama/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/calcium-magnesium-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/calcul-calcium-magnesium/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/calcium-magnesium-berekenen/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/calcolo-calcio-magnesio/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-calcio-magnesio/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/kalsiyum-magnezyum-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/calcium-magnesium-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Deniz akvaryumu kalsiyum ve magnezyum hesaplama">
+<meta property="og:description" content="Deniz akvaryumunda kalsiyum ve magnezyumu yükseltmek için kaç gram kalsiyum klorür (dihidrat ya da susuz), magnezyum klorür veya İngiliz tuzu gerektiği, günlere bölünmüş olarak.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/tr/kalsiyum-magnezyum-hesaplama/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../tr/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../tr/hesaplayicilar/" aria-current="page">Hesaplayıcılar</a>
+<nav class="lang" aria-label="Dil"><a href="../../calcium-magnesium-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/calcium-magnesium-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/calcul-calcium-magnesium/" hreflang="fr" lang="fr">FR</a><a href="../../nl/calcium-magnesium-berekenen/" hreflang="nl" lang="nl">NL</a><a href="../../it/calcolo-calcio-magnesio/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-calcio-magnesio/" hreflang="es" lang="es">ES</a><a href="../../tr/kalsiyum-magnezyum-hesaplama/" hreflang="tr" lang="tr" aria-current="page">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../tr/hesaplayicilar/">Hesaplayıcılar</a></p>
+<h1>Kalsiyum ve magnezyum hesaplayıcı</h1>
+<p class="lead">300 L'de kalsiyumu 400'den 430 ppm'e çıkarmak için 33 g kalsiyum klorür dihidrat gerekir. Kendi sayıların için hacmini ve değerlerini gir. Bir elementi atlamak istersen boş bırak.</p>
+<div id="calc-nojs" class="callout"><p>Hesaplayıcı JavaScript ister. Aşağıdaki formül ve örnek hesap onsuz da okunur.</p></div>
+<section class="calc" aria-labelledby="h-camg">
+<h2 id="h-camg">Kalsiyum ve magnezyum</h2>
+<form class="panel" data-calc="camg" novalidate>
+<div class="field"><label for="cm-vol">Net su hacmi</label>
+<div class="joined"><input id="cm-vol" name="cm-vol" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="300" aria-describedby="cm-vol-hint cm-vol-err">
+<select id="cm-vol-unit" name="cm-vol-unit" aria-label="Hacim birimi"><option value="L" selected>litre</option><option value="gal">ABD galonu</option></select></div>
+<span class="hint" id="cm-vol-hint">Sistemde gerçekten olan su: akvaryum, sump ve borular, kaya ve kum hariç.</span><span class="err" id="cm-vol-err" hidden></span></div>
+<h3 class="form-h">Kalsiyum</h3>
+<div class="field-row two"><div class="field "><label for="cm-ca-cur">Şu anki kalsiyum (ppm)</label>
+<input id="cm-ca-cur" name="cm-ca-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-ca-cur-err">
+<span class="err" id="cm-ca-cur-err" hidden></span></div><div class="field "><label for="cm-ca-tgt">Kalsiyum hedefi (ppm)</label>
+<input id="cm-ca-tgt" name="cm-ca-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="430" aria-describedby="cm-ca-tgt-hint cm-ca-tgt-err">
+<span class="hint" id="cm-ca-tgt-hint">Doğal deniz suyu yaklaşık 420. Çoğu resif 380 ile 450 arasında tutar.</span><span class="err" id="cm-ca-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Kalsiyum klorür</legend><div class="pills"><label class="pill"><input type="radio" name="cm-ca-salt" value="dihydrate" checked><span>Dihidrat (CaCl2·2H2O)</span></label><label class="pill"><input type="radio" name="cm-ca-salt" value="anhydrous"><span>Susuz (CaCl2)</span></label></div></fieldset>
+<h3 class="form-h">Magnezyum</h3>
+<div class="field-row two"><div class="field "><label for="cm-mg-cur">Şu anki magnezyum (ppm)</label>
+<input id="cm-mg-cur" name="cm-mg-cur" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="cm-mg-cur-err">
+<span class="err" id="cm-mg-cur-err" hidden></span></div><div class="field "><label for="cm-mg-tgt">Magnezyum hedefi (ppm)</label>
+<input id="cm-mg-tgt" name="cm-mg-tgt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="1.350" aria-describedby="cm-mg-tgt-hint cm-mg-tgt-err">
+<span class="hint" id="cm-mg-tgt-hint">Doğal deniz suyu yaklaşık 1300. Çoğu resif 1250 ile 1350 arasında tutar.</span><span class="err" id="cm-mg-tgt-err" hidden></span></div></div>
+<fieldset class="choice"><legend>Magnezyum tuzu</legend><div class="pills"><label class="pill"><input type="radio" name="cm-mg-salt" value="chloride" checked><span>Klorür (MgCl2·6H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="sulfate"><span>İngiliz tuzu (MgSO4·7H2O)</span></label><label class="pill"><input type="radio" name="cm-mg-salt" value="mix"><span>İkisinin karışımı</span></label></div></fieldset>
+<div data-show="mix" hidden><div class="field "><label for="cm-mg-mix">Klorürden gelen magnezyum payı (%)</label>
+<input id="cm-mg-mix" name="cm-mg-mix" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="50" aria-describedby="cm-mg-mix-hint cm-mg-mix-err">
+<span class="hint" id="cm-mg-mix-hint">Magnezyumun ne kadarının magnezyum klorürden geldiği. Kalanı İngiliz tuzundan gelir.</span><span class="err" id="cm-mg-mix-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-camg" aria-live="polite" hidden><h3 class="sr">Sonuç</h3></div>
+</section>
+<p class="note">Tarayıcında çalışır. Yazdığın hiçbir şey kaydedilmez, hiçbir yere gönderilmez.</p>
+<script type="application/json" id="calc-i18n">{"locale":"tr-TR","decimal":",","errNumber":"Bir sayı gir, örneğin 8,5","errRange":"{min} ile {max} arasında","fillIn":"Sonucu görmek için yukarıdaki alanları doldur.","fixErrors":"İşaretli alanı kontrol et.","flags":{"warn":"Dikkat","info":"Not","good":"Tamam"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"gün","other":"gün"},"page":{"caH":"Kalsiyum {from} → {to} ppm","mgH":"Magnezyum {from} → {to} ppm","add":"{salt}","both":"{a} klorür ve {b} İngiliz tuzu","split":"Günlük {cap} ppm sınırını aşıyor. Böl: {n} {days} boyunca günde {perDay}, günde yaklaşık {rise} ppm.","oneDay":"Günlük {cap} ppm sınırının içinde. Birkaç parçada ekle, sonra yeniden test et.","noRaise":"Zaten hedefte ya da üstünde, eklenecek bir şey yok. Düşürmek için akvaryumun tüketmesini bekle ya da su değişimi yap.","caNote":"Büyük bir kalsiyum dozu KH'yi düşürebilir. KH'yi de test et.","salts":{"dihydrate":"kalsiyum klorür dihidrat","anhydrous":"susuz kalsiyum klorür","chloride":"magnezyum klorür","sulfate":"İngiliz tuzu"}}}</script>
+
+<div class="prose">
+<h2>Nasıl hesaplanıyor</h2>
+<h3>Kalsiyum</h3>
+<p>Kalsiyumun mol kütlesi 40,078 g/mol. ppm olarak artışı litre olarak hacimle çarpıp 40,078'e bölersen gereken kalsiyumu milimol olarak bulursun. Her milimol kalsiyum, tuzun bir formül birimiyle gelir:</p>
+<p class="f">gram = ppm artış × litre ÷ 40,078 × 147,01 ÷ 1000 (dihidrat)<br>gram = ppm artış × litre ÷ 40,078 × 110,98 ÷ 1000 (susuz)</p>
+<p>Torbaya bak. Buz çözücü olarak ya da akvaryum için satılan kalsiyum klorürün çoğu dihidrattır (pul halinde, %77 ile 80 CaCl<sub>2</sub>). Susuz granüller çözünürken ısınır.</p>
+<h3>Magnezyum</h3>
+<p>Mantık aynı: magnezyum için 24,305 g/mol, magnezyum klorür hekzahidrat için 203,30 g/mol, magnezyum sülfat heptahidrat (İngiliz tuzu) için 246,47 g/mol. Karışımda her tuz kendi payına düşen magnezyumu taşır.</p>
+<p>İngiliz tuzu sülfat da ekler. Büyük ya da sık düzeltmelerde çoğu resifçi, klasik ev yapımı two-part ve Balling tariflerinde olduğu gibi çoğunlukla klorür, biraz da sülfat kullanır.</p>
+<h3>Ne hızda</h3>
+<p>Hesaplayıcı günlük artışı kalsiyumda 20 ppm, magnezyumda 100 ppm ile sınırlar, daha büyüğünü günlere eşit böler. Kalsiyumu tek seferde çok yükseltmek KH'yi de düşürebilir, ikisini de test et.</p>
+<p>Hedef şu anki değerin altında mı? Eklenecek bir şey yok. Akvaryumun tüketmesini bekle ya da su değişimi yap.</p>
+<h2>Örnek hesap</h2>
+<p>300 L sistem. Kalsiyum 400 ppm, hedef 430. Magnezyum 1250 ppm, hedef 1350.</p>
+<p class="f">Kalsiyum: 30 × 300 ÷ 40,078 × 147,01 ÷ 1000 = 33,01 g dihidrat<br>Magnezyum: 100 × 300 ÷ 24,305 × 203,30 ÷ 1000 = 250,9 g klorür</p>
+<p>30 ppm kalsiyum, günlük 20 ppm sınırının üstünde. Yani 2 gün boyunca günde 16,51 g. 100 ppm magnezyum tek güne sığar. Sadece İngiliz tuzu kullansaydın magnezyum için 304,2 g gerekirdi.</p>
+<p class="callout">Bunlar tahmindir. Test kitlerinin toleransı var ve her akvaryum biraz farklı tüketir. Dozu parça parça ver ve bir sonraki dozdan önce yeniden test et.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Sadece sonucu değil, testlerini de sakla</h2>
+<p>Coralline kalsiyum ve magnezyum geçmişini KH'nin yanında tutar; biri kayarken diğerlerinin sabit kaldığını görürsün. Günlük sınırından hızlı yükseltecek bir dozu işaretler ve senin yerine böler. Kayıt ücretsiz ve sınırsız; hesap yok, abonelik yok, internetsiz çalışır. Pro tek ödeme.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Android için</small><b>Google Play</b></a><span class="soon">iPhone sürümü yolda</span></div>
+</aside>
+<h2>Kaynaklar</h2>
+<ol class="sources"><li><a href="https://web.archive.org/web/20180103004047/http://www.advancedaquarist.com/2002/11/chemistry" rel="noopener">R. Holmes-Farley, Solving Calcium and Alkalinity Problems. Advanced Aquarist, Kasım 2002 (arşiv kopyası)</a></li><li><a href="http://reefkeeping.com/issues/2006-02/rhf/index.php" rel="noopener">R. Holmes-Farley, An Improved Do-it-Yourself Two-Part Calcium and Alkalinity Supplement System. Reefkeeping, Şubat 2006</a></li><li><a href="https://www.ciaaw.org/atomic-weights.htm" rel="noopener">CIAAW, Standart atom ağırlıkları (mol kütleleri)</a></li></ol>
+<p class="updated">Kaynaklarla karşılaştırıldı: 2026-11-02</p>
+<p class="more"><b>Diğer hesaplayıcılar:</b> <a href="../../tr/kh-alkalinite-hesaplama/">KH (dKH)</a> · <a href="../../tr/tuzluluk-yogunluk-hesaplama/">Tuzluluk ve SG</a> · <a href="../../tr/fosfat-ppb-ppm-donusturme/">Fosfor ve nitrat kitleri</a> · <a href="../../tr/kalkwasser-hesaplama/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline, deniz akvaryumu için su testi günlüğü ve dozaj hesaplayıcısıdır. Bu sitede çerez ve izleyici yok.</span>
+<nav><a href="../../tr/">Ana sayfa</a><a href="../../tr/hesaplayicilar/">Hesaplayıcılar</a><a href="../../tr/support/">Destek</a><a href="../../tr/switch/">Uygulama değiştirme</a><a href="../../tr/privacy/">Gizlilik</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

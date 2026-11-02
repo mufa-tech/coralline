@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Zoutgehalte berekenen: ppt naar soortelijk gewicht (EOS-80)</title>
+<meta name="description" content="Reken het zoutgehalte van je rifaquarium om van ppt naar soortelijk gewicht (SG) en terug met de zeewatervergelijking EOS-80, bij 25/25 °C, 60/60 °F of 77/77 °F.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#080B1F" media="(prefers-color-scheme: dark)">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://mufa-tech.github.io/coralline/nl/zoutgehalte-soortelijk-gewicht/">
+<link rel="alternate" hreflang="en" href="https://mufa-tech.github.io/coralline/salinity-calculator/">
+<link rel="alternate" hreflang="de" href="https://mufa-tech.github.io/coralline/de/salzgehalt-dichte-rechner/">
+<link rel="alternate" hreflang="fr" href="https://mufa-tech.github.io/coralline/fr/salinite-densite-calcul/">
+<link rel="alternate" hreflang="nl" href="https://mufa-tech.github.io/coralline/nl/zoutgehalte-soortelijk-gewicht/">
+<link rel="alternate" hreflang="it" href="https://mufa-tech.github.io/coralline/it/salinita-densita-calcolo/">
+<link rel="alternate" hreflang="es" href="https://mufa-tech.github.io/coralline/es/calculadora-salinidad-densidad/">
+<link rel="alternate" hreflang="tr" href="https://mufa-tech.github.io/coralline/tr/tuzluluk-yogunluk-hesaplama/">
+<link rel="alternate" hreflang="x-default" href="https://mufa-tech.github.io/coralline/salinity-calculator/">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/icon-32.png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coralline">
+<meta property="og:title" content="Zoutgehalte berekenen: ppt naar soortelijk gewicht (EOS-80)">
+<meta property="og:description" content="Reken het zoutgehalte van je rifaquarium om van ppt naar soortelijk gewicht (SG) en terug met de zeewatervergelijking EOS-80, bij 25/25 °C, 60/60 °F of 77/77 °F.">
+<meta property="og:url" content="https://mufa-tech.github.io/coralline/nl/zoutgehalte-soortelijk-gewicht/">
+<meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../nl/"><img src="../../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../../nl/rekenhulp/" aria-current="page">Rekenhulp</a>
+<nav class="lang" aria-label="Taal"><a href="../../salinity-calculator/" hreflang="en" lang="en">EN</a><a href="../../de/salzgehalt-dichte-rechner/" hreflang="de" lang="de">DE</a><a href="../../fr/salinite-densite-calcul/" hreflang="fr" lang="fr">FR</a><a href="../../nl/zoutgehalte-soortelijk-gewicht/" hreflang="nl" lang="nl" aria-current="page">NL</a><a href="../../it/salinita-densita-calcolo/" hreflang="it" lang="it">IT</a><a href="../../es/calculadora-salinidad-densidad/" hreflang="es" lang="es">ES</a><a href="../../tr/tuzluluk-yogunluk-hesaplama/" hreflang="tr" lang="tr">TR</a></nav>
+</div></header>
+<main class="wrap calcpage">
+<p class="crumb"><a href="../../nl/rekenhulp/">Rekenhulp</a></p>
+<h1>Zoutgehalte: ppt naar soortelijk gewicht</h1>
+<p class="lead">35 ppt is SG 1,0264 bij 25/25 °C en 1,0269 bij 60/60 °F. Vul ppt of SG in, kies de referentietemperatuur van je refractometer of areometer, en je krijgt de andere waarde.</p>
+<div id="calc-nojs" class="callout"><p>De calculator heeft JavaScript nodig. De formule en het rekenvoorbeeld hieronder werken ook zonder.</p></div>
+<section class="calc" aria-labelledby="h-sal">
+<h2 id="h-sal">Zoutgehalte en SG</h2>
+<form class="panel" data-calc="sal" novalidate>
+<fieldset class="choice"><legend>Referentietemperatuur</legend><div class="pills"><label class="pill"><input type="radio" name="sl-ref" value="c25" checked><span>25/25 °C</span></label><label class="pill"><input type="radio" name="sl-ref" value="f60"><span>60/60 °F</span></label><label class="pill"><input type="radio" name="sl-ref" value="f77"><span>77/77 °F</span></label></div></fieldset>
+<p class="hint">Staat op de refractometer of in de handleiding. 77/77 °F is hetzelfde als 25/25 °C.</p>
+<div class="field-row two"><div class="field "><label for="sl-ppt">Zoutgehalte (ppt)</label>
+<input id="sl-ppt" name="sl-ppt" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="35" aria-describedby="sl-ppt-err">
+<span class="err" id="sl-ppt-err" hidden></span></div><div class="field "><label for="sl-sg">Soortelijk gewicht</label>
+<input id="sl-sg" name="sl-sg" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-describedby="sl-sg-err">
+<span class="err" id="sl-sg-err" hidden></span></div></div>
+</form>
+<div class="res" id="res-sal" aria-live="polite" hidden><h3 class="sr">Uitkomst</h3></div>
+</section>
+<p class="note">Draait in je browser. Wat je invult wordt niet opgeslagen of verstuurd.</p>
+<script type="application/json" id="calc-i18n">{"locale":"nl-NL","decimal":",","errNumber":"Vul een getal in, bijvoorbeeld 8,5","errRange":"Tussen {min} en {max}","fillIn":"Vul de velden hierboven in, dan zie je de uitkomst.","fixErrors":"Kijk het gemarkeerde veld na.","flags":{"warn":"Let op","info":"Info","good":"In orde"},"g":"g","oz":"oz","l":"L","gal":"gal","days":{"one":"dag","other":"dagen"},"page":{"result":"{ppt} ppt = SG {sg} bij {ref}","density":"Dichtheid bij de referentietemperatuur: {rho} kg/m³.","seawater":"Natuurlijk zeewater is ongeveer 35 ppt (SG {sg35} bij {ref}).","outOfRange":"Geen zeewater tussen 0 en 50 ppt heeft dat soortelijk gewicht. Controleer de meting en de referentietemperatuur.","refs":{"c25":"25/25 °C","f60":"60/60 °F","f77":"77/77 °F"}}}</script>
+<div class="prose"><h2 id="table-h">ppt naar soortelijk gewicht</h2>
+<div class="table-wrap" role="region" aria-labelledby="table-h" tabindex="0"><table class="num-table">
+<thead><tr><th scope="col">ppt</th><th scope="col">SG 25/25 °C</th><th scope="col">SG 60/60 °F</th></tr></thead>
+<tbody><tr><td>30</td><td>1,0226</td><td>1,0230</td></tr><tr><td>31</td><td>1,0233</td><td>1,0238</td></tr><tr><td>32</td><td>1,0241</td><td>1,0245</td></tr><tr><td>33</td><td>1,0249</td><td>1,0253</td></tr><tr><td>34</td><td>1,0256</td><td>1,0261</td></tr><tr><td>35</td><td>1,0264</td><td>1,0269</td></tr><tr><td>36</td><td>1,0271</td><td>1,0276</td></tr></tbody></table></div></div>
+<div class="prose">
+<h2>Zo wordt het berekend</h2>
+<h3>Wat SG betekent</h3>
+<p>Het soortelijk gewicht is de dichtheid van je bakwater gedeeld door de dichtheid van zuiver water, allebei bij een referentietemperatuur. Hetzelfde water geeft bij 25/25 °C een iets andere SG dan bij 60/60 °F. Daarom is 1,025 op de ene meter niet altijd hetzelfde zoutgehalte als 1,025 op de andere.</p>
+<h3>De vergelijking</h3>
+<p>De calculator gebruikt <span class="nw">EOS-80</span>, de internationale toestandsvergelijking van zeewater bij één atmosfeer (UNESCO 1981; Millero en Poisson 1981). Die geeft de dichtheid van zeewater uit zoutgehalte en temperatuur:</p>
+<p class="f">ρ = ρw + A·S + B·S<sup>1,5</sup> + C·S²</p>
+<p>Hierin is ρw zuiver water en zijn A, B en C polynomen in de temperatuur. Bij 35 ppt en 25 °C komt er 1023,343 kg/m³ uit, tegen 997,048 voor zuiver water: SG 1,0264. Van SG terug naar ppt zoekt de calculator met bisectie in de vergelijking tot de uitkomst bij jouw meting past.</p>
+<h3>Waar mik je op</h3>
+<p>Natuurlijk zeewater is ongeveer 35 ppt. De meeste rifhouders houden 33 tot 35,5 aan en vinden een stabiele waarde belangrijker dan het precieze getal. IJk een refractometer met ijkvloeistof van 35 ppt, niet alleen met osmosewater.</p>
+<h2>Rekenvoorbeeld</h2>
+<p>Je refractometer staat op 25/25 °C en geeft 1,025 aan. De calculator vindt 33,2 ppt, ongeveer 1,8 ppt onder natuurlijk zeewater. Om op 35 ppt te komen vul je bij met zout water, niet met zoet, tot hij 1,0264 aangeeft.</p>
+<p>Dezelfde 35 ppt geeft op een areometer die op 60/60 °F geijkt is 1,0269.</p>
+<p class="callout">Dit zijn schattingen. Testkits hebben toleranties en elke bak verbruikt net iets anders: doseer in delen en meet opnieuw voor de volgende dosis.</p>
+<aside class="card app-note" aria-labelledby="app-h">
+<h2 id="app-h">Bewaar je waarden, niet alleen de uitkomst</h2>
+<p>In Coralline voer je het zoutgehalte in als ppt of SG, bij 25/25 °C of 60/60 °F, en als je wisselt worden alle oude metingen omgerekend. De grafiek van het zoutgehalte laat zien hoe verdamping het laat oplopen, voordat het een doseerprobleem wordt. Invoeren is gratis en onbeperkt, zonder account of abonnement, en werkt offline. Pro betaal je één keer.</p>
+<div class="stores left"><a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline&amp;listing=dosing"><small>Ontdek het op</small><b>Google Play</b></a><span class="soon">iPhone-versie volgt binnenkort</span></div>
+</aside>
+<h2>Bronnen</h2>
+<ol class="sources"><li><a href="https://marineinfo.org/doc/publication/246046" rel="noopener">UNESCO (1981). Tenth report of the Joint Panel on Oceanographic Tables and Standards. UNESCO Technical Papers in Marine Science 36 (<span class="nw">EOS-80</span>)</a></li><li><a href="https://doi.org/10.1016/0198-0149(81)90122-9" rel="noopener">F. J. Millero en A. Poisson (1981). International one-atmosphere equation of state of seawater. Deep-Sea Research 28A, 625–629</a></li></ol>
+<p class="updated">Gecontroleerd aan de hand van de bronnen: 2026-11-02</p>
+<p class="more"><b>Andere calculators:</b> <a href="../../nl/kh-alkaliniteit-berekenen/">KH (dKH)</a> · <a href="../../nl/calcium-magnesium-berekenen/">Calcium en magnesium</a> · <a href="../../nl/fosfaat-ppb-ppm-omrekenen/">Fosfor- en nitraattests</a> · <a href="../../nl/kalkwater-berekenen/">Kalkwasser</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+<span>Coralline is een logboek en doseercalculator voor je zeewateraquarium. Deze site gebruikt geen cookies of trackers.</span>
+<nav><a href="../../nl/">Home</a><a href="../../nl/rekenhulp/">Rekenhulp</a><a href="../../nl/support/">Hulp</a><a href="../../nl/switch/">Overstappen</a><a href="../../nl/privacy/">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+</div></footer>
+<script type="module" src="../../assets/calc-ui.js"></script>
+</body>
+</html>

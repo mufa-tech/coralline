@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Coralline: deniz akvaryumu test günlüğü ve dozaj hesaplayıcı</title>
 <meta name="description" content="Resif akvaryumu için internetsiz su testi günlüğü ve dozaj hesaplayıcı. Sınırsız test, hesap yok, abonelik yok.">
 <meta name="color-scheme" content="light dark">
@@ -27,12 +28,19 @@
 <meta property="og:url" content="https://mufa-tech.github.io/coralline/tr/">
 <meta property="og:image" content="https://mufa-tech.github.io/coralline/assets/icon-512.png">
 <meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../tr/"><img src="../assets/icon-180.png" alt="" width="28" height="28">Coralline</a>
+<a class="toplink" href="../tr/hesaplayicilar/">Hesaplayıcılar</a>
 <nav class="lang" aria-label="Dil"><a href="../" hreflang="en" lang="en">EN</a><a href="../de/" hreflang="de" lang="de">DE</a><a href="../fr/" hreflang="fr" lang="fr">FR</a><a href="../nl/" hreflang="nl" lang="nl">NL</a><a href="../it/" hreflang="it" lang="it">IT</a><a href="../es/" hreflang="es" lang="es">ES</a><a href="../tr/" hreflang="tr" lang="tr" aria-current="page">TR</a></nav>
 </div></header>
 <main class="wrap hero">
@@ -43,17 +51,22 @@
 <a class="store" href="https://play.google.com/store/apps/details?id=com.mufatech.coralline"><small>Android için</small><b>Google Play</b></a>
 </div>
 <p class="promise">Hesap yok. Abonelik yok. İnternetsiz.</p>
-<p class="note">Bir akvaryum ve sınırsız test için ücretsiz. Pro tek ödeme, 7 gün ücretsiz deneme ile.</p>
+<p class="note">Bir akvaryum ve sınırsız test için ücretsiz. Pro tek ödeme, 7 gün ücretsiz deneme ile.</p>
 <ul class="features">
 <li>KH, Ca, Mg, nitrat, fosfat ve daha fazlasını on saniye kadar sürede kaydet. Son değerlerin zaten dolu gelir.</li>
 <li>Hedef aralıklı grafikler, istikrar kartı ve bir değerin aralık dışına ne zaman çıkacağını gösteren tahmin.</li>
-<li>Hedefe yükseltme, su değişimi ve tuzluluk (EOS-80) hesaplayıcıları. Pro; kalkwasser, ürün kalibrasyonu ve gerçek tüketimine göre doz önerisi ekler.</li>
+<li>Hedefe yükseltme, su değişimi ve tuzluluk (<span class="nw">EOS-80</span>) hesaplayıcıları. Pro; kalkwasser, ürün kalibrasyonu ve gerçek tüketimine göre doz önerisi ekler.</li>
 </ul>
-<p class="note" style="margin-top:28px">Sorun mu var? <a href="../tr/support/">Destek</a> sayfasına bak. Verine ne olduğu: <a href="../tr/privacy/">Gizlilik</a>.</p>
+<section class="card home-calcs" aria-labelledby="hc-h">
+<h2 id="hc-h">Ücretsiz resif hesaplayıcıları</h2>
+<p>Şu an tek bir sayı mı lazım? dKH, ppm ve meq/L çevirme, hacmine göre gram karbonat, kalsiyum ve magnezyum dozu, tuzluluk ve SG, Hanna fosfor okumasından fosfat, kalkwasser. Tarayıcıda çalışır, bir şey yüklemen gerekmez.</p>
+<p><a class="btn" href="../tr/hesaplayicilar/">Hesaplayıcıları aç<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+</section>
+<p class="note gap">Sorun mu var? <a href="../tr/support/">Destek</a> sayfasına bak. Verine ne olduğu: <a href="../tr/privacy/">Gizlilik</a>.</p>
 </main>
 <footer><div class="wrap">
 <span>Coralline, deniz akvaryumu için su testi günlüğü ve dozaj hesaplayıcısıdır. Bu sitede çerez ve izleyici yok.</span>
-<nav><a href="../tr/">Ana sayfa</a><a href="../tr/support/">Destek</a><a href="../tr/switch/">Uygulama değiştirme</a><a href="../tr/privacy/">Gizlilik</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
+<nav><a href="../tr/">Ana sayfa</a><a href="../tr/hesaplayicilar/">Hesaplayıcılar</a><a href="../tr/support/">Destek</a><a href="../tr/switch/">Uygulama değiştirme</a><a href="../tr/privacy/">Gizlilik</a><a href="https://play.google.com/store/apps/details?id=com.mufatech.coralline">Google Play</a><a href="mailto:hello@mufatech.com">hello@mufatech.com</a></nav>
 </div></footer>
 </body>
 </html>
